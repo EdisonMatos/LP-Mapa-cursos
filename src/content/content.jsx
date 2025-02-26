@@ -43,33 +43,33 @@ import imgTestimonial4 from "../assets/imgs/testimonials/deposition4.png";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Mapa Cursos",
   email: "contato", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "mapacursos.com", // Sem "www"
   phone: {
-    ddd: "A_Definir",
-    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "A_Definir", // Apenas os 4 últimos números
+    ddd: "45",
+    firstPart: "99129", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0837", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
       <p>Endereço:</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
+      <p>Rua Otelo Celestino de Castilho, Nº 768</p>
+      <p> Coqueiral Cascavel - PR</p>
+      <p>CEP 85807-590</p>
     </div>
   ),
   expediente: (
     <div>
       <p>Horário de expediente:</p>
       <p>Segunda a Sexta-feira</p>
-      <p>Das 9h às 18h</p>
+      <p>Das 8h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A Definir</span>,
-  instagramProfile: "A_definir", // Sem o @
+  instagramProfile: "mapacursos", // Sem o @
   facebookProfile: "A_Definir",
-  linkeDinProfile: "A_Definir",
+  linkeDinProfile: "dhiegobalves",
   x: "A_Definir",
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
@@ -362,29 +362,66 @@ const content = {
         img: aboutImg1,
         alt: "Imagem profissional de escritório/advogado(a)",
       },
-      miniTag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
+      miniTag: "QUEM É A MAPA CURSOS",
+      title: "Nossa trajetória",
+      subtitle:
+        "Capacitando agentes públicos com ensino de excelência e aplicação prática.",
       paragraph: (
         <div>
-          A_Definir
-          <br />
-          A_Definir
+          Fundado com o propósito de qualificar agentes públicos e fortalecer a
+          administração pública, o Mapa Cursos se tornou referência na
+          capacitação de profissionais que atuam diretamente na gestão e na
+          governança do país.
         </div>
       ),
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p>
-          A_Definir
+          Fundado com o propósito de qualificar agentes públicos e fortalecer a
+          administração pública, o Mapa Cursos se tornou referência na
+          capacitação de profissionais que atuam diretamente na gestão e na
+          governança do país.
           <br />
           <br />
-          A_Definir
+          Com sede em Cascavel - PR, a instituição já tem anos de experiência no
+          mercado de ensino e presta assessoria e treinamento para servidores
+          efetivos e comissionados, vereadores, prefeitos, secretários,
+          procuradores e assessores políticos.
           <br />
           <br />
-          A_Definir
+          O objetivo é claro: difundir conhecimento, proporcionar atualização
+          profissional e contribuir para a melhoria da eficiência e
+          transparência na gestão pública.
           <br />
           <br />
-          A_Definir
+          Os cursos abrangem temas essenciais da Administração Pública,
+          compreendendo desde a Constituição Federal até legislações específicas
+          que impactam diretamente a atuação dos agentes públicos.
+          <br />
+          <br />
+          A abordagem alia teoria e prática, permitindo que os participantes
+          apliquem imediatamente o conhecimento adquirido no dia a dia da gestão
+          pública.
+          <br />
+          <br />
+          À frente do Mapa Cursos está Dhiego Bernardo Alves, advogado com mais
+          de 10 anos de experiência e especialista em Direito Constitucional,
+          Administrativo e Eleitoral. Além de atuar como assessor jurídico de
+          parlamentares, Dhiego tem se dedicado à docência há mais de dois anos,
+          compartilhando sua expertise para capacitar profissionais do Direito e
+          do setor público.
+          <br />
+          <br />
+          Como fundador e diretor geral do Mapa Cursos, ele desenvolveu um
+          método de ensino que une uma base teórica sólida com a aplicação
+          prática, garantindo que os alunos estejam preparados para os desafios
+          reais da gestão pública.
+          <br />
+          <br />
+          O compromisso do Mapa Cursos vai além do ensino: é um projeto voltado
+          para a construção de um setor público mais qualificado, ético e
+          eficiente, impactando diretamente a sociedade e promovendo uma
+          administração mais transparente e eficaz.
           <br />
           <br />
         </p>
@@ -407,68 +444,79 @@ const content = {
         labelX: "Siga-nos no X",
         paragraph: (
           <p>
-            Aproveite nossas redes sociais para mantermos contato e ficar por
-            dentro de atualizações importantes no mundo do direito.
+            Acompanhe nossas redes sociais e fique por dentro das novidades,
+            cursos e atualizações essenciais para agentes e órgãos públicos.
           </p>
         ),
       },
     },
     cta: {
       backgroundImg: ctaWhatsappImgBg,
-      miniTag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
-      ctaButtonText: "Entre em contato pelo WhatsApp",
+      miniTag: "FALE CONOSCO",
+      title:
+        "Capacite-se agora para as demandas do mercado atual com nossa ajuda.",
+      subtitle:
+        "Fale com nossa equipe e descubra como nossos cursos podem aprimorar seus conhecimentos e sua atuação no setor público.",
+      ctaButtonText: "Entre em contato",
     },
     steps: {
-      miniTag: "A_Definir",
-      title: "A_Definir",
+      miniTag: "PASSO A PASSO",
+      title: "Como funciona nossa capacitação?",
       subtitle: "",
       img: imgSteps,
       alt: "",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: "A_Definir",
-          cardDescription: "A_Definir",
+          cardTitle: "Escolha do curso",
+          cardDescription:
+            "Você seleciona o curso que deseja fazer, de acordo com seus interesses e necessidades profissionais.",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: "A_Definir",
-          cardDescription: "A_Definir",
+          cardTitle: "Inscrição e acesso",
+          cardDescription:
+            "Realize sua inscrição de forma simples e tenha acesso ao material e às orientações para iniciar seu aprendizado.",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: "A_Definir",
-          cardDescription: "A_Definir",
+          cardTitle: "Capacitação especializada",
+          cardDescription:
+            "Aulas ministradas por especialistas, com conteúdo atualizado e dinâmico, alinhado às leis e práticas do setor.",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: "A_Definir",
-          cardDescription: "A_Definir",
+          cardTitle: "Aplicação do conhecimento",
+          cardDescription:
+            "Os alunos saem preparados para implementar melhorias e soluções eficazes na gestão pública.",
         },
       },
     },
     faq: {
-      miniTag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
+      miniTag: "TIRE SUAS DÚVIDAS",
+      title: "Perguntas Frequentes",
+      subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas. ",
       questions: {
         question1: {
-          question: "A_Definir",
-          answer: "A_Definir",
+          question: "Quais cursos vocês oferecem para agentes públicos?",
+          answer:
+            "Oferecemos uma variedade de cursos voltados para a capacitação de agentes públicos, abrangendo temas como gestão pública, licitações, contratos administrativos, convênios públicos, transparência e inovação. Nossos cursos são desenvolvidos para aprimorar as habilidades dos servidores e gestores, alinhando-se às demandas atuais da administração pública.",
         },
         question2: {
-          question: "A_Definir",
-          answer: "A_Definir",
+          question: "Como posso me inscrever nos cursos?",
+          answer:
+            "A inscrição pode ser feita diretamente em nosso site. Basta selecionar o curso desejado, preencher o formulário de inscrição e seguir as instruções. Caso precise de suporte, nossa equipe está disponível para ajudar via WhatsApp, telefone ou e-mail.",
         },
         question3: {
-          question: "A_Definir",
-          answer: "A_Definir",
+          question: "Os cursos são presenciais ou online?",
+          answer:
+            "Oferecemos cursos tanto presenciais quanto online, permitindo que você escolha a modalidade que melhor se adapta à sua rotina. Também disponibilizamos opções híbridas, combinando aulas presenciais e atividades online para uma experiência de aprendizado completa.",
         },
         question4: {
-          question: "A_Definir",
-          answer: "A_Definir",
+          question:
+            "Servidores públicos têm direito a licença para capacitação?",
+          answer:
+            "Sim! Servidores públicos podem ter direito a uma licença para capacitação de até três meses a cada cinco anos de serviço. Essa licença permite que o servidor participe de nossos cursos sem prejuízo da remuneração, garantindo um aprendizado aprofundado sem comprometer sua rotina profissional.",
         },
       },
       paragraph: "Clique aqui caso tenha mais dúvidas",

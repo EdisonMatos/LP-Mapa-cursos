@@ -115,17 +115,20 @@ export default function Hero({ appDownloadButtons }) {
               <div className="w-[40%] flex flex-col  text-white">
                 <span className="font-bold leading-10 text-title5">
                   {" "}
-                  Lorem Ipsum is simply dummy text
+                  Nossos Cursos
                 </span>
                 <br />
                 <br />
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. <br />
+                Fundado com o propósito de qualificar agentes públicos e
+                fortalecer a administração pública, o Mapa Cursos se tornou
+                referência na capacitação de profissionais que atuam diretamente
+                na gestão e na governança do país. <br />
                 <br />
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+                Com sede em Cascavel - PR, a instituição já tem anos de
+                experiência no mercado de ensino e presta assessoria e
+                treinamento para servidores efetivos e comissionados,
+                vereadores, prefeitos, secretários, procuradores e assessores
+                políticos.
                 <Button
                   aria-label={content.texts.hero.ctaButtonAriaLabel}
                   label={content.texts.hero.ctaButtonText}
