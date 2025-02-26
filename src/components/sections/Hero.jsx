@@ -9,7 +9,7 @@ const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 export default function Hero({ appDownloadButtons }) {
   return (
     <div
-      className="w-full bg-center bg-cover font-mainFont bg-red-500"
+      className="w-full bg-red-500 bg-center bg-cover font-mainFont"
       id="home"
       style={{
         backgroundImage: `url(${content.texts.hero.bgImg})`,
@@ -28,13 +28,13 @@ export default function Hero({ appDownloadButtons }) {
                 </div>
               </MotionDivDownToUp> */}
               <MotionDivDownToUp>
-                <div className="text-lighter flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7">
+                <div className="text-lighter flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
                   <h1 className="">{content.texts.hero.title}</h1>
                 </div>
               </MotionDivDownToUp>
               <MotionDivDownToUp>
                 <div className="flex justify-center w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
-                  <p className="text-lighter mb-[32px] opacity-100">
+                  <p className="text-lighter mb-[32px] opacity-100 ">
                     {content.texts.hero.subtitle}
                   </p>
                 </div>
@@ -111,9 +111,9 @@ export default function Hero({ appDownloadButtons }) {
             </div>
           </div>
           <div className="h-[200px]  relative flex justify-center">
-            <div className="bg-bgSectionDark flex justify-evenly rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[30px]">
-              <div className="w-[40%]  text-white">
-                <span className="text-title5 font-bold">
+            <div className="bg-bgSectionDark flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[30px]">
+              <div className="w-[40%] flex flex-col  text-white">
+                <span className="font-bold leading-10 text-title5">
                   {" "}
                   Lorem Ipsum is simply dummy text
                 </span>
@@ -123,6 +123,9 @@ export default function Hero({ appDownloadButtons }) {
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book. <br />
+                <br />
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
                 <Button
                   aria-label={content.texts.hero.ctaButtonAriaLabel}
                   label={content.texts.hero.ctaButtonText}
@@ -132,8 +135,8 @@ export default function Hero({ appDownloadButtons }) {
                   icon={<FaWhatsapp size={24} />}
                 />
               </div>
-              <div className="w-[50%] h-fit bg-red-500">
-                <img className="w-full" src={imgVideoMockup}></img>
+              <div className="w-[50%] h-fit ">
+                <img className="w-full rounded-2xl" src={imgVideoMockup}></img>
               </div>
             </div>
           </div>

@@ -98,8 +98,8 @@ const content = {
       title: (
         <h1 className="mb-[16px]">
           Esteja
-          <span className="text-bgSectionDark"> preparado </span> para os
-          desafios do serviço público
+          <span className="text-white"> preparado </span> para os desafios do
+          serviço público
         </h1>
       ),
       subtitle:
@@ -167,15 +167,15 @@ const content = {
       bgImg: bgHeroImg,
     },
     features: {
-      miniTag: "A_Definir",
-      title: "A_Definir",
+      miniTag: "A ESCOLHA CERTA",
+      title: "Por que a Mapa Cursos é a melhor escolha?",
       subtitle: "A_Definir",
       imgFeatures: imgFeatures,
       imgDivisor: imgDivisor,
       card1: {
         img: featuresImg1,
-        title: "A_Definir",
-        subtitle: "A_Definir",
+        title: "Cursos presenciais e à distância",
+        subtitle: "Flexibilidade para aprender onde e quando quiser.",
         description: (
           <div>
             A_Definir
@@ -202,8 +202,8 @@ const content = {
       },
       card2: {
         img: featuresImg2,
-        title: "A_Definir",
-        subtitle: "A_Definir",
+        title: "Aprendizagem na prática",
+        subtitle: "Metodologia prática para aplicação imediata.",
         description: (
           <div>
             A_Definir
@@ -230,8 +230,8 @@ const content = {
       },
       card3: {
         img: featuresImg3,
-        title: "A_Definir",
-        subtitle: "A_Definir",
+        title: "Seminários e congressos",
+        subtitle: "Eventos para atualização e networking profissional.",
         description: (
           <div>
             A_Definir <br />
@@ -257,8 +257,8 @@ const content = {
       },
       card4: {
         img: featuresImg4,
-        title: "A_Definir",
-        subtitle: "A_Definir",
+        title: "Assessorias técnicas",
+        subtitle: "Suporte especializado para órgãos e gestores públicos.",
         description: (
           <div>
             A_Definir

@@ -32,7 +32,7 @@ export default function FeaturesButton() {
         className="py-[40px] tablet1:py-[64px] desktop1:py-[96px] desktop1:pb-[0px] bg-quinary squares"
       >
         <SectionHeader
-          className="text-center"
+          className="text-center mt-[280px]"
           miniTitle={content.texts.features.miniTag}
           sectionHeaderTitle={content.texts.features.title}
           sectionHeaderSubtitle={content.texts.features.subtitle}
