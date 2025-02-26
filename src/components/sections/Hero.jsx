@@ -8,8 +8,11 @@ const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 export default function Hero({ appDownloadButtons }) {
   return (
     <div
-      className="w-full bg-center bg-repeat font-mainFont bg-gradient-to-b from-black to-bgSectionDark "
+      className="w-full bg-center bg-cover font-mainFont bg-red-500"
       id="home"
+      style={{
+        backgroundImage: `url(${content.texts.hero.bgImg})`,
+      }}
     >
       <div className="relative z-10 flex w-full bg-black bg-opacity-0 items-left">
         <div className="w-full text-secondary justify-evenly">
@@ -18,7 +21,7 @@ export default function Hero({ appDownloadButtons }) {
             <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
               <MotionDivDownToUp>
                 <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
-                  <p className="mb-[16px] bg-primary text-labelsIcons bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
+                  <p className="mb-[16px] bg-bgSectionDark text-white bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
                     {content.texts.hero.miniTag}
                   </p>
                 </div>
@@ -30,7 +33,7 @@ export default function Hero({ appDownloadButtons }) {
               </MotionDivDownToUp>
               <MotionDivDownToUp>
                 <div className="flex justify-center w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
-                  <p className="text-lighter mb-[32px] opacity-80">
+                  <p className="text-lighter mb-[32px] opacity-100">
                     {content.texts.hero.subtitle}
                   </p>
                 </div>
@@ -42,7 +45,7 @@ export default function Hero({ appDownloadButtons }) {
                     label={content.texts.hero.ctaButtonText}
                     buttonLink={whatsappContactLink}
                     animation
-                    className="w-[100%]"
+                    className="w-[100%] text-white"
                     icon={<FaWhatsapp size={24} />}
                   />
                 </div>
@@ -50,7 +53,7 @@ export default function Hero({ appDownloadButtons }) {
                   <div className="flex justify-center desktop1:justify-start">
                     <div className="flex flex-col items-center desktop1:flex-row text-primary">
                       {content.texts.hero.obsHero.icon}
-                      <p className="text-white opacity-80 ml-[10px] text-center mt-[12px] desktop1:mt-0">
+                      <p className="text-white opacity-100 ml-[10px] text-center mt-[12px] desktop1:mt-0">
                         {content.texts.hero.obsHero.text}
                       </p>
                     </div>
@@ -96,13 +99,13 @@ export default function Hero({ appDownloadButtons }) {
             </div>
             <div className="flex justify-center w-[90%] tablet1:w-[450px] desktop1:w-[42%] desktop2:w-[42.8%]">
               <MotionDivDownToUp className="relative flex justify-end w-full ">
-                <div
+                {/* <div
                   className="bg-top rounded-xl w-full h-[350px] tablet1:h-[380px] desktop1:h-[500px] desktop1:w-[500px] bg-cover bg-no-repeat shadow-custom-opacity shadow-black/30"
                   style={{
                     backgroundImage: `url(${content.texts.hero.heroImg})`,
                     backgroundSize: "",
                   }}
-                ></div>
+                ></div> */}
               </MotionDivDownToUp>
             </div>
           </div>

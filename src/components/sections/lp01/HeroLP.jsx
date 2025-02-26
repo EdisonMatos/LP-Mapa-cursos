@@ -2,14 +2,14 @@ import SectionArea from "../../sectionElements/SectionArea";
 import SectionWrapper from "../../animation/MotionDivDownToUp";
 import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 import Button from "../../interactives/Button";
-import contentLp01 from "../../../content/contentLp01";
+import content from "../../../content/content";
 
 export default function HeroLP() {
   return (
     <div
       className="w-full bg-top bg-no-repeat bg-cover font-mainFont"
       style={{
-        backgroundImage: `url(${contentLp01.hero.bgImg})`,
+        backgroundImage: `url(${content.texts.hero.bgImg})`,
       }}
     >
       <SectionArea

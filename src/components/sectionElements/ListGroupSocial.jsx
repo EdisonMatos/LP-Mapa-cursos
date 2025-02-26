@@ -196,7 +196,7 @@ export default function ListGroupSocial({ LightMode }) {
             aria-label={content.texts.hero.ctaButtonAriaLabel}
             label="Contato"
             buttonLink={whatsappContactLink}
-            className={`${scrolling ? "" : ""}`}
+            className={`${scrolling ? "" : ""} text-white`}
             textclassName="text-paragraph3"
             size="small"
             icon={
