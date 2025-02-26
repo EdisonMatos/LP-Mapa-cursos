@@ -15,12 +15,9 @@ import IconButtonFeatureCard from "../cards/IconButtonFeatureCard";
 import Button from "../interactives/Button";
 
 export default function FeaturesParagraphs({ modal }) {
-
-  
-
   return (
     <div>
-      <SectionArea id="service" className="squares">
+      <SectionArea id="service" className="squares mt-[330px]">
         <SectionShapeDiv
           shapeDivArrow={false}
           shapeColor="text-bgSectionDark"

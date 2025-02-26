@@ -20,7 +20,6 @@ import FeaturesParagraphs from "./FeaturesParagraphs";
 import FeaturesButton from "./FeaturesButton";
 import DefaultModals from "./DefaultModals";
 
-
 export default function Features({
   modal,
   defaultFeature,
@@ -140,7 +139,6 @@ export default function Features({
                     }
                   />
                 </MotionDivDownToUp>{" "}
-
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
                   <IconButtonFeatureCard
                     icon={content.texts.features.card4.icon}
