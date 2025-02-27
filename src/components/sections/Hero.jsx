@@ -114,7 +114,7 @@ export default function Hero({ appDownloadButtons }) {
           </div>
           <MotionDivDownToUp>
             <div className="h-[200px]  relative flex justify-center">
-              <div className="bg-bgSectionDark flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[30px]">
+              <div className="bg-bgSectionDark/90 flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[30px]">
                 <div className="w-[40%] flex flex-col  text-white">
                   <span className="font-bold leading-10 text-title5">
                     {" "}
