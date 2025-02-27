@@ -88,7 +88,7 @@ export default function NavbarSocial({ LightMode }) {
               : "bg-transparent"
             : scrolling
             ? "bg-bgSectionDark/100 bg-opacity-100 shadow-lg transition-all duration-1000 border-b-[1px] border-white"
-            : "bg-bgSectionDark/30 transition-colors duration-1000 border-b-[1px] border-transparent border-black"
+            : "bg-black/30 transition-colors duration-1000 border-b-[1px] border-transparent border-black"
         }`}
       >
         <Navbar>

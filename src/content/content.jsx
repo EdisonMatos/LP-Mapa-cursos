@@ -39,6 +39,7 @@ import imgTestimonial1 from "../assets/imgs/testimonials/deposition1.png";
 import imgTestimonial2 from "../assets/imgs/testimonials/deposition2.png";
 import imgTestimonial3 from "../assets/imgs/testimonials/deposition3.png";
 import imgTestimonial4 from "../assets/imgs/testimonials/deposition4.png";
+import TypewriterComponent from "../components/animation/TypeWriter";
 
 const currentYear = new Date().getFullYear();
 
@@ -98,8 +99,14 @@ const content = {
       title: (
         <h1 className="mb-[16px]">
           Esteja
-          <span className="text-white"> preparado </span> para os desafios do
-          serviço público
+          <span className="text-white">
+            {" "}
+            <TypewriterComponent
+              strings={["qualificado", "atualizado", "preparado"]}
+              className="my-typewriter"
+            />{" "}
+          </span>
+          para os desafios do serviço público
         </h1>
       ),
       subtitle:

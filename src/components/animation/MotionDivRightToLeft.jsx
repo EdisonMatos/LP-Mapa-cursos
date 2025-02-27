@@ -14,8 +14,8 @@ export default function MotionDivRightToLeft({ children, className }) {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, x: 45 }}
-      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 45 }}
+      initial={{ opacity: 0, x: 25 }}
+      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 25 }}
       transition={{ duration: 1 }}
       className={`${className}`}
     >
