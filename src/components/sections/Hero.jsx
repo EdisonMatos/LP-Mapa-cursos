@@ -158,7 +158,7 @@ export default function Hero({ appDownloadButtons }) {
                   </MotionDivRightToLeft>
                 </div> */}
                 <div className="w-full flex flex-col gap-8 ">
-                  <h1 className="flex text-title4 text-white font-mainFont justify-center">
+                  <h1 className="flex text-title1 tablet1:text-title4 text-center text-white font-mainFont justify-center">
                     Próximos Cursos
                   </h1>
                   <div className="flex flex-col desktop1:flex-row items-center gap-8 desktop1:justify-evenly">
