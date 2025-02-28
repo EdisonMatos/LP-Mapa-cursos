@@ -28,7 +28,7 @@ export default function CardHeroCursos(props) {
  
   return (
     <MotionDivDownToUp className="flex w-full h-[100%] justify-center ">
-      <div className="max-w-[350px] tablet1:max-w-[400px] desktop2:max-w-[300px] bg-white flex  p-2 rounded-md">
+      <div className="max-w-[350px] tablet1:max-w-[400px] desktop2:max-w-[320px] bg-white flex  p-2 rounded-md">
         <div className="flex flex-col gap-6 w-full justify-between">
             <img className="rounded-md" src={imageUrl} alt="" />
           {/* paragrafo */}
