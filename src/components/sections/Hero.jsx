@@ -5,6 +5,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import imgVideoMockup from "../../assets/imgs/hero/videomockup.jpg";
 import MotionDivRightToLeft from "../animation/MotionDivRightToLeft";
 import MotionDivLeftToRight from "../animation/MotionDivLeftToRight";
+import CardHeroCursos from "../cards/CardHero";
+import imgCurso1 from "../../assets/imgs/hero/cursoHero1.webp";
+import imgCurso2 from "../../assets/imgs/hero/cursoHero2.webp";
+import imgCurso3 from "../../assets/imgs/hero/cursoHero3.webp";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -113,9 +117,9 @@ export default function Hero({ appDownloadButtons }) {
             </div>
           </div>
           <MotionDivDownToUp>
-            <div className="h-[200px]  relative flex justify-center">
-              <div className="bg-bgSectionDark/90 flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[30px]">
-                <div className="w-[40%] flex flex-col  text-white">
+            <div className="h-[200px] relative flex justify-center">
+              <div className="bg-bgSectionDark flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[30px]">
+                {/* <div className="w-[40%] flex flex-col  text-white">
                   <span className="font-bold leading-10 text-title5">
                     {" "}
                     <MotionDivLeftToRight>Nossos Cursos</MotionDivLeftToRight>
@@ -152,6 +156,38 @@ export default function Hero({ appDownloadButtons }) {
                       src={imgVideoMockup}
                     ></img>
                   </MotionDivRightToLeft>
+                </div> */}
+                <div className="w-full flex flex-col gap-8 ">
+                  <h1 className="flex text-title1 tablet1:text-title4 text-center text-white font-mainFont justify-center">
+                    Próximos Cursos
+                  </h1>
+                  <div className="flex flex-col desktop1:flex-row items-center gap-8 desktop1:justify-evenly">
+                    <CardHeroCursos
+                      imageUrl={imgCurso1}
+                      title={content.texts.features.card3.title}
+                      description="Capacitar os agentes públicos para um melhor controle e desenvolvimento da função pública, buscando a eficiência e modernização da gestão pública municipal."
+                      className=""
+                    />
+
+                    <CardHeroCursos
+                      imageUrl={imgCurso2}
+                      icon={content.texts.features.card3.icon}
+                      title={content.texts.features.card3.title}
+                      description="Capacitar os profissionais no entendimento e na gestão eficiente dos processos relacionados à remuneração de servidores públicos."
+                      className=""
+                    />
+
+                    <CardHeroCursos
+                      imageUrl={imgCurso3}
+                      icon={content.texts.features.card3.icon}
+                      title={content.texts.features.card3.title}
+                      description="O curso visa demonstrar as regras de utilização do Fundeb, as regras de formação e origem do recurso, além do correto cumprimento dos índices."
+                      className=""
+                    />
+                  </div>
+                  <div>
+                    <a className="flex justify-center text-white text-p" href="">Ver todos os Cursos</a>
+                  </div>
                 </div>
               </div>
             </div>
