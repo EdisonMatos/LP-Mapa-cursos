@@ -7,6 +7,8 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import imgTestimonial1 from "../../assets/imgs/testimonials/depoiment1.png";
 import imgTestimonial2 from "../../assets/imgs/testimonials/depoiment2.png";
 import imgTestimonial3 from "../../assets/imgs/testimonials/depoiment3.png";
+import SectionHeader from "../sectionElements/SectionHeader";
+import content from "../../content/content";
 
 const Depoimentos = () => {
   const responsiveOptions = [
@@ -89,8 +91,15 @@ const Depoimentos = () => {
   };
 
   return (
-    <div className="bg-bgSectionDark">
-      <div className="w-[90%] m-auto py-[64px] desktop1:py-[96px] max-w-[1215px]">
+    <div className="bg-bgSectionDark py-[64px] desktop1:py-[96px]">
+      <SectionHeader
+            className="text-center"
+            miniTitle={content.texts.testimonials.miniTag}
+            sectionHeaderTitle={content.texts.testimonials.title}
+            sectionHeaderSubtitle={content.texts.testimonials.subtitle}
+            color=""
+          />
+      <div className="w-[90%] m-auto max-w-[1215px]">
         <div className="carousel-container" style={{ position: "relative" }}>
           <div
             onClick={goToPrevSlide}

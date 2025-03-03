@@ -537,9 +537,9 @@ const content = {
       footerNavegacaoText: "NAVEGAÇÃO",
     },
     testimonials: {
-      miniTag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
+      miniTag: "DEPOIMENTOS",
+      title: "O que nossos alunos dizem",
+      subtitle: "Experiências reais de quem já confiou no nosso trabalho",
       images: {
         img1: {
           img: imgTestimonial1,
