@@ -56,7 +56,7 @@ export default function Hero({ appDownloadButtons }) {
                     icon={<FaWhatsapp size={24} />}
                   />
                 </div> */}
-                {/* <MotionDivDownToUp>
+                <MotionDivDownToUp>
                   <div className="flex justify-center desktop1:justify-start">
                     <div className="flex flex-col items-center desktop1:flex-row text-primary">
                       {content.texts.hero.obsHero.icon}
@@ -65,7 +65,7 @@ export default function Hero({ appDownloadButtons }) {
                       </p>
                     </div>
                   </div>
-                </MotionDivDownToUp> */}
+                </MotionDivDownToUp>
                 {appDownloadButtons && (
                   <MotionDivDownToUp>
                     <div className="flex flex-col items-center desktop1:items-start">

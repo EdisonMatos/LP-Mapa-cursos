@@ -19,6 +19,7 @@ import Features6cards from "./Features6cards";
 import FeaturesParagraphs from "./FeaturesParagraphs";
 import FeaturesButton from "./FeaturesButton";
 import DefaultModals from "./DefaultModals";
+import FeaturesImage from "./FeatureImage";
 
 export default function Features({
   modal,
@@ -28,6 +29,7 @@ export default function Features({
   paragraphs,
   button,
   paragraphsModal,
+  imageFeatures,
 }) {
   return (
     <div>
@@ -299,6 +301,7 @@ export default function Features({
       {paragraphs && <FeaturesParagraphs />}
       {button && <FeaturesButton />}
       {paragraphsModal && <DefaultModals />}
+      {imageFeatures && <FeaturesImage />}
     </div>
   );
 }
