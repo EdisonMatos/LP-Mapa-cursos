@@ -9,6 +9,7 @@ import Maps from "../components/sections/Maps";
 import Faq from "../components/sections/Faq";
 import FooterSocial from "../components/sections/FooterSocial";
 import DefaultModals from "../components/sections/DefaultModals";
+import Depoimentos from "../components/sections/DepoimentosCarousel";
 
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import BackToTopButton from "../components/interactives/BackToTopButton";
@@ -28,6 +29,7 @@ export default function Index() {
         paragraphsModal={false}
       />
       <About modal={true} />
+      <Depoimentos />
       <AboutInstagram
         socialPrint={true}
         instagram={true}
