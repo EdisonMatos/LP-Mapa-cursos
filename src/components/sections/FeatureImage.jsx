@@ -18,23 +18,23 @@ export default function FeaturesImage() {
         <div className="flex flex-wrap justify-between w-full gap-[36px] tablet1:gap-[24px]">
           <FeatureImgOnBgCard
             bgImg={content.texts.features.card1.img}
-            title="Casas"
-            description="Descubra a casa dos seus sonhos!"
+            title={content.texts.features.card1.title}
+            description={content.texts.features.card1.subtitle}
           />
           <FeatureImgOnBgCard
             bgImg={content.texts.features.card2.img}
-            title="Apartamentos"
-            description="Praticidade em nossos apartamentos sofisticados."
+            title={content.texts.features.card2.title}
+            description={content.texts.features.card2.subtitle}
           />
           <FeatureImgOnBgCard
             bgImg={content.texts.features.card3.img}
-            title="Terrenos"
-            description="Construa a realidade que você deseja em nossos terrenos bem localizados."
+            title={content.texts.features.card3.title}
+            description={content.texts.features.card3.subtitle}
           />
           <FeatureImgOnBgCard
             bgImg={content.texts.features.card4.img}
-            title="Pontos Comerciais"
-            description="Posicione seu negócio para o sucesso!"
+            title={content.texts.features.card4.title}
+            description={content.texts.features.card4.subtitle}
           />
         </div>
       </SectionWrapper>
