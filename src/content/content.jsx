@@ -444,15 +444,14 @@ const content = {
         },
         miniTag: "REDES SOCIAIS",
         title: "Conecte-se conosco",
-        subtitle: "",
+        subtitle: "Acompanhe nossas redes sociais e fique por dentro das novidades, cursos e atualizações essenciais para agentes e órgãos públicos.",
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
         labelLinkedin: "Siga-nos no LinkedIn",
         labelX: "Siga-nos no X",
         paragraph: (
           <p>
-            Acompanhe nossas redes sociais e fique por dentro das novidades,
-            cursos e atualizações essenciais para agentes e órgãos públicos.
+           
           </p>
         ),
       },
