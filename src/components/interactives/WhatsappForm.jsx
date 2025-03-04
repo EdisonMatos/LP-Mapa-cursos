@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import WhatsAppIcon from "../../assets/importAssets/WhatsAppIcon.webp";
 import { CiUser, CiPhone, CiMail, CiGlobe, CiChat1 } from "react-icons/ci";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 const WhatsappForm = () => {
   const [name, setName] = useState("");
@@ -77,44 +77,59 @@ const WhatsappForm = () => {
       return;
     }
 
-    const templateParams = {
-      to_name: name,
-      name,
-      phone,
-      email,
-      uf,
-      to_email: email,
-      message,
-    };
 
-    try {
-      const response = await emailjs.send(
-        "service_79yzhx9",
-        "template_mhpelei",
-        templateParams,
-        "HhY_ngFZdJ35Ugc0H"
-      );
-      console.log(
-        "Mensagem enviada com sucesso:",
-        response.status,
-        response.text
-      );
+    const whatsappMessage = `Olá! Meus dados são:
+  - Nome: ${name}
+  - Telefone: ${phone}
+  - E-mail: ${email}
+  - Cidade e Estado: ${uf}
+  - Mensagem: ${message}`;
 
-      setName("");
-      setPhone("");
-      setEmail("");
-      setUf("");
-      setMessage("");
-      setIsSubmitting(false);
-      alert(
-        "Recebemos os seus dados com sucesso! Em breve nossa equipe entrará em contato. Obrigado!"
-      );
-      window.location.reload();
-    } catch (error) {
-      console.error("Erro ao enviar o e-mail:", error);
-      alert("Houve um erro ao enviar o e-mail. Tente novamente.");
-      setIsSubmitting(false);
-    }
+  const phoneNumber = "5545991290837"; // Substitua pelo número do WhatsApp desejado (com DDI e DDD)
+  const encodedMessage = encodeURIComponent(whatsappMessage);
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappUrl, "_blank");
+  setIsSubmitting(false);
+
+    // const templateParams = {
+    //   to_name: name,
+    //   name,
+    //   phone,
+    //   email,
+    //   uf,
+    //   to_email: email,
+    //   message,
+    // };
+
+    // try {
+    //   const response = await emailjs.send(
+    //     "service_79yzhx9",
+    //     "template_mhpelei",
+    //     templateParams,
+    //     "HhY_ngFZdJ35Ugc0H"
+    //   );
+    //   console.log(
+    //     "Mensagem enviada com sucesso:",
+    //     response.status,
+    //     response.text
+    //   );
+
+    //   setName("");
+    //   setPhone("");
+    //   setEmail("");
+    //   setUf("");
+    //   setMessage("");
+    //   setIsSubmitting(false);
+    //   alert(
+    //     "Recebemos os seus dados com sucesso! Em breve nossa equipe entrará em contato. Obrigado!"
+    //   );
+    //   window.location.reload();
+    // } catch (error) {
+    //   console.error("Erro ao enviar o e-mail:", error);
+    //   alert("Houve um erro ao enviar o e-mail. Tente novamente.");
+    //   setIsSubmitting(false);
+    // }
   };
 
   const validateName = (name) => {
