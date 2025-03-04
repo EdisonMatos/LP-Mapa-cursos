@@ -36,7 +36,7 @@ export default function CardHeroCursos(props) {
           {/* paragrafo */}
           <h1 className="text-center">{title}</h1>
           <p className="text-center">{date}</p>
-          <p className="">{description}</p>
+          <p className="text-center">{description}</p>
 
           {/* botões */}
 
