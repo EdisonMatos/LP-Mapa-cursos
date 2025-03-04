@@ -43,7 +43,7 @@ export default function CardHeroCursos(props) {
           <div className="flex justify-center  ">
             <Button
               removeAnchor={true}
-              label="Inscrição"
+              label="Inscreva-se"
               buttonLink={buttonLink}
               gap="gap-0"
               sizeFeatures="px-[15px] phone2:px-[25px] phone3:px-[35px] tablet1:px-[45px] desktop1:px-[20px] desktop2:px-[50px] py-[5px] rounded-[2px]"

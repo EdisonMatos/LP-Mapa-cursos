@@ -268,7 +268,7 @@ const WhatsappForm = () => {
         {/* Botão */}
         <button
           type="button"
-          className="flex items-center w-full font-medium text-[#0E2B40] bg-primary transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
+          className="flex items-center w-full font-medium text-white bg-primary transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
           onClick={sendToWhatsapp}
           disabled={isSubmitting}
         >
