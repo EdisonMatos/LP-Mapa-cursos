@@ -241,7 +241,7 @@ export default function ListGroupSocial({ LightMode }) {
               }
             />
           </a>
-          <a
+          {/* <a
             href={content.texts.links.facebook}
             target="_blank"
             className={scrolling ? "" : ""}
@@ -264,7 +264,7 @@ export default function ListGroupSocial({ LightMode }) {
                 </svg>
               }
             />
-          </a>
+          </a> */}
           <a
             href={content.texts.links.linkedin}
             target="_blank"
