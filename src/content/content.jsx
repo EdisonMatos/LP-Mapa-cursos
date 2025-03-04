@@ -182,6 +182,7 @@ const content = {
       card1: {
         img: featuresImg1,
         title: "Cursos presenciais e à distância",
+        date: "28/02/2025 - 19h",
         subtitle: "Flexibilidade para aprender onde e quando quiser.",
         description: (
           <div>
@@ -210,6 +211,7 @@ const content = {
       card2: {
         img: featuresImg2,
         title: "Aprendizagem na prática",
+        date: "01/03/2025 - 19h",
         subtitle: "Metodologia prática para aplicação imediata.",
         description: (
           <div>
@@ -238,6 +240,7 @@ const content = {
       card3: {
         img: featuresImg3,
         title: "Seminários e congressos",
+        date: "13/02/2025 - 19h",
         subtitle: "Eventos para atualização e networking profissional.",
         description: (
           <div>

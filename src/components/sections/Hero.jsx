@@ -164,23 +164,24 @@ export default function Hero({ appDownloadButtons }) {
                   <div className="flex flex-col desktop1:flex-row items-center gap-8 desktop1:justify-evenly">
                     <CardHeroCursos
                       imageUrl={imgCurso1}
-                      title={content.texts.features.card3.title}
+                      title={content.texts.features.card1.title}
+                      date={content.texts.features.card1.date}
                       description="Capacitar os agentes públicos para um melhor controle e desenvolvimento da função pública, buscando a eficiência e modernização da gestão pública municipal."
                       className=""
                     />
 
                     <CardHeroCursos
                       imageUrl={imgCurso2}
-                      icon={content.texts.features.card3.icon}
-                      title={content.texts.features.card3.title}
+                      title={content.texts.features.card2.title}
+                      date={content.texts.features.card2.date}
                       description="Capacitar os profissionais no entendimento e na gestão eficiente dos processos relacionados à remuneração de servidores públicos."
                       className=""
                     />
 
                     <CardHeroCursos
                       imageUrl={imgCurso3}
-                      icon={content.texts.features.card3.icon}
                       title={content.texts.features.card3.title}
+                      date={content.texts.features.card3.date}
                       description="O curso visa demonstrar as regras de utilização do Fundeb, as regras de formação e origem do recurso, além do correto cumprimento dos índices."
                       className=""
                     />
