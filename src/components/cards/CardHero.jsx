@@ -30,46 +30,44 @@ export default function CardHeroCursos(props) {
 
   return (
     <MotionDivDownToUp className="flex w-full h-[100%] justify-center ">
-      <div className="max-w-[350px] tablet1:max-w-[400px] desktop2:max-w-[320px] bg-white flex  p-2 rounded-md">
-        <div className="flex flex-col gap-4 w-full justify-between">
-          <img className="rounded-md" src={imageUrl} alt="" />
+      <div className="max-w-[350px] tablet1:max-w-[400px] desktop2:max-w-[320px] bg-white flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 rounded-[10px]">
+        <div className="flex flex-col gap-4 w-full desktop2:p-[4px]">
+          <img className="rounded-[10px]" src={imageUrl} alt="" />
           {/* paragrafo */}
-          <h1 className="text-center">{title}</h1>
-          <p className="text-center">{date}</p>
-          <p className="text-center">{description}</p>
+          <div className=" h-full flex flex-col w-full">
+          <p className=" text-black/50 text-paragraph2 pt-[8px] bg-green-800">{date}</p>
+          <h1 className="text-title2 leading-[27px] font-medium pt-[2px] bg-red-800">{title}</h1>
+          <p className="text-paragraph3 desktop2:text-paragraph4 text-black/60 leading-[18px] desktop1:leading-[21px] pt-[12px] bg-yellow-800 mt-auto ">{description}</p>
 
-          {/* botões */}
-
-          <div className="flex justify-center  ">
+           <div className="flex pt-[24px] mt-auto bg-purple-900">
             <Button
               removeAnchor={true}
               label="Inscreva-se"
               buttonLink={buttonLink}
-              gap="gap-0"
-              sizeFeatures="px-[15px] phone2:px-[25px] phone3:px-[35px] tablet1:px-[45px] desktop1:px-[20px] desktop2:px-[50px] py-[5px] rounded-[2px]"
               color={buttonColor}
               className="text-white"
               size="small"
               onClick={onClick}
-              // icon={
-              //   <svg
-              //     xmlns="http://www.w3.org/2000/svg"
-              //     width="16"
-              //     height="16"
-              //     viewBox="0 0 24 24"
-              //     fill="none"
-              //     stroke="currentColor"
-              //     strokeWidth="2"
-              //     strokeLinecap="round"
-              //     strokeLinejoin="round"
-              //     className="lucide lucide-corner-down-right"
-              //   >
-              //     <polyline points="15 10 20 15 15 20" />
-              //     <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-              //   </svg>
-              // }
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-corner-down-right"
+                >
+                  <polyline points="15 10 20 15 15 20" />
+                  <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                </svg>
+              }
             />
           </div>
+          </div>         
         </div>
       </div>
     </MotionDivDownToUp>
