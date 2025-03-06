@@ -16,10 +16,40 @@ import AboutFading from "../sectionElements/AboutFading";
 import SectionShapeDiv from "../sectionElements/SectionShapeDiv";
 import { MoveRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import Item1 from "../../assets/imgs/about/itemAbout1.jpeg";
+import Item2 from "../../assets/imgs/about/itemAbout2.jpeg";
+import Item3 from "../../assets/imgs/about/itemAbout3.jpeg";
+import Item4 from "../../assets/imgs/about/itemAbout4.jpeg";
+import Item5 from "../../assets/imgs/about/itemAbout5.jpeg";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
-export default function About({ modal="true" }) {
+export default function About({ modal = "true" }) {
+  const images = [
+    {
+      original: Item1,
+      thumbnail: Item1,
+    },
+    {
+      original: Item2,
+      thumbnail: Item2,
+    },
+    {
+      original: Item3,
+      thumbnail: Item3,
+    },
+    {
+      original: Item4,
+      thumbnail: Item4,
+    },
+    {
+      original: Item5,
+      thumbnail: Item5,
+    },
+  ];
+
   const [visible, setVisible] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [modalTitle, setModalTitle] = useState("");
@@ -52,11 +82,49 @@ export default function About({ modal="true" }) {
       <SectionWrapper className="flex flex-col desktop1:flex-row-reverse gap-[40px] desktop1:gap-x-[40px] desktop2:gap-0 desktop1:justify-between">
         <MotionDivDownToUp className=" w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
           <div
-            style={{
-              backgroundImage: `url(${content.texts.about.imagem.img})`,
-            }}
-            className="shadow-custom-opacity shadow-secondary/25 relative bg-center bg-no-repeat bg-cover h-[350px] w-[90%] tablet1:w-full tablet1:h-[800px] desktop1:h-[467px] rounded-xl"
+            // style={{
+            //   backgroundImage: `url(${content.texts.about.imagem.img})`,
+            // }}
+            className="shadow-custom-opacity shadow-secondary/25 relative bg-center bg-no-repeat bg-cover h-[350px] w-[90%] tablet1:w-full tablet1:h-[740px] desktop1:h-[467px] rounded-xl"
           >
+            <ImageGallery
+              items={images}
+              showNav={false} // Ativando a navegação
+              showFullscreenButton={false} // Desativando botão de tela cheia
+              useBrowserFullscreen={false} // Desativando o uso de tela cheia do navegador
+              showBullets={true}
+              showThumbnails={false}
+              additionalClass="custom-gallery"
+            />
+            <style>
+              {`
+                    .custom-gallery .image-gallery-slide img {
+                      height: 350px; 
+                      width: 100%;
+                      object-fit: cover;
+                      border-radius: 10px;
+                    }
+
+                     @media (min-width: 640px) and (max-width: 1023px) {
+                        .custom-gallery .image-gallery-slide img {
+                          height: 800px;
+                        }
+                      }
+
+                      @media (min-width: 1024px) {
+                        .custom-gallery .image-gallery-slide img {
+                          height: 470px;
+                        }
+                      }
+
+
+                    .custom-gallery .image-gallery-thumbnails img {
+                      height: 60px;  
+                      width: 100px;  
+                      object-fit: cover; 
+                    }
+                  `}
+            </style>
             {/* <img
               alt="Imagem de efeito pontilhado"
               src={imgPoints}

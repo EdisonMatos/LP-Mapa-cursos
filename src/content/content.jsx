@@ -18,10 +18,10 @@ import trustedByImg1 from "../assets/imgs/trustedBy/item1.jpg";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.jpg";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.jpg";
 
-import featuresImg1 from "../assets/imgs/features/imgFeatures1.jpg";
-import featuresImg2 from "../assets/imgs/features/imgFeatures2.jpg";
-import featuresImg3 from "../assets/imgs/features/imgFeatures3.jpg";
-import featuresImg4 from "../assets/imgs/features/imgFeatures4.jpg";
+import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.jpg";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.jpg";
+import featuresImg4 from "../assets/imgs/features/featuresImg4.jpg";
 
 import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.jpg";
 import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.jpg";
@@ -176,12 +176,13 @@ const content = {
     features: {
       miniTag: "A ESCOLHA CERTA",
       title: "Por que a Mapa Cursos é a melhor escolha?",
-      subtitle: "A_Definir",
+      subtitle: "Transformando seu futuro com ensino de qualidade e suporte personalizado.",
       imgFeatures: imgFeatures,
       imgDivisor: imgDivisor,
       card1: {
         img: featuresImg1,
         title: "Cursos presenciais e à distância",
+        date: "28/02/2025 - 19h",
         subtitle: "Flexibilidade para aprender onde e quando quiser.",
         description: (
           <div>
@@ -210,6 +211,7 @@ const content = {
       card2: {
         img: featuresImg2,
         title: "Aprendizagem na prática",
+        date: "01/03/2025 - 19h",
         subtitle: "Metodologia prática para aplicação imediata.",
         description: (
           <div>
@@ -238,6 +240,7 @@ const content = {
       card3: {
         img: featuresImg3,
         title: "Seminários e congressos",
+        date: "13/02/2025 - 19h",
         subtitle: "Eventos para atualização e networking profissional.",
         description: (
           <div>
@@ -444,15 +447,14 @@ const content = {
         },
         miniTag: "REDES SOCIAIS",
         title: "Conecte-se conosco",
-        subtitle: "",
+        subtitle: "Acompanhe nossas redes sociais e fique por dentro das novidades, cursos e atualizações essenciais para agentes e órgãos públicos.",
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
         labelLinkedin: "Siga-nos no LinkedIn",
         labelX: "Siga-nos no X",
         paragraph: (
           <p>
-            Acompanhe nossas redes sociais e fique por dentro das novidades,
-            cursos e atualizações essenciais para agentes e órgãos públicos.
+           
           </p>
         ),
       },
@@ -538,9 +540,9 @@ const content = {
       footerNavegacaoText: "NAVEGAÇÃO",
     },
     testimonials: {
-      miniTag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
+      miniTag: "DEPOIMENTOS",
+      title: "O que nossos alunos dizem",
+      subtitle: "Experiências reais de quem já confiou no nosso trabalho",
       images: {
         img1: {
           img: imgTestimonial1,
@@ -863,6 +865,12 @@ const content = {
           },
         },
       },
+    },
+    contactForm: {
+      minitag: "",
+      title: "Preencha o Formulário",
+      subtitle:
+        "Nos conte um pouco sobre sua situação preenchendo o formulário abaixo.",
     },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,

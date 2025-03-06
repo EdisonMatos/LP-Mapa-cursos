@@ -9,6 +9,8 @@ import Maps from "../components/sections/Maps";
 import Faq from "../components/sections/Faq";
 import FooterSocial from "../components/sections/FooterSocial";
 import DefaultModals from "../components/sections/DefaultModals";
+import Depoimentos from "../components/sections/DepoimentosCarousel";
+import Form from "../components/sections/Form";
 
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import BackToTopButton from "../components/interactives/BackToTopButton";
@@ -20,13 +22,15 @@ export default function Index() {
       <Hero appDownloadButtons={false} />
       <Features
         defaultFeature={false}
-        button={true}
+        imageFeatures={true}
+        button={false}
         modalWithCards={false}
         paragraphs={false}
         sixCards={false}
         paragraphsModal={false}
       />
       <About modal={true} />
+      <Depoimentos />
       <AboutInstagram
         socialPrint={true}
         instagram={true}
@@ -37,6 +41,7 @@ export default function Index() {
       />
       <Cta />
       <Steps />
+      <Form />
       <Faq />
       <FooterSocial
         addres={true}

@@ -42,9 +42,9 @@ export default function Button({
           onClick={onClick}
           className={`flex ${className} ${sizeFeatures} flex-row items-center justify-around transition ${color} text-labelsIcons hover:scale-110`}
         >
-          <div className={`flex items-center text-center ${gap} min-h-[24px]`}>
+          <div className={`flex items-center text-center text-white ${gap} min-h-[24px]`}>
             <div className="">{icon}</div>
-            <p className={`flex items-center ${textclassName}`}>{label}</p>
+            <p className={`flex items-center text-white ${textclassName}`}>{label}</p>
           </div>
         </button>
       </MotionDivDownToUp>
