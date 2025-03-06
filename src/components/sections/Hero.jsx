@@ -118,7 +118,7 @@ export default function Hero({ appDownloadButtons }) {
           </div>
           <MotionDivDownToUp>
             <div className="h-[200px] relative flex justify-center">
-              <div className="bg-bgSectionDark flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[30px]">
+              <div className="bg-bgSectionDark flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[15px] tablet1:p-[30px]">
                 {/* <div className="w-[40%] flex flex-col  text-white">
                   <span className="font-bold leading-10 text-title5">
                     {" "}
@@ -157,11 +157,11 @@ export default function Hero({ appDownloadButtons }) {
                     ></img>
                   </MotionDivRightToLeft>
                 </div> */}
-                <div className="w-full flex flex-col gap-8 ">
-                  <h1 className="flex text-title1 tablet1:text-title4 text-center text-white font-mainFont justify-center">
+                <div className="flex flex-col w-full gap-8 ">
+                  <h1 className="flex justify-center text-center text-white text-title1 tablet1:text-title4 font-mainFont mt-[24px]">
                     Próximos Cursos
                   </h1>
-                  <div className="flex flex-col desktop1:flex-row items-center gap-8 desktop1:justify-evenly">
+                  <div className="flex flex-col items-center gap-8 desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                     <CardHeroCursos
                       imageUrl={imgCurso1}
                       title={content.texts.features.card1.title}
@@ -187,7 +187,12 @@ export default function Hero({ appDownloadButtons }) {
                     />
                   </div>
                   <div>
-                    <a className="flex justify-center text-white text-p" href="">Ver todos os Cursos</a>
+                    <a
+                      className="flex justify-center text-white underline transition-all text-p hover:scale-110"
+                      href="#"
+                    >
+                      Ver todos os Cursos
+                    </a>
                   </div>
                 </div>
               </div>
