@@ -62,12 +62,20 @@ const contentLp01 = {
             <rect x="2" y="5" width="20" height="14" rx="2" />
           </svg>
         ),
-        title: "Dia 18/03 – Recepção e Credenciamento",
+        title: (
+          <h1>
+            <span className="opacity-100 text-primary text-paragraph5">
+              Dia 18/03
+            </span>{" "}
+            <br></br>
+            Recepção e Credenciamento
+          </h1>
+        ),
         description: (
           <p>
             <strong>15:00 às 17:00</strong>
-            <br /> Credenciamento e confirmação de inscrições <br /> Networking
-            inicial com participantes
+            <br />- Credenciamento e confirmação de inscrições <br /> -
+            Networking inicial com participantes
           </p>
         ),
       },
@@ -93,15 +101,23 @@ const contentLp01 = {
             <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
           </svg>
         ),
-        title: "Dia 19/03 – Improbidade e Controle Fiscal",
+        title: (
+          <h1>
+            <span className="opacity-100 text-primary text-paragraph5">
+              Dia 19/03
+            </span>{" "}
+            <br></br>
+            Improbidade e Controle Fiscal
+          </h1>
+        ),
         description: (
           <p>
-            <strong>09:00 às 12:00 – Abertura</strong> <br /> Entrega de
-            material <br /> Apresentação dos temas
+            <strong>09:00 às 12:00 – Abertura</strong> <br /> - Entrega de
+            material <br /> - Apresentação dos temas
             <br /> <br />
             <strong>14:00 às 17:00 – Aula</strong>
-            <br /> Nova Lei de Improbidade Administrativa <br /> Atos de
-            improbidade e controle fiscal <br /> Orientações jurídicas para o
+            <br />- Nova Lei de Improbidade Administrativa <br /> - Atos de
+            improbidade e controle fiscal <br /> - Orientações jurídicas para o
             controle de contas e atos
           </p>
         ),
@@ -128,20 +144,27 @@ const contentLp01 = {
             <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
           </svg>
         ),
-        title: "Dia 20/03 – Procedimentos e Licitações",
+        title: (
+          <h1>
+            <span className="opacity-100 text-primary text-paragraph5">
+              Dia 20/03
+            </span>{" "}
+            <br></br>
+            Procedimentos e Licitações
+          </h1>
+        ),
         description: (
           <p>
             <strong>09:00 às 12:00 – Aula</strong>
-            <br /> Diferenças na prestação de contas
+            <br /> - Diferenças na prestação de contas
             <br />
-            Transparência em procedimentos administrativos
-            <br /> Prevenção ao abuso de poder e fraudes
+            - Transparência em procedimentos administrativos
+            <br /> - Prevenção ao abuso de poder e fraudes
             <br />
-            <br /> <strong>14:00 às 17:00 – Aula</strong> Limites da dispensa de
-            licitação
-            <br />
-            <br /> Métodos de contratação preventiva
-            <br /> Exemplos práticos para evitar erros
+            <br /> <strong>14:00 às 17:00 – Aula</strong>
+            <br />- Limites da dispensa de licitação
+            <br />- Métodos de contratação preventiva
+            <br />- Exemplos práticos para evitar erros
             <br />
             <br /> <strong>17:00 – Coffee-break</strong>
           </p>
@@ -167,13 +190,21 @@ const contentLp01 = {
             <path d="M7 16.5 8 22l-3-1-3 1 1-5.5" />
           </svg>
         ),
-        title: "Dia 21/03 – Encerramento e Certificação",
+        title: (
+          <h1>
+            <span className="opacity-100 text-primary text-paragraph5">
+              Dia 21/03
+            </span>{" "}
+            <br></br>
+            Encerramento e Certificação
+          </h1>
+        ),
         description: (
           <p>
             <strong>09:00 às 12:00</strong>
             <br />
-            <br /> Debate e esclarecimento de dúvidas
-            <br /> Entrega de certificados
+            <br /> - Debate e esclarecimento de dúvidas
+            <br /> - Entrega de certificados
           </p>
         ),
       },
