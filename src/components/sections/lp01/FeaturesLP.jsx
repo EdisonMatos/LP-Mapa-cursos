@@ -20,21 +20,25 @@ export default function FeaturesLP({ className }) {
               icon={contentLp01.features.cards.card1.icon}
               title={contentLp01.features.cards.card1.title}
               description={contentLp01.features.cards.card1.description}
+              className="w-full tablet1:w-[60%]"
             />
             <FeatureCardLP
               icon={contentLp01.features.cards.card2.icon}
               title={contentLp01.features.cards.card2.title}
               description={contentLp01.features.cards.card2.description}
+              className="w-full tablet1:w-[60%]"
             />
             <FeatureCardLP
               icon={contentLp01.features.cards.card3.icon}
               title={contentLp01.features.cards.card3.title}
               description={contentLp01.features.cards.card3.description}
+              className="w-full tablet1:w-[60%]"
             />
             <FeatureCardLP
               icon={contentLp01.features.cards.card4.icon}
               title={contentLp01.features.cards.card4.title}
               description={contentLp01.features.cards.card4.description}
+              className="w-full tablet1:w-[60%]"
             />
           </div>
         </SectionWrapper>
