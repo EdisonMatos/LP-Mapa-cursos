@@ -2,7 +2,7 @@ import logo from "../assets/imgs/logo/logo.png";
 import heroImg from "../assets/imgs/hero/lawHero.jpg";
 import imgFeatures from "../assets/imgs/features/imgServices.jpg";
 import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
-import aboutSocial from "../assets/imgs/about/aboutSocial.jpg";
+import aboutSocial from "../assets/imgs/about/aboutSocial.jpeg";
 import aboutSocialImg from "../assets/imgs/about/aboutSocial.png";
 import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
 
