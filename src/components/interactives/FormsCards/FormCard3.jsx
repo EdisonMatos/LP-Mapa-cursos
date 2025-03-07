@@ -3,15 +3,14 @@ import React, { useState } from "react";
 import WhatsAppIcon from "../../../assets/importAssets/WhatsAppIcon.webp";
 import { CiUser, CiPhone, CiMail, CiGlobe, CiChat1 } from "react-icons/ci";
 
-const FormCard2 = () => {
+const FormCard1 = () => {
   const [name, setName] = useState("");
-  const [cpf, setCpf] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [empresa, setEmpresa] = useState("");
-  const [subscription, setSubscription] = useState("");
-  const [profission, setProfission] = useState("");
+  const [institution, setInstitution] = useState("");
+  const[cpf, setCpf]= useState("");
 
+  // const [uf, setUf] = useState("");
   // const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,10 +29,17 @@ const FormCard2 = () => {
     setName(capitalizeFirstLetter(onlyLetters));
   };
 
+  const handleUfChange = (e) => {
+    const input = e.target.value;
+    const onlyLetters = input.replace(/[^a-zA-ZÀ-ÿ\s-]/g, ""); // Permite apenas letras, espaços e hífens
+    setUf(capitalizeFirstLetter(onlyLetters));
+  };
+
   const handlePhoneChange = (e) => {
     const input = e.target.value.replace(/[^\d]/g, ""); // Remove tudo que não for número
     setPhone(formatPhoneNumber(input));
   };
+
 
   const sendToWhatsapp = async () => {
     // setIsSubmitting(true);
@@ -58,22 +64,19 @@ const FormCard2 = () => {
       validationErrors.email = "E-mail inválido.";
     }
 
-    if (!empresa) {
-      validationErrors.empresa =
-        "O campo Orgão de Classe ou Empresa é obrigatório.";
-    } else !validateEmpresa(empresa);
+    if (!institution) {
+      validationErrors.institution = "O campo Instituição é obrigatório.";
+    } else !validateInstitution(institution);
 
     if (!cpf) {
       validationErrors.cpf = "O campo Cpf é obrigatório.";
-    } else !validateCpf(cpf);
+    } else !validateInstitution(institution);
 
-    if (!subscription) {
-      validationErrors.subscription = "O campo Subscription é obrigatório.";
-    } else !validateSubscription(subscription);
+   
 
-    if (!profission) {
-        validationErrors.profission = "O campo Função é obrigatório.";
-      } else !validateProfission(profission);
+    // if (!validateMessage(message)) {
+    //   validationErrors.message = "O campo mensagem é obrigatório.";
+    // }
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -88,10 +91,8 @@ const FormCard2 = () => {
     const whatsappMessage = `Olá! Meu nome é ${name}.%0A
     Telefone: ${formattedPhone}.%0A
     E-mail: ${email}.%0A
-    Cpf: ${cpf}.%0A
-    Inscrição: ${subscription}.%0A
-    Profission: ${profission}.%0A
-    Instituição: ${empresa}`;
+    Cpf: ${cpf}
+    Instituição: ${institution}`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -107,8 +108,6 @@ const FormCard2 = () => {
     setPhone("");
     setEmail("");
     setCpf("");
-    setSubscription("");
-    setProfission("");
     setUf("");
     setMessage("");
     setIsSubmitting(false);
@@ -128,21 +127,23 @@ const FormCard2 = () => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email.trim());
   };
-  const validateEmpresa = (empresa) => {
-    const empresaPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
-    return empresaPattern.test(empresa.trim());
+  const validateInstitution = (institution) => {
+    const institutionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
+    return institutionPattern.test(institution.trim());
+  };
+
+  const validateCpf = (cpf) => {
+    const cpfPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
+    return cpfPattern.test(cpf.trim());
   };
 
 
-  const validateSubscription = (subscription) => {
-    const subscriptionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
-    return subscriptionPattern.test(subscription.trim());
-  };
 
-  const validateProfission = (profission) => {
-    const profissionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
-    return profissionPattern.test(profission.trim());
-  };
+  // const validateUf = (uf) => {
+  //   return uf.trim().length >= 5; // Requer ao menos 5 caracteres para Cidade e Estado
+  // };
+
+  // const validateMessage = (message) => !!message;
 
   const formatPhoneNumber = (phoneNumber) => {
     let cleaned = phoneNumber.replace(/\D/g, ""); // Remove tudo que não for número
@@ -162,6 +163,8 @@ const FormCard2 = () => {
       7
     )}`;
   };
+
+
 
   return (
     <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
@@ -221,6 +224,41 @@ const FormCard2 = () => {
           </div>
           {errors.email && <p className="text-red-500">{errors.email}</p>}
         </div>
+        {/* Cidade/Estado */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiGlobe />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="text"
+              id="uf"
+              value={uf}
+              onChange={handleUfChange}
+              placeholder="Cidade e Estado"
+              required
+            />
+          </div>
+          {errors.uf && <p className="text-red-500">{errors.uf}</p>}
+        </div>
+        {/* Mensagem */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-start justify-center w-12 px-1 bg-white">
+              <CiChat1 className="mt-[14px]" />
+            </div>
+            <textarea
+              className="w-full px-1 py-2 border-0 rounded-none"
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Conte um pouco sua situação:"
+              required
+            />
+          </div>
+          {errors.message && <p className="text-red-500">{errors.message}</p>}
+        </div>
         {/* Instituição */}
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
@@ -230,17 +268,15 @@ const FormCard2 = () => {
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
               type="text"
-              id="empresa"
-              value={empresa}
-              onChange={(e) => setEmpresa(e.target.value)}
-              placeholder="Órgão de classe a que pertence OU empresa em que trabalha"
+              id="institution"
+              value={institution}
+              onChange={(e) => setInstitution(e.target.value)}
+              placeholder="Institution"
               required
             />
           </div>
-          {errors.empresa && <p className="text-red-500">{errors.empresa}</p>}
-
         </div>
-        {/* Cpf */}
+
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
@@ -256,47 +292,9 @@ const FormCard2 = () => {
               required
             />
           </div>
-          {errors.cpf && <p className="text-red-500">{errors.cpf}</p>}
-
         </div>
-        {/* Inscrição */}
-        <div className="mb-6">
-          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-            <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
-            </div>
-            <input
-              className="w-full px-1 py-2 border-0 rounded-none"
-              type="text"
-              id="subscription"
-              value={subscription}
-              onChange={(e) => setSubscription(e.target.value)}
-              placeholder="subscription"
-              required
-            />
-          </div>
-          {errors.subscription && <p className="text-red-500">{errors.subscription}</p>}
+       
 
-        </div>
-        {/*Profissão */}
-        <div className="mb-6">
-          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-            <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
-            </div>
-            <input
-              className="w-full px-1 py-2 border-0 rounded-none"
-              type="text"
-              id="profission"
-              value={profission}
-              onChange={(e) => setProfission(e.target.value)}
-              placeholder="profission"
-              required
-            />
-          </div>
-          {errors.profission && <p className="text-red-500">{errors.profission}</p>}
-
-        </div>
         {/* Botão */}
         <button
           type="button"
@@ -317,4 +315,4 @@ const FormCard2 = () => {
   );
 };
 
-export default FormCard2;
+export default FormCard1;
