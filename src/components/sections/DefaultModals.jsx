@@ -99,14 +99,14 @@ export default function DefaultModals({ modal = "true" }) {
 
               <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
                 <CardModal
-                  title={contentLp01.subscription.cards.card1.title}
-                  valor={contentLp01.subscription.cards.card1.valor}
+                  title={contentLp01.subscription.cards.card2.title}
+                  valor={contentLp01.subscription.cards.card2.valor}
                   className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                 />
                 {modal && (
                   <Button
                     size="small"
-                    label={contentLp01.subscription.cards.card1.buttonLabel}
+                    label={contentLp01.subscription.cards.card2.buttonLabel}
                     onClick={() =>
                       onClick(
                         <div>
@@ -141,14 +141,14 @@ export default function DefaultModals({ modal = "true" }) {
 
               <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
                 <CardModal
-                  title={contentLp01.subscription.cards.card1.title}
-                  valor={contentLp01.subscription.cards.card1.valor}
+                  title={contentLp01.subscription.cards.card3.title}
+                  valor={contentLp01.subscription.cards.card3.valor}
                   className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                 />
                 {modal && (
                   <Button
                     size="small"
-                    label={contentLp01.subscription.cards.card1.buttonLabel}
+                    label={contentLp01.subscription.cards.card3.buttonLabel}
                     onClick={() =>
                       onClick(
                         <div>

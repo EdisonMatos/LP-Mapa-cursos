@@ -394,7 +394,6 @@ const contentLp01 = {
           </svg>
         ),
         title: "Acadêmicos de universidades/faculdades",
-        description: "",
         valor: "R$200,00",
         buttonLabel: "Inscrever-se",
       },
@@ -418,8 +417,9 @@ const contentLp01 = {
             <path d="M20 21.5h.01" />
           </svg>
         ),
-        title: "Dia 19/03 – Improbidade e Controle Fiscal",
-        description: "",
+        title: "Profissionais do Direito e da iniciativa privada",
+        valor: "R$400,00",
+        buttonLabel: "Inscrever-se",
       },
       card3: {
         icon: (
@@ -445,8 +445,9 @@ const contentLp01 = {
             <path d="M12 12v6" />
           </svg>
         ),
-        title: "Dia 20/03 – Procedimentos e Licitações",
-        description: "",
+        title: "Servidores Públicos",
+        valor: "R$1.800,00",
+        buttonLabel: "Inscrever-se",
       },
       card4: {
         icon: (
