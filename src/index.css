@@ -333,6 +333,19 @@
   left: 0; 
 }
 
+.slick-dots {
+  position: absolute;
+  bottom: -30px !important; 
+  display: flex !important;
+  justify-content: center; 
+}
+
+
+.slick-active {
+  margin-bottom: 10px; 
+}
+
+
 
 @media (max-width: 374px) {
   .progress-bar-container {
