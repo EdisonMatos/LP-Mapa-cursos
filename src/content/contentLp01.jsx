@@ -53,9 +53,13 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-plane"
+            class="lucide lucide-id-card"
           >
-            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+            <path d="M16 10h2" />
+            <path d="M16 14h2" />
+            <path d="M6.17 15a3 3 0 0 1 5.66 0" />
+            <circle cx="9" cy="11" r="2" />
+            <rect x="2" y="5" width="20" height="14" rx="2" />
           </svg>
         ),
         title: "Dia 18/03 – Recepção e Credenciamento",
@@ -79,12 +83,14 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-clock-alert"
+            class="lucide lucide-notebook-pen"
           >
-            <path d="M12 6v6l4 2" />
-            <path d="M16 21.16a10 10 0 1 1 5-13.516" />
-            <path d="M20 11.5v6" />
-            <path d="M20 21.5h.01" />
+            <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
+            <path d="M2 6h4" />
+            <path d="M2 10h4" />
+            <path d="M2 14h4" />
+            <path d="M2 18h4" />
+            <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
           </svg>
         ),
         title: "Dia 19/03 – Improbidade e Controle Fiscal",
@@ -112,16 +118,14 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-siren"
+            class="lucide lucide-notebook-pen"
           >
-            <path d="M7 18v-6a5 5 0 1 1 10 0v6" />
-            <path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z" />
-            <path d="M21 12h1" />
-            <path d="M18.5 4.5 18 5" />
-            <path d="M2 12h1" />
-            <path d="M12 2v1" />
-            <path d="m4.929 4.929.707.707" />
-            <path d="M12 12v6" />
+            <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
+            <path d="M2 6h4" />
+            <path d="M2 10h4" />
+            <path d="M2 14h4" />
+            <path d="M2 18h4" />
+            <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
           </svg>
         ),
         title: "Dia 20/03 – Procedimentos e Licitações",
@@ -155,11 +159,12 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-triangle-alert"
+            class="lucide lucide-file-badge"
           >
-            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
-            <path d="M12 9v4" />
-            <path d="M12 17h.01" />
+            <path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" />
+            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            <path d="M5 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+            <path d="M7 16.5 8 22l-3-1-3 1 1-5.5" />
           </svg>
         ),
         title: "Dia 21/03 – Encerramento e Certificação",
