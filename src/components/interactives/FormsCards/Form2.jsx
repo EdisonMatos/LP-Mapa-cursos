@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import WhatsAppIcon from "../../../assets/importAssets/WhatsAppIcon.webp";
-import { CiUser, CiPhone, CiMail, CiGlobe, CiChat1 } from "react-icons/ci";
+import { CiUser, CiPhone, CiMail, CiShop , CiCreditCard1, CiFileOn  } from "react-icons/ci";
 
 const FormCard2 = () => {
   const [name, setName] = useState("");
@@ -188,7 +188,7 @@ const FormCard2 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
+              <CiCreditCard1 />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -242,7 +242,7 @@ const FormCard2 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
+              <CiShop  />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -260,7 +260,7 @@ const FormCard2 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
+              <CiFileOn  />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -280,7 +280,7 @@ const FormCard2 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
+              <CiUser  />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"

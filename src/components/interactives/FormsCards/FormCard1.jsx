@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import WhatsAppIcon from "../../../assets/importAssets/WhatsAppIcon.webp";
-import { CiUser, CiPhone, CiMail, CiGlobe, CiChat1 } from "react-icons/ci";
+import { CiUser, CiPhone, CiMail, CiCreditCard1, CiBank  } from "react-icons/ci";
 
 const FormCard1 = () => {
   const [name, setName] = useState("");
@@ -185,7 +185,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
+              <CiCreditCard1  />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -238,7 +238,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
+              <CiBank />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -250,7 +250,9 @@ const FormCard1 = () => {
               required
             />
           </div>
-          {errors.institution && <p className="text-red-500">{errors.institution}</p>}
+          {errors.institution && (
+            <p className="text-red-500">{errors.institution}</p>
+          )}
         </div>
         {/* Mensagem */}
         {/* <div className="mb-6">
