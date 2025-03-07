@@ -8,6 +8,7 @@ const WhatsappForm = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [institution, setInstitution] = useState("");
+  const[cpf, setCpf]= useState("");
 
   // const [uf, setUf] = useState("");
   // const [message, setMessage] = useState("");
@@ -39,6 +40,7 @@ const WhatsappForm = () => {
     setPhone(formatPhoneNumber(input));
   };
 
+
   const sendToWhatsapp = async () => {
     // setIsSubmitting(true);
     const validationErrors = {};
@@ -63,8 +65,14 @@ const WhatsappForm = () => {
     }
 
     if (!institution) {
-      validationErrors.Institution = "O campo E-mail é obrigatório.";
+      validationErrors.institution = "O campo Instituição é obrigatório.";
     } else !validateInstitution(institution);
+
+    if (!cpf) {
+      validationErrors.cpf = "O campo Cpf é obrigatório.";
+    } else !validateInstitution(institution);
+
+   
 
     // if (!validateMessage(message)) {
     //   validationErrors.message = "O campo mensagem é obrigatório.";
@@ -83,6 +91,7 @@ const WhatsappForm = () => {
     const whatsappMessage = `Olá! Meu nome é ${name}.%0A
     Telefone: ${formattedPhone}.%0A
     E-mail: ${email}.%0A
+    Cpf: ${cpf}
     Instituição: ${institution}`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
@@ -98,6 +107,7 @@ const WhatsappForm = () => {
     setName("");
     setPhone("");
     setEmail("");
+    setCpf("");
     setUf("");
     setMessage("");
     setIsSubmitting(false);
@@ -121,6 +131,13 @@ const WhatsappForm = () => {
     const institutionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
     return institutionPattern.test(institution.trim());
   };
+
+  const validateCpf = (cpf) => {
+    const cpfPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
+    return cpfPattern.test(cpf.trim());
+  };
+
+
 
   // const validateUf = (uf) => {
   //   return uf.trim().length >= 5; // Requer ao menos 5 caracteres para Cidade e Estado
@@ -146,6 +163,8 @@ const WhatsappForm = () => {
       7
     )}`;
   };
+
+
 
   return (
     <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
@@ -257,6 +276,24 @@ const WhatsappForm = () => {
             />
           </div>
         </div>
+
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiMail />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="tel"
+              id="cpf"
+              value={cpf}
+              onChange={(e) => setCpf(e.target.value)}
+              placeholder="cpf"
+              required
+            />
+          </div>
+        </div>
+       
 
         {/* Botão */}
         <button
