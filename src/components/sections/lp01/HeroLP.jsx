@@ -3,6 +3,7 @@ import SectionWrapper from "../../animation/MotionDivDownToUp";
 import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 import Button from "../../interactives/Button";
 import content from "../../../content/content";
+import contentLp01 from "../../../content/contentLp01";
 
 export default function HeroLP() {
   return (
@@ -22,7 +23,7 @@ export default function HeroLP() {
               <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
                 <MotionDivDownToUp className="flex justify-center desktop1:justify-start">
                   <img
-                    src={contentLp01.hero.logo.logoImg}
+                    src={contentLp01.about.logo.logoImg}
                     alt={contentLp01.hero.logo.alt}
                     className="mb-[60px] max-w-[280px] phone2:max-w-[320px] phone3:max-w-[270px]"
                   />

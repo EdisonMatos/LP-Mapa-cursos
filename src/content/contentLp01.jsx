@@ -1,5 +1,5 @@
 import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
-import logo from "../assets/imgs/logo/logoLp.png";
+import logo from "../assets/imgs/logo/logo.png";
 import { infos } from "./content";
 
 const currentYear = new Date().getFullYear();
@@ -7,11 +7,11 @@ const currentYear = new Date().getFullYear();
 const contentLp01 = {
   infos: {
     title:
-      "Dra. Roberta Zani | Indenização por Voo Cancelado em Guarapari - ES",
+      "Mapa Cursos - Curso de Improbidade e Controle de Contas - Cascavel PR",
     description:
-      "Teve um voo cancelado ou atrasado? A advogada Roberta Zani garante seus direitos e busca sua indenização. Fale com um especialista agora!",
+      "Aprenda com os melhores profissionais da gestão pública no Curso de Improbidade e Controle de Contas. Aulas práticas e teóricas em Cascavel, PR.",
     keywords:
-      "Indenização Por Voo Cancelado, Direitos Do Passageiro, Voo Atrasado Indenização, Advogada Especialista Em Voos, Dra. Roberta Zani, Ação Contra Companhia Aérea, Compensação Por Voo Cancelado, Problema Com Voo O Que Fazer, Reembolso De Passagem Aérea, Advogada Para Passageiros Aéreos, Direito Do Consumidor Aéreo, Voo Cancelado Sem Aviso, Companhia Aérea Não Deu Assistência, Processo Contra Companhia Aérea, Passagem Aérea Não Reembolsada, Indenização Por Atraso De Voo, Cancelamento De Voo Direitos, Atraso Superior A 4 Horas, Reclamação Contra Companhia Aérea, Danos Morais Por Voo Cancelado.",
+      "Curso de Improbidade Administrativa, Curso de Controle de Contas, Curso de Gestão Pública Cascavel, Capacitação em Improbidade Administrativa, Curso de Direito Administrativo Cascavel, Curso de Administração Pública, Improbidade e Controle de Contas, Curso de Administração Pública PR, Formação em Gestão Pública, Capacitação para Servidores Públicos, Curso para Servidores Públicos, Curso de Direito Eleitoral, Curso de Direito Constitucional, Curso de Governança Pública, Dhiego Bernardo Alves, Mapa Cursos, Curso para Advogados, Curso de Direito Cascavel, Aperfeiçoamento em Improbidade Administrativa, Formação para Profissionais do Direito.",
   },
   hero: {
     bgImg: bgImg,
