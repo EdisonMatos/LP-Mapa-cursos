@@ -30,7 +30,6 @@ export default function Index() {
         paragraphsModal={false}
       />
       <About modal={true} />
-      <Depoimentos />
       <AboutInstagram
         socialPrint={false}
         instagram={true}
@@ -39,6 +38,7 @@ export default function Index() {
         x={false}
         test={true}
       />
+      <Depoimentos />
       <Cta />
       <Steps />
       <Form />

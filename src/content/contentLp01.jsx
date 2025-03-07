@@ -22,7 +22,7 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          <span className="bg-black/60 p-[10px] rounded-lg text-primary text-title1">
+          <span className="bg-black/60 p-[10px] rounded-lg text-white text-title1">
             {" "}
             De 18 a 21 de Março de 2025
           </span>

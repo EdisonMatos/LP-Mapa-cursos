@@ -26,16 +26,15 @@ export default function CardModal(props) {
         {/* <div className="h-[64px] w-[64px] mb-[24px] rounded-md flex justify-center items-center text-primary">
           {icon}
         </div> */}
-        <h1 className="h-auto font-bold font-mainFont text-title1 text-center mb-[16px] text-primary">
+        <h1 className="h-auto font-bold font-mainFont text-title1 text-center mb-[16px] text-secondary">
           {title}
         </h1>{" "}
         <p className="text-center text-black opacity-70 font-mainFont w-[90%] pb-4">
           {paragraph}
         </p>
-        <h4 className="h-auto font-bold font-mainFont text-title1 text-center mb-[16px] text-primary">
+        <h4 className="h-auto font-bold font-mainFont text-title5 text-center mb-[16px] text-primary">
           {valor}
         </h4>
-        
         {children}
       </div>
       <Dialog

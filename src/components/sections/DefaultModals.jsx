@@ -36,7 +36,7 @@ export default function DefaultModals({ modal = "true" }) {
   };
   return (
     <div
-      className="bg-scroll bg-center bg-cover desktop1:bg-fixed bg-black bg-opacity-80"
+      className="bg-scroll bg-black bg-center bg-cover desktop1:bg-fixed bg-opacity-80"
       style={{
         backgroundImage: `url(${contentLp01.about.bgImg})`,
         backgroundRepeat: "no-repeat",
@@ -62,7 +62,7 @@ export default function DefaultModals({ modal = "true" }) {
           <SectionWrapper>
             <div className="flex flex-col items-center w-full justify-evenly tablet1:flex-row">
               <div className="flex flex-wrap items-start justify-center w-full gap-[40px]">
-                <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
+                <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[30%]">
                   <CardModal
                     title={contentLp01.subscription.cards.card1.title}
                     valor={contentLp01.subscription.cards.card1.valor}
@@ -79,7 +79,7 @@ export default function DefaultModals({ modal = "true" }) {
                               Preencha o Formulário
                             </h1>
                             <br />
-                            <div className=" w-full">
+                            <div className="w-full ">
                               <FormCard1 className="w-full h-full" />
                             </div>
                           </div>
@@ -106,7 +106,7 @@ export default function DefaultModals({ modal = "true" }) {
                   )}
                 </MotionDivDownToUp>
 
-                <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
+                <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[30%]">
                   <CardModal
                     title={contentLp01.subscription.cards.card2.title}
                     valor={contentLp01.subscription.cards.card2.valor}
@@ -123,7 +123,7 @@ export default function DefaultModals({ modal = "true" }) {
                               Preencha o Formulário
                             </h1>
                             <br />
-                            <div className=" w-full">
+                            <div className="w-full ">
                               <FormCard2 className="w-full h-full" />
                             </div>
                           </div>
@@ -150,7 +150,7 @@ export default function DefaultModals({ modal = "true" }) {
                   )}
                 </MotionDivDownToUp>
 
-                <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
+                <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[30%]">
                   <CardModal
                     title={contentLp01.subscription.cards.card3.title}
                     valor={contentLp01.subscription.cards.card3.valor}
@@ -167,7 +167,7 @@ export default function DefaultModals({ modal = "true" }) {
                               Preencha o Formulário
                             </h1>
                             <br />
-                            <div className=" w-full">
+                            <div className="w-full ">
                               <FormCard3 className="w-full h-full" />
                             </div>
                           </div>

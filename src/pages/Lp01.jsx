@@ -46,7 +46,7 @@ export default function Lp01() {
       <AboutParalaxeLP logo={false} />
       <WhyUs />
       {/* <CtaLP /> */}
-      <Features paragraphsModal={true}/>
+      <Features paragraphsModal={true} />
       {/* <Faq /> */}
       <ContactLP />
       <FooterLP />
