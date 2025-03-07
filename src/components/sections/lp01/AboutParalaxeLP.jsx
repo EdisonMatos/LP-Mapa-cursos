@@ -31,7 +31,7 @@ export default function AboutParalaxeLP({ logo }) {
                     />
                   ) : (
                     <img
-                      src={content.texts.about.imagem.img}
+                      src={content.texts.steps.img}
                       alt={content.texts.about.imagem.alt}
                       className="w-[90%] desktop1:w-[90%] rounded-xl shadow-custom-opacity shadow-secondary/50"
                     />
@@ -39,7 +39,7 @@ export default function AboutParalaxeLP({ logo }) {
                 </MotionDivDownToUp>
 
                 {/* Texto ao lado da logo */}
-                <div className={logo ? "desktop1:w-[60%]" : "desktop1:w-[100%]"}>
+                <div className={logo ? "desktop1:w-[60%]" : "desktop1:w-auto"}>
                   <SectionHeader
                     className="text-center"
                     miniTitle={contentLp01.about.sectionHeader.miniTag}
