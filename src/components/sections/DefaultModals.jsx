@@ -80,7 +80,7 @@ export default function DefaultModals({ modal = "true" }) {
                             </h1>
                             <br />
                             <div className="w-full ">
-                              {/* <FormCard1 className="w-full h-full" /> */}
+                              <FormCard1 className="w-full h-full" />
                             </div>
                           </div>
                         )

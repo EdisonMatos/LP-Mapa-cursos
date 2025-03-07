@@ -159,137 +159,137 @@ const FormCard1 = () => {
     )}`;
   };
 
-  // return (
-  //   <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
-  //     <div className="w-full text-paragraph3 phone3:text-paragraph4 ">
-  //       {/* <h1 className="w-full mb-2 font-medium text-white">Fale conosco</h1> */}
-  //       {/* Nome */}
-  //       <div className="mb-6">
-  //         <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-  //           <div className="flex items-center justify-center w-12 px-1 bg-white">
-  //             <CiUser />
-  //           </div>
-  //           <input
-  //             className="w-full px-1 py-2 border-0 rounded-none"
-  //             type="text"
-  //             id="name"
-  //             value={name}
-  //             onChange={handleNameChange}
-  //             placeholder="Nome"
-  //             required
-  //           />
-  //         </div>
-  //         {errors.name && <p className="text-red-500">{errors.name}</p>}
-  //       </div>{" "}
-  //       {/* Cpf */}
-  //       <div className="mb-6">
-  //         <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-  //           <div className="flex items-center justify-center w-12 px-1 bg-white">
-  //             <CiCreditCard1  />
-  //           </div>
-  //           <input
-  //             className="w-full px-1 py-2 border-0 rounded-none"
-  //             type="tel"
-  //             id="cpf"
-  //             value={cpf}
-  //             onChange={(e) => setCpf(e.target.value)}
-  //             placeholder="Cpf"
-  //             required
-  //           />
-  //         </div>
-  //         {errors.cpf && <p className="text-red-500">{errors.cpf}</p>}
-  //       </div>
-  //       {/* Telefone */}
-  //       <div className="mb-6">
-  //         <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-  //           <div className="flex items-center justify-center w-12 px-1 bg-white">
-  //             <CiPhone />
-  //           </div>
-  //           <input
-  //             className="w-full px-1 py-2 border-0 rounded-none"
-  //             type="tel"
-  //             id="phone"
-  //             value={phone}
-  //             onChange={handlePhoneChange}
-  //             placeholder="Telefone"
-  //             required
-  //           />
-  //         </div>
-  //         {errors.phone && <p className="text-red-500">{errors.phone}</p>}
-  //       </div>
-  //       {/* Email */}
-  //       <div className="mb-6">
-  //         <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-  //           <div className="flex items-center justify-center w-12 px-1 bg-white">
-  //             <CiMail />
-  //           </div>
-  //           <input
-  //             className="w-full px-1 py-2 border-0 rounded-none"
-  //             type="email"
-  //             id="email"
-  //             value={email}
-  //             onChange={(e) => setEmail(e.target.value)}
-  //             placeholder="E-mail"
-  //             required
-  //           />
-  //         </div>
-  //         {errors.email && <p className="text-red-500">{errors.email}</p>}
-  //       </div>
-  //       {/* Instituição */}
-  //       <div className="mb-6">
-  //         <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-  //           <div className="flex items-center justify-center w-12 px-1 bg-white">
-  //             <CiBank />
-  //           </div>
-  //           <input
-  //             className="w-full px-1 py-2 border-0 rounded-none"
-  //             type="text"
-  //             id="institution"
-  //             value={institution}
-  //             onChange={(e) => setInstitution(e.target.value)}
-  //             placeholder="Instituição"
-  //             required
-  //           />
-  //         </div>
-  //         {errors.institution && (
-  //           <p className="text-red-500">{errors.institution}</p>
-  //         )}
-  //       </div>
-  //       {/* Mensagem */}
-  //       {/* <div className="mb-6">
-  //         <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-  //           <div className="flex items-start justify-center w-12 px-1 bg-white">
-  //             <CiChat1 className="mt-[14px]" />
-  //           </div>
-  //           <textarea
-  //             className="w-full px-1 py-2 border-0 rounded-none"
-  //             id="message"
-  //             value={message}
-  //             onChange={(e) => setMessage(e.target.value)}
-  //             placeholder="Conte um pouco sua situação:"
-  //             required
-  //           />
-  //         </div>
-  //         {errors.message && <p className="text-red-500">{errors.message}</p>}
-  //       </div> */}
-  //       {/* Botão */}
-  //       <button
-  //         type="button"
-  //         className="flex items-center w-full font-medium text-[#0E2B40] bg-primary transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
-  //         onClick={sendToWhatsapp}
-  //       >
-  //         <div className="flex items-center justify-center w-full">
-  //           <img
-  //             src={WhatsAppIcon}
-  //             className="w-6 h-6 mr-2 phone2:w-8 phone2:h-8"
-  //             alt="WhatsApp Icon"
-  //           />
-  //           <p>{isSubmitting ? "Enviando..." : "Enviar mensagem"}</p>
-  //         </div>
-  //       </button>
-  //     </div>
-  //   </div>
-  // );
+  return (
+    <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
+      <div className="w-full text-paragraph3 phone3:text-paragraph4 ">
+        {/* <h1 className="w-full mb-2 font-medium text-white">Fale conosco</h1> */}
+        {/* Nome */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiUser />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="text"
+              id="name"
+              value={name}
+              onChange={handleNameChange}
+              placeholder="Nome"
+              required
+            />
+          </div>
+          {errors.name && <p className="text-red-500">{errors.name}</p>}
+        </div>{" "}
+        {/* Cpf */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiCreditCard1  />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="tel"
+              id="cpf"
+              value={cpf}
+              onChange={(e) => setCpf(e.target.value)}
+              placeholder="Cpf"
+              required
+            />
+          </div>
+          {errors.cpf && <p className="text-red-500">{errors.cpf}</p>}
+        </div>
+        {/* Telefone */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiPhone />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="tel"
+              id="phone"
+              value={phone}
+              onChange={handlePhoneChange}
+              placeholder="Telefone"
+              required
+            />
+          </div>
+          {errors.phone && <p className="text-red-500">{errors.phone}</p>}
+        </div>
+        {/* Email */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiMail />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="E-mail"
+              required
+            />
+          </div>
+          {errors.email && <p className="text-red-500">{errors.email}</p>}
+        </div>
+        {/* Instituição */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiBank />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="text"
+              id="institution"
+              value={institution}
+              onChange={(e) => setInstitution(e.target.value)}
+              placeholder="Instituição"
+              required
+            />
+          </div>
+          {errors.institution && (
+            <p className="text-red-500">{errors.institution}</p>
+          )}
+        </div>
+        {/* Mensagem */}
+        {/* <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-start justify-center w-12 px-1 bg-white">
+              <CiChat1 className="mt-[14px]" />
+            </div>
+            <textarea
+              className="w-full px-1 py-2 border-0 rounded-none"
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Conte um pouco sua situação:"
+              required
+            />
+          </div>
+          {errors.message && <p className="text-red-500">{errors.message}</p>}
+        </div> */}
+        {/* Botão */}
+        <button
+          type="button"
+          className="flex items-center w-full font-medium text-[#0E2B40] bg-primary transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
+          onClick={sendToWhatsapp}
+        >
+          <div className="flex items-center justify-center w-full">
+            <img
+              src={WhatsAppIcon}
+              className="w-6 h-6 mr-2 phone2:w-8 phone2:h-8"
+              alt="WhatsApp Icon"
+            />
+            <p>{isSubmitting ? "Enviando..." : "Enviar mensagem"}</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default FormCard1;
