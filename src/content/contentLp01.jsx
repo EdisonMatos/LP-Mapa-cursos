@@ -24,7 +24,7 @@ const contentLp01 = {
         <h1>
           O segredo para <span className="text-primary"> não cair </span>
           na malha da improbidade
-          <span className="text-primary"> está aqui!</span>!
+          <span className="text-primary"> está aqui!</span>
         </h1>
       ),
       subtitle:
