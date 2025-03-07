@@ -22,9 +22,12 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          O segredo para <span className="text-primary"> não cair </span>
-          na malha da improbidade
-          <span className="text-primary"> está aqui!</span>
+          <span className="bg-black/60 p-[10px] rounded-lg text-primary text-title1">
+            {" "}
+            De 18 a 21 de Março de 2025
+          </span>
+          <br />
+          Improbidade Administrativa e Controle de Contas
         </h1>
       ),
       subtitle:
