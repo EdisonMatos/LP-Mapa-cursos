@@ -250,6 +250,7 @@ const FormCard1 = () => {
               required
             />
           </div>
+          {errors.institution && <p className="text-red-500">{errors.institution}</p>}
         </div>
         {/* Mensagem */}
         {/* <div className="mb-6">

@@ -68,7 +68,7 @@ const FormCard2 = () => {
     } else !validateCpf(cpf);
 
     if (!subscription) {
-      validationErrors.subscription = "O campo Subscription é obrigatório.";
+      validationErrors.subscription = "O campo Inscrição é obrigatório.";
     } else !validateSubscription(subscription);
 
     if (!profission) {
