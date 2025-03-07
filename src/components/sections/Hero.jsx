@@ -116,47 +116,10 @@ export default function Hero({ appDownloadButtons }) {
               </MotionDivDownToUp>
             </div>
           </div>
-          <MotionDivDownToUp>
+          {/* <MotionDivDownToUp>
             <div className="h-[200px] relative flex justify-center">
               <div className="bg-bgSectionDark flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[15px] tablet1:p-[30px]">
-                {/* <div className="w-[40%] flex flex-col  text-white">
-                  <span className="font-bold leading-10 text-title5">
-                    {" "}
-                    <MotionDivLeftToRight>Nossos Cursos</MotionDivLeftToRight>
-                  </span>
-                  <br />
-                  <br />
-                  <MotionDivLeftToRight>
-                    Fundado com o propósito de qualificar agentes públicos e
-                    fortalecer a administração pública, o Mapa Cursos se tornou
-                    referência na capacitação de profissionais que atuam
-                    diretamente na gestão e na governança do país.{" "}
-                  </MotionDivLeftToRight>
-                  <br />
-                  <MotionDivLeftToRight>
-                    Com sede em Cascavel - PR, a instituição já tem anos de
-                    experiência no mercado de ensino e presta assessoria e
-                    treinamento para servidores efetivos e comissionados,
-                    vereadores, prefeitos, secretários, procuradores e
-                    assessores políticos.
-                  </MotionDivLeftToRight>
-                  <Button
-                    aria-label={content.texts.hero.ctaButtonAriaLabel}
-                    label={content.texts.hero.ctaButtonText}
-                    buttonLink={whatsappContactLink}
-                    animation
-                    className="w-[100%] text-white mt-[30px] "
-                    icon={<FaWhatsapp size={24} />}
-                  />
-                </div>
-                <div className="w-[50%] h-fit ">
-                  <MotionDivRightToLeft>
-                    <img
-                      className="w-full rounded-2xl"
-                      src={imgVideoMockup}
-                    ></img>
-                  </MotionDivRightToLeft>
-                </div> */}
+               
                 <div className="flex flex-col w-full gap-8 ">
                   <h1 className="flex justify-center text-center text-white text-title1 tablet1:text-title4 font-mainFont mt-[24px]">
                     Próximos Cursos
@@ -197,7 +160,7 @@ export default function Hero({ appDownloadButtons }) {
                 </div>
               </div>
             </div>
-          </MotionDivDownToUp>
+          </MotionDivDownToUp> */}
         </div>
       </div>
     </div>
