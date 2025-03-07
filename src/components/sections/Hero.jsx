@@ -6,9 +6,10 @@ import imgVideoMockup from "../../assets/imgs/hero/videomockup.jpg";
 import MotionDivRightToLeft from "../animation/MotionDivRightToLeft";
 import MotionDivLeftToRight from "../animation/MotionDivLeftToRight";
 import CardHeroCursos from "../cards/CardHero";
-import imgCurso1 from "../../assets/imgs/hero/cursoHero1.webp";
-import imgCurso2 from "../../assets/imgs/hero/cursoHero2.webp";
-import imgCurso3 from "../../assets/imgs/hero/cursoHero3.webp";
+import imgCurso1 from "../../assets/imgs/hero/cursoHero1.jpeg";
+import imgCurso2 from "../../assets/imgs/hero/cursoHero2.jpeg";
+import imgCurso3 from "../../assets/imgs/hero/cursoHero3.jpeg";
+
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -118,33 +119,41 @@ export default function Hero({ appDownloadButtons }) {
           </div>
           <MotionDivDownToUp>
             <div className="h-[200px] relative flex justify-center">
-              <div className="bg-bgSectionDark flex justify-between rounded-2xl w-[90%] max-w-[1215px] relative top-[-50px] p-[30px] tablet1:p-[30px] h-fit desktop1:h-[800px]">
+              <div className="bg-bgSectionDark flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[15px] tablet1:p-[30px]">
+               
                 <div className="flex flex-col w-full gap-8 ">
-                  <h1 className="flex justify-center text-center text-white text-title1 tablet1:text-title4 font-mainFont tablet1:mt-[24px]">
+                  <h1 className="flex justify-center text-center text-white text-title1 tablet1:text-title4 font-mainFont mt-[24px]">
                     Próximos Cursos
                   </h1>
                   <div className="flex flex-col items-center gap-8 desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                     <CardHeroCursos
                       imageUrl={imgCurso1}
-                      title={content.texts.features.card1.title}
+                      title="Improbidade e Controle de Contas"
                       date={content.texts.features.card1.date}
-                      description="Capacitar os agentes públicos para um melhor controle e desenvolvimento da função pública, buscando a eficiência e modernização da gestão pública municipal."
+                      description="Garanta a transparência e evite irregularidades financeiras."
+                      buttonLink="/curso-improbidade-22-04"
+                      labelButton="Acesse agora!"
                       className=""
+                      
                     />
 
                     <CardHeroCursos
                       imageUrl={imgCurso2}
-                      title={content.texts.features.card2.title}
+                      title="Licitações e Contratações"
                       date={content.texts.features.card2.date}
-                      description="Capacitar os profissionais no entendimento e na gestão eficiente dos processos relacionados à remuneração de servidores públicos."
+                      description="Garanta eficiência e legalidade nas contratações públicas."
+                      labelButton="Em breve!"
+                      buttonColor="bg-black/30"
                       className=""
                     />
 
                     <CardHeroCursos
                       imageUrl={imgCurso3}
-                      title={content.texts.features.card3.title}
+                      title="Lei Orgânica Municipal"
                       date={content.texts.features.card3.date}
-                      description="O curso visa demonstrar as regras de utilização do Fundeb, as regras de formação e origem do recurso, além do correto cumprimento dos índices."
+                      description="Entenda as regras que regem o município."
+                      labelButton="Em breve!"
+                      buttonColor="bg-black/30"
                       className=""
                     />
                   </div>
