@@ -17,12 +17,14 @@ export default function CardHeroCursos(props) {
   const navigate = useNavigate(); // Cria a função navigate
 
   const handleButtonClick = () => {
-    // Redireciona para a rota que foi passada para o card
-    navigate(buttonLink);
+    // Abre o link em uma nova aba
+    window.open(buttonLink, '_blank');
+
+    // Chama a função onClick, caso tenha sido passada como prop
     if (onClick) {
-      onClick(); // Chama a função onClick, caso tenha sido passada como prop
+      onClick();
     }
-  };
+};
 
   return (
     <MotionDivDownToUp className="flex justify-center w-full">
@@ -41,6 +43,7 @@ export default function CardHeroCursos(props) {
             <div className="flex">
               <Button
                 removeAnchor={true}
+                target="_blank"
                 label={labelButton}
                 color={buttonColor}
                 className="text-white"
