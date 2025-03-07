@@ -10,7 +10,7 @@ export default function HeroLP() {
     <div
       className="w-full bg-top bg-no-repeat bg-cover font-mainFont"
       style={{
-        backgroundImage: `url(${content.texts.hero.bgImg})`,
+        backgroundImage: `url(${contentLp01.hero.bgImg})`,
       }}
     >
       <SectionArea
