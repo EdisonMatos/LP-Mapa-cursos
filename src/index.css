@@ -375,3 +375,11 @@
     top: 15px; 
   }
 }
+
+
+.p-dialog-content {
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

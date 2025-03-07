@@ -369,6 +369,109 @@ const contentLp01 = {
       description: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
     },
   },
+  subscription: {
+    sectionHeader: {
+      miniTag: "INSCREVA-SE AGORA",
+      title: "Não perca a chance de transformar sua carreira",
+      subtitle: "Garanta sua vaga e aprenda com quem realmente entende de gestão pública.",
+    },
+    cards: {
+      card1: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-plane"
+          >
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+          </svg>
+        ),
+        title: "Acadêmicos de universidades/faculdades",
+        description: "",
+        valor: "R$200,00",
+        buttonLabel: "Inscrever-se",
+      },
+      card2: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-clock-alert"
+          >
+            <path d="M12 6v6l4 2" />
+            <path d="M16 21.16a10 10 0 1 1 5-13.516" />
+            <path d="M20 11.5v6" />
+            <path d="M20 21.5h.01" />
+          </svg>
+        ),
+        title: "Dia 19/03 – Improbidade e Controle Fiscal",
+        description: "",
+      },
+      card3: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-siren"
+          >
+            <path d="M7 18v-6a5 5 0 1 1 10 0v6" />
+            <path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z" />
+            <path d="M21 12h1" />
+            <path d="M18.5 4.5 18 5" />
+            <path d="M2 12h1" />
+            <path d="M12 2v1" />
+            <path d="m4.929 4.929.707.707" />
+            <path d="M12 12v6" />
+          </svg>
+        ),
+        title: "Dia 20/03 – Procedimentos e Licitações",
+        description: "",
+      },
+      card4: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-triangle-alert"
+          >
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+            <path d="M12 9v4" />
+            <path d="M12 17h.01" />
+          </svg>
+        ),
+        title: "Dia 21/03 – Encerramento e Certificação",
+        description: "",
+      },
+    },
+  },
   footer: {
     copyrightLine: `© ${currentYear} ${infos.name}. Todos os direitos reservados.`,
     disclaimer: `Este site não é um produto Meta Platforms, Inc., Google LLC, tampouco oferece serviços públicos oficiais. ${infos.name} oferece serviços jurídicos privativos de advogado, de acordo com a legislação vigente e o Código de Ética e Disciplina da Ordem dos Advogados do Brasil.`,
