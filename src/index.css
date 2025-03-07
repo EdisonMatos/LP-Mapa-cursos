@@ -193,9 +193,9 @@
 }
 
 .floating-whatsapp-button {
-  width: 50px !important; /* Tamanho fixo do botão */
+    width: 50px !important; /* Tamanho fixo do botão */
   height: 50px !important;
-  flex-shrink: 0 !important; /* Impede que o botão diminua se o tooltip aumentar */
+  flex-shrink: 0 !important; /* Impede que o botão diminua */
 }
 
 

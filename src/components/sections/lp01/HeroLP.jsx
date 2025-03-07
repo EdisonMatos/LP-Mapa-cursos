@@ -54,7 +54,7 @@ export default function HeroLP() {
                         aria-label={
                           contentLp01.hero.textArea.ctaButtonAriaLabel
                         }
-                        label={contentLp01.hero.textArea.buttonLabel}
+                        label={contentLp01.hero.textArea.ctaButtonAriaLabel}
                         buttonLink={contentLp01.links.ctaWhatsapp}
                         animation
                         className="w-[100%]"

@@ -23,19 +23,19 @@ const contentLp01 = {
       title: (
         <h1>
           O segredo para <span className="text-primary"> não cair</span>? Você
-          na malha da improbidade<span className="text-primary"> está aqui!</span>!
+          na malha da improbidade
+          <span className="text-primary"> está aqui!</span>!
         </h1>
       ),
       subtitle:
         "Seu primeiro ano de exercício pode definir toda a sua carreira. Domine as regras, evite erros fatais e proteja sua trajetória profissional!",
-      ctaButtonAriaLabel:
-        "Garantir minha vaga agora!",
+      ctaButtonAriaLabel: "Garantir minha vaga agora!",
     },
   },
   features: {
     sectionHeader: {
-      miniTag: "RECLAME SEUS DIREITOS",
-      title: "Quem pode solicitar indenização?",
+      miniTag: "PROGRAMAÇÃO DO CURSO",
+      title: "Cada aula um passo para blindar sua carreira contra erros fatais",
     },
     cards: {
       card1: {
@@ -55,9 +55,14 @@ const contentLp01 = {
             <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
           </svg>
         ),
-        title: "Voo cancelado sem aviso prévio",
-        description:
-          "Se sua viagem foi interrompida por um cancelamento inesperado e você não recebeu suporte adequado da companhia aérea, pode ter direito a uma indenização.",
+        title: "Dia 18/03 – Recepção e Credenciamento",
+        description: (
+          <p>
+            <strong>15:00 às 17:00</strong>
+            <br /> Credenciamento e confirmação de inscrições <br /> Networking
+            inicial com participantes
+          </p>
+        ),
       },
       card2: {
         icon: (
@@ -79,9 +84,18 @@ const contentLp01 = {
             <path d="M20 21.5h.01" />
           </svg>
         ),
-        title: "Atrasos superiores a 4 horas",
-        description:
-          "Se o seu voo sofreu um atraso de mais de 4 horas e a companhia não ofereceu reacomodação ou assistência adequada, você pode exigir compensação.",
+        title: "Dia 19/03 – Improbidade e Controle Fiscal",
+        description: (
+          <p>
+            <strong>09:00 às 12:00 – Abertura</strong> <br /> Entrega de
+            material <br /> Apresentação dos temas
+            <br /> <br />
+            <strong>14:00 às 17:00 – Aula</strong>
+            <br /> Nova Lei de Improbidade Administrativa <br /> Atos de
+            improbidade e controle fiscal <br /> Orientações jurídicas para o
+            controle de contas e atos
+          </p>
+        ),
       },
       card3: {
         icon: (
@@ -107,9 +121,24 @@ const contentLp01 = {
             <path d="M12 12v6" />
           </svg>
         ),
-        title: "Perda de compromissos importantes",
-        description:
-          "Se o cancelamento ou atraso do voo fez você perder eventos, reuniões ou conexões essenciais, você pode ter direito a reparação por danos.",
+        title: "Dia 20/03 – Procedimentos e Licitações",
+        description: (
+          <p>
+            <strong>09:00 às 12:00 – Aula</strong>
+            <br /> Diferenças na prestação de contas
+            <br />
+            Transparência em procedimentos administrativos
+            <br /> Prevenção ao abuso de poder e fraudes
+            <br />
+            <br /> <strong>14:00 às 17:00 – Aula</strong> Limites da dispensa de
+            licitação
+            <br />
+            <br /> Métodos de contratação preventiva
+            <br /> Exemplos práticos para evitar erros
+            <br />
+            <br /> <strong>17:00 – Coffee-break</strong>
+          </p>
+        ),
       },
       card4: {
         icon: (
@@ -130,9 +159,15 @@ const contentLp01 = {
             <path d="M12 17h.01" />
           </svg>
         ),
-        title: "Negativa de reembolso ou assistência",
-        description:
-          "Se a companhia aérea se recusou a reembolsar sua passagem ou não ofereceu alimentação e hospedagem quando necessário, podemos buscar seus direitos na justiça.",
+        title: "Dia 21/03 – Encerramento e Certificação",
+        description: (
+          <p>
+            <strong>09:00 às 12:00</strong>
+            <br />
+            <br /> Debate e esclarecimento de dúvidas
+            <br /> Entrega de certificados
+          </p>
+        ),
       },
     },
   },

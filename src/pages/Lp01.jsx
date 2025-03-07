@@ -50,8 +50,8 @@ export default function Lp01() {
       <ContactLP />
       <FooterLP />
       {/* <LPFloatingWhatsappButton /> */}
-      {/* <FloatingWhatsappButton /> */}
-      <WhatsChat />
+      <FloatingWhatsappButton />
+      {/* <WhatsChat /> */}
       <BackToTopButton />
     </div>
   );
