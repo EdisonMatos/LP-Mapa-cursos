@@ -22,7 +22,7 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          O segredo para <span className="text-primary"> não cair</span>? Você
+          O segredo para <span className="text-primary"> não cair </span>
           na malha da improbidade
           <span className="text-primary"> está aqui!</span>!
         </h1>
