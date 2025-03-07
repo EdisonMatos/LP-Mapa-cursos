@@ -8,7 +8,7 @@ const FormCard1 = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [institution, setInstitution] = useState("");
-  const[cpf, setCpf]= useState("");
+  const [cpf, setCpf] = useState("");
 
   // const [uf, setUf] = useState("");
   // const [message, setMessage] = useState("");
@@ -39,7 +39,6 @@ const FormCard1 = () => {
     const input = e.target.value.replace(/[^\d]/g, ""); // Remove tudo que não for número
     setPhone(formatPhoneNumber(input));
   };
-
 
   const sendToWhatsapp = async () => {
     // setIsSubmitting(true);
@@ -72,8 +71,6 @@ const FormCard1 = () => {
       validationErrors.cpf = "O campo Cpf é obrigatório.";
     } else !validateInstitution(institution);
 
-   
-
     // if (!validateMessage(message)) {
     //   validationErrors.message = "O campo mensagem é obrigatório.";
     // }
@@ -89,9 +86,9 @@ const FormCard1 = () => {
     const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
 
     const whatsappMessage = `Olá! Meu nome é ${name}.%0A
+    Cpf: ${cpf}.%0A
     Telefone: ${formattedPhone}.%0A
     E-mail: ${email}.%0A
-    Cpf: ${cpf}
     Instituição: ${institution}`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
@@ -137,8 +134,6 @@ const FormCard1 = () => {
     return cpfPattern.test(cpf.trim());
   };
 
-
-
   // const validateUf = (uf) => {
   //   return uf.trim().length >= 5; // Requer ao menos 5 caracteres para Cidade e Estado
   // };
@@ -164,8 +159,6 @@ const FormCard1 = () => {
     )}`;
   };
 
-
-
   return (
     <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
       <div className="w-full text-paragraph3 phone3:text-paragraph4 ">
@@ -187,6 +180,23 @@ const FormCard1 = () => {
             />
           </div>
           {errors.name && <p className="text-red-500">{errors.name}</p>}
+        </div>{" "}
+        {/* Cpf */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiMail />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="tel"
+              id="cpf"
+              value={cpf}
+              onChange={(e) => setCpf(e.target.value)}
+              placeholder="cpf"
+              required
+            />
+          </div>
         </div>
         {/* Telefone */}
         <div className="mb-6">
@@ -224,41 +234,6 @@ const FormCard1 = () => {
           </div>
           {errors.email && <p className="text-red-500">{errors.email}</p>}
         </div>
-        {/* Cidade/Estado */}
-        {/* <div className="mb-6">
-          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-            <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiGlobe />
-            </div>
-            <input
-              className="w-full px-1 py-2 border-0 rounded-none"
-              type="text"
-              id="uf"
-              value={uf}
-              onChange={handleUfChange}
-              placeholder="Cidade e Estado"
-              required
-            />
-          </div>
-          {errors.uf && <p className="text-red-500">{errors.uf}</p>}
-        </div> */}
-        {/* Mensagem */}
-        {/* <div className="mb-6">
-          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-            <div className="flex items-start justify-center w-12 px-1 bg-white">
-              <CiChat1 className="mt-[14px]" />
-            </div>
-            <textarea
-              className="w-full px-1 py-2 border-0 rounded-none"
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Conte um pouco sua situação:"
-              required
-            />
-          </div>
-          {errors.message && <p className="text-red-500">{errors.message}</p>}
-        </div> */}
         {/* Instituição */}
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
@@ -276,25 +251,23 @@ const FormCard1 = () => {
             />
           </div>
         </div>
-
-        <div className="mb-6">
+        {/* Mensagem */}
+        {/* <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-            <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
+            <div className="flex items-start justify-center w-12 px-1 bg-white">
+              <CiChat1 className="mt-[14px]" />
             </div>
-            <input
+            <textarea
               className="w-full px-1 py-2 border-0 rounded-none"
-              type="tel"
-              id="cpf"
-              value={cpf}
-              onChange={(e) => setCpf(e.target.value)}
-              placeholder="cpf"
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Conte um pouco sua situação:"
               required
             />
           </div>
-        </div>
-       
-
+          {errors.message && <p className="text-red-500">{errors.message}</p>}
+        </div> */}
         {/* Botão */}
         <button
           type="button"

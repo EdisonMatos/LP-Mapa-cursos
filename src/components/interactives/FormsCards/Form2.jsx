@@ -72,8 +72,8 @@ const FormCard2 = () => {
     } else !validateSubscription(subscription);
 
     if (!profission) {
-        validationErrors.profission = "O campo Função é obrigatório.";
-      } else !validateProfission(profission);
+      validationErrors.profission = "O campo Função é obrigatório.";
+    } else !validateProfission(profission);
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -86,12 +86,12 @@ const FormCard2 = () => {
     const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
 
     const whatsappMessage = `Olá! Meu nome é ${name}.%0A
+    Cpf: ${cpf}.%0A
     Telefone: ${formattedPhone}.%0A
     E-mail: ${email}.%0A
-    Cpf: ${cpf}.%0A
+    Instituição: ${empresa}
     Inscrição: ${subscription}.%0A
-    Profission: ${profission}.%0A
-    Instituição: ${empresa}`;
+    Profission: ${profission}`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -132,7 +132,6 @@ const FormCard2 = () => {
     const empresaPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
     return empresaPattern.test(empresa.trim());
   };
-
 
   const validateSubscription = (subscription) => {
     const subscriptionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
@@ -184,6 +183,24 @@ const FormCard2 = () => {
             />
           </div>
           {errors.name && <p className="text-red-500">{errors.name}</p>}
+        </div>{" "}
+        {/* Cpf */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiMail />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="tel"
+              id="cpf"
+              value={cpf}
+              onChange={(e) => setCpf(e.target.value)}
+              placeholder="cpf"
+              required
+            />
+          </div>
+          {errors.cpf && <p className="text-red-500">{errors.cpf}</p>}
         </div>
         {/* Telefone */}
         <div className="mb-6">
@@ -238,26 +255,6 @@ const FormCard2 = () => {
             />
           </div>
           {errors.empresa && <p className="text-red-500">{errors.empresa}</p>}
-
-        </div>
-        {/* Cpf */}
-        <div className="mb-6">
-          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-            <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
-            </div>
-            <input
-              className="w-full px-1 py-2 border-0 rounded-none"
-              type="tel"
-              id="cpf"
-              value={cpf}
-              onChange={(e) => setCpf(e.target.value)}
-              placeholder="cpf"
-              required
-            />
-          </div>
-          {errors.cpf && <p className="text-red-500">{errors.cpf}</p>}
-
         </div>
         {/* Inscrição */}
         <div className="mb-6">
@@ -275,8 +272,9 @@ const FormCard2 = () => {
               required
             />
           </div>
-          {errors.subscription && <p className="text-red-500">{errors.subscription}</p>}
-
+          {errors.subscription && (
+            <p className="text-red-500">{errors.subscription}</p>
+          )}
         </div>
         {/*Profissão */}
         <div className="mb-6">
@@ -294,8 +292,9 @@ const FormCard2 = () => {
               required
             />
           </div>
-          {errors.profission && <p className="text-red-500">{errors.profission}</p>}
-
+          {errors.profission && (
+            <p className="text-red-500">{errors.profission}</p>
+          )}
         </div>
         {/* Botão */}
         <button

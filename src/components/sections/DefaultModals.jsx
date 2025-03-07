@@ -18,6 +18,7 @@ import WhatsappForm from "../interactives/WhatsappForm";
 import "../../index.css";
 import FormCard1 from "../interactives/FormsCards/FormCard1";
 import FormCard2 from "../interactives/FormsCards/Form2";
+import FormCard3 from "../interactives/FormsCards/FormCard3";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -154,7 +155,7 @@ export default function DefaultModals({ modal = "true" }) {
                           <h1 className="text-title3">Preencha o Formulário</h1>
                           <br />
                           <div className=" w-full">
-                            <FormCard2 className="w-full h-full" />
+                            <FormCard3 className="w-full h-full" />
                           </div>
                         </div>
                       )
