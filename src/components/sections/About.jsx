@@ -95,6 +95,7 @@ export default function About({ modal = "true" }) {
               showBullets={true}
               showThumbnails={false}
               additionalClass="custom-gallery"
+              autoPlay={true}
             />
             <style>
               {`
