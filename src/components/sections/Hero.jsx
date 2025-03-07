@@ -116,12 +116,11 @@ export default function Hero({ appDownloadButtons }) {
               </MotionDivDownToUp>
             </div>
           </div>
-          {/* <MotionDivDownToUp>
+          <MotionDivDownToUp>
             <div className="h-[200px] relative flex justify-center">
-              <div className="bg-bgSectionDark flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[15px] tablet1:p-[30px]">
-               
+              <div className="bg-bgSectionDark flex justify-between rounded-2xl w-[90%] max-w-[1215px] relative top-[-50px] p-[30px] tablet1:p-[30px] h-fit desktop1:h-[800px]">
                 <div className="flex flex-col w-full gap-8 ">
-                  <h1 className="flex justify-center text-center text-white text-title1 tablet1:text-title4 font-mainFont mt-[24px]">
+                  <h1 className="flex justify-center text-center text-white text-title1 tablet1:text-title4 font-mainFont tablet1:mt-[24px]">
                     Próximos Cursos
                   </h1>
                   <div className="flex flex-col items-center gap-8 desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
@@ -149,18 +148,18 @@ export default function Hero({ appDownloadButtons }) {
                       className=""
                     />
                   </div>
-                  <div>
+                  {/* <div>
                     <a
                       className="flex justify-center text-white underline transition-all text-p hover:scale-110"
                       href="#"
                     >
                       Ver todos os Cursos
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
-          </MotionDivDownToUp> */}
+          </MotionDivDownToUp>
         </div>
       </div>
     </div>
