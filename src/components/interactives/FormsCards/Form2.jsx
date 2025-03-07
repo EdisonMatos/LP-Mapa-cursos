@@ -196,7 +196,7 @@ const FormCard2 = () => {
               id="cpf"
               value={cpf}
               onChange={(e) => setCpf(e.target.value)}
-              placeholder="cpf"
+              placeholder="Cpf"
               required
             />
           </div>
@@ -268,7 +268,7 @@ const FormCard2 = () => {
               id="subscription"
               value={subscription}
               onChange={(e) => setSubscription(e.target.value)}
-              placeholder="subscription"
+              placeholder="Inscrição"
               required
             />
           </div>
@@ -288,7 +288,7 @@ const FormCard2 = () => {
               id="profission"
               value={profission}
               onChange={(e) => setProfission(e.target.value)}
-              placeholder="profission"
+              placeholder="Profissão"
               required
             />
           </div>
