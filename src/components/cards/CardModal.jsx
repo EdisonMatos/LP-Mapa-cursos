@@ -19,9 +19,9 @@ export default function CardModal(props) {
   const { icon, title, valor, paragraph, className, children } = props;
 
   return (
-    <div>
+    <div className="">
       <div
-        className={`w-full p-0 flex flex-col items-center desktop1:hover:scale-110 transition desktop1:p-0 ${className}`}
+        className={`max-w-[350px] min-h-[150px] p-0 flex flex-col items-center desktop1:p-0 ${className}`}
       >
         {/* <div className="h-[64px] w-[64px] mb-[24px] rounded-md flex justify-center items-center text-primary">
           {icon}
