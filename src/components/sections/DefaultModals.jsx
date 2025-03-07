@@ -16,6 +16,8 @@ import contentLp01 from "../../content/contentLp01";
 import CardModal from "../cards/CardModal";
 import WhatsappForm from "../interactives/WhatsappForm";
 import "../../index.css";
+import FormCard1 from "../interactives/FormsCards/FormCard1";
+import FormCard2 from "../interactives/FormsCards/Form2";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -62,7 +64,59 @@ export default function DefaultModals({ modal = "true" }) {
                   <Button
                     size="small"
                     label={contentLp01.subscription.cards.card1.buttonLabel}
-                    onClick={() => onClick()}
+                    onClick={() =>
+                      onClick(
+                        <div>
+                          <h1 className="text-title3">Preencha o Formulário</h1>
+                          <br />
+                          <div className=" w-full">
+                            <FormCard1 className="w-full h-full" />
+                          </div>
+                        </div>
+                      )
+                    }
+                    icon={
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-corner-down-right"
+                      >
+                        <polyline points="15 10 20 15 15 20" />
+                        <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                      </svg>
+                    }
+                  />
+                )}
+              </MotionDivDownToUp>
+
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
+                <CardModal
+                  title={contentLp01.subscription.cards.card1.title}
+                  valor={contentLp01.subscription.cards.card1.valor}
+                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
+                />
+                {modal && (
+                  <Button
+                    size="small"
+                    label={contentLp01.subscription.cards.card1.buttonLabel}
+                    onClick={() =>
+                      onClick(
+                        <div>
+                          <h1 className="text-title3">Preencha o Formulário</h1>
+                          <br />
+                          <div className=" w-full">
+                            <FormCard2 className="w-full h-full" />
+                          </div>
+                        </div>
+                      )
+                    }
                     icon={
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -95,13 +149,7 @@ export default function DefaultModals({ modal = "true" }) {
         onHide={() => setVisible(false)}
         style={{ width: "50vw" }}
         breakpoints={{ "4000px": "35vw", "1024px": "60vw", "641px": "90vw" }}
-      >
-        <h1 className="text-title3">Preencha o Formulário</h1>
-        <br />
-        <div className=" w-full">
-          <WhatsappForm className="w-full h-full" />
-        </div>
-      </Dialog>
+      ></Dialog>
     </div>
   );
 }
