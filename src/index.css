@@ -320,8 +320,11 @@
   height: 5px;
   background: #21201e;
   position: relative;
-  margin: 0 auto;
+  margin-top: -50px; /* Teste valores maiores para subir mais */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 /* A barra de progresso interna */
 .progress-bar {
