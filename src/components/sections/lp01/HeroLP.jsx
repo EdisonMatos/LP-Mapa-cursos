@@ -3,13 +3,14 @@ import SectionWrapper from "../../animation/MotionDivDownToUp";
 import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 import Button from "../../interactives/Button";
 import content from "../../../content/content";
+import contentLp01 from "../../../content/contentLp01";
 
 export default function HeroLP() {
   return (
     <div
       className="w-full bg-top bg-no-repeat bg-cover font-mainFont"
       style={{
-        backgroundImage: `url(${content.texts.hero.bgImg})`,
+        backgroundImage: `url(${contentLp01.hero.bgImg})`,
       }}
     >
       <SectionArea
@@ -19,10 +20,10 @@ export default function HeroLP() {
         <SectionWrapper className="">
           <div className="flex w-full ">
             <div className="flex phone1:flex-col-reverse gap-[40px]  desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[64px] pt-[46px] desktop1:pt-[68px] desktop1:pb-[96px]">
-              <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
+              <div className="flex  flex-col w-full desktop1:w-[60%] desktop1:mr-[20px]">
                 <MotionDivDownToUp className="flex justify-center desktop1:justify-start">
                   <img
-                    src={contentLp01.hero.logo.logoImg}
+                    src={contentLp01.about.logo.logoImg}
                     alt={contentLp01.hero.logo.alt}
                     className="mb-[60px] max-w-[280px] phone2:max-w-[320px] phone3:max-w-[270px]"
                   />
@@ -53,7 +54,7 @@ export default function HeroLP() {
                         aria-label={
                           contentLp01.hero.textArea.ctaButtonAriaLabel
                         }
-                        label={contentLp01.hero.textArea.buttonLabel}
+                        label={contentLp01.hero.textArea.ctaButtonAriaLabel}
                         buttonLink={contentLp01.links.ctaWhatsapp}
                         animation
                         className="w-[100%]"

@@ -10,10 +10,10 @@ import FooterLP from "../components/sections/lp01/FooterLP";
 import HeroLP from "../components/sections/lp01/HeroLP";
 import WhyUs from "../components/sections/lp01/WhyUs";
 import WhatsChat from "../components/interactives/WhatsChat";
-
 import contentLp01 from "../content/contentLp01";
 
 import { useEffect } from "react";
+import Features from "../components/sections/Features";
 
 export default function Lp01() {
   useEffect(() => {
@@ -43,15 +43,16 @@ export default function Lp01() {
     <div>
       <HeroLP />
       <FeaturesLP />
-      <AboutParalaxeLP logo={true} />
+      <AboutParalaxeLP logo={false} />
       <WhyUs />
-      <CtaLP />
+      {/* <CtaLP /> */}
+      <Features paragraphsModal={true} />
       {/* <Faq /> */}
       <ContactLP />
       <FooterLP />
       {/* <LPFloatingWhatsappButton /> */}
-      {/* <FloatingWhatsappButton /> */}
-      <WhatsChat />
+      <FloatingWhatsappButton />
+      {/* <WhatsChat /> */}
       <BackToTopButton />
     </div>
   );

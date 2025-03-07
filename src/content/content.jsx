@@ -2,7 +2,7 @@ import logo from "../assets/imgs/logo/logo.png";
 import heroImg from "../assets/imgs/hero/lawHero.jpg";
 import imgFeatures from "../assets/imgs/features/imgServices.jpg";
 import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
-import aboutSocial from "../assets/imgs/about/aboutSocial.jpg";
+import aboutSocial from "../assets/imgs/about/aboutSocial.jpeg";
 import aboutSocialImg from "../assets/imgs/about/aboutSocial.png";
 import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
 
@@ -18,10 +18,10 @@ import trustedByImg1 from "../assets/imgs/trustedBy/item1.jpg";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.jpg";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.jpg";
 
-import featuresImg1 from "../assets/imgs/features/featuresImg1.jpg";
-import featuresImg2 from "../assets/imgs/features/featuresImg2.jpg";
-import featuresImg3 from "../assets/imgs/features/featuresImg3.jpg";
-import featuresImg4 from "../assets/imgs/features/featuresImg4.jpg";
+import featuresImg1 from "../assets/imgs/features/featuresImg1.jpeg";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.jpeg";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.jpeg";
+import featuresImg4 from "../assets/imgs/features/featuresImg4.jpeg";
 
 import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.jpg";
 import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.jpg";
@@ -176,13 +176,14 @@ const content = {
     features: {
       miniTag: "A ESCOLHA CERTA",
       title: "Por que a Mapa Cursos é a melhor escolha?",
-      subtitle: "Transformando seu futuro com ensino de qualidade e suporte personalizado.",
+      subtitle:
+        "Transformando seu futuro com ensino de qualidade e suporte personalizado.",
       imgFeatures: imgFeatures,
       imgDivisor: imgDivisor,
       card1: {
         img: featuresImg1,
         title: "Cursos presenciais e à distância",
-        date: "28/02/2025 - 19h",
+        date: "22/04/2025 - 15h",
         subtitle: "Flexibilidade para aprender onde e quando quiser.",
         description: (
           <div>
@@ -211,7 +212,7 @@ const content = {
       card2: {
         img: featuresImg2,
         title: "Aprendizagem na prática",
-        date: "01/03/2025 - 19h",
+        date: "29/05/2025 - 15h",
         subtitle: "Metodologia prática para aplicação imediata.",
         description: (
           <div>
@@ -240,7 +241,7 @@ const content = {
       card3: {
         img: featuresImg3,
         title: "Seminários e congressos",
-        date: "13/02/2025 - 19h",
+        date: "24/06/2025 - 15h",
         subtitle: "Eventos para atualização e networking profissional.",
         description: (
           <div>
@@ -447,16 +448,13 @@ const content = {
         },
         miniTag: "REDES SOCIAIS",
         title: "Conecte-se conosco",
-        subtitle: "Acompanhe nossas redes sociais e fique por dentro das novidades, cursos e atualizações essenciais para agentes e órgãos públicos.",
+        subtitle:
+          "Acompanhe nossas redes sociais e fique por dentro das novidades, cursos e atualizações essenciais para agentes e órgãos públicos.",
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
         labelLinkedin: "Siga-nos no LinkedIn",
         labelX: "Siga-nos no X",
-        paragraph: (
-          <p>
-           
-          </p>
-        ),
+        paragraph: <p></p>,
       },
     },
     cta: {

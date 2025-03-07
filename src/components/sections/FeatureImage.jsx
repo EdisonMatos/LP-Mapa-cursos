@@ -6,7 +6,7 @@ import content from "../../content/content";
 
 export default function FeaturesImage() {
   return (
-    <SectionArea id="service" className="bg-quinary pt-[1650px] phone2:pt-[1680px] phone3:pt-[1780px] tablet1:pt-[1950px] desktop1:pt-[600px] desktop2:pt-[650px]">
+    <SectionArea id="service" className="bg-quinary">
       <SectionHeader
         className="text-center"
         miniTitle={content.texts.features.miniTag}

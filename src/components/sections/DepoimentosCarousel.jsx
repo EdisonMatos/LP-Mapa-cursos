@@ -91,7 +91,7 @@ const Depoimentos = () => {
   };
 
   return (
-    <div className="bg-bgSectionDark py-[64px] desktop1:py-[96px]">
+    <div className="bg-bgSectionDark pb-[64px] desktop1:pb-[96px]">
       <SectionHeader
             className="text-center"
             miniTitle={content.texts.testimonials.miniTag}

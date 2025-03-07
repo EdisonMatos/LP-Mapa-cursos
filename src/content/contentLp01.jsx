@@ -1,5 +1,5 @@
-import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
-import logo from "../assets/imgs/logo/logoLp.png";
+import bgImg from "../assets/imgs/hero/bgHeroLp01.jpg";
+import logo from "../assets/imgs/logo/logo.png";
 import { infos } from "./content";
 
 const currentYear = new Date().getFullYear();
@@ -7,11 +7,11 @@ const currentYear = new Date().getFullYear();
 const contentLp01 = {
   infos: {
     title:
-      "Dra. Roberta Zani | Indenização por Voo Cancelado em Guarapari - ES",
+      "Mapa Cursos - Curso de Improbidade e Controle de Contas - Cascavel PR",
     description:
-      "Teve um voo cancelado ou atrasado? A advogada Roberta Zani garante seus direitos e busca sua indenização. Fale com um especialista agora!",
+      "Aprenda com os melhores profissionais da gestão pública no Curso de Improbidade e Controle de Contas. Aulas práticas e teóricas em Cascavel, PR.",
     keywords:
-      "Indenização Por Voo Cancelado, Direitos Do Passageiro, Voo Atrasado Indenização, Advogada Especialista Em Voos, Dra. Roberta Zani, Ação Contra Companhia Aérea, Compensação Por Voo Cancelado, Problema Com Voo O Que Fazer, Reembolso De Passagem Aérea, Advogada Para Passageiros Aéreos, Direito Do Consumidor Aéreo, Voo Cancelado Sem Aviso, Companhia Aérea Não Deu Assistência, Processo Contra Companhia Aérea, Passagem Aérea Não Reembolsada, Indenização Por Atraso De Voo, Cancelamento De Voo Direitos, Atraso Superior A 4 Horas, Reclamação Contra Companhia Aérea, Danos Morais Por Voo Cancelado.",
+      "Curso de Improbidade Administrativa, Curso de Controle de Contas, Curso de Gestão Pública Cascavel, Capacitação em Improbidade Administrativa, Curso de Direito Administrativo Cascavel, Curso de Administração Pública, Improbidade e Controle de Contas, Curso de Administração Pública PR, Formação em Gestão Pública, Capacitação para Servidores Públicos, Curso para Servidores Públicos, Curso de Direito Eleitoral, Curso de Direito Constitucional, Curso de Governança Pública, Dhiego Bernardo Alves, Mapa Cursos, Curso para Advogados, Curso de Direito Cascavel, Aperfeiçoamento em Improbidade Administrativa, Formação para Profissionais do Direito.",
   },
   hero: {
     bgImg: bgImg,
@@ -22,21 +22,23 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          Teve seu <span className="text-primary"> voo cancelado</span>? Você
-          pode ter direito a<span className="text-primary"> indenização</span>!
+          <span className="bg-black/60 p-[10px] rounded-lg text-white text-title1">
+            {" "}
+            De 22 a 24 de Abril de 2025
+          </span>
+          <br />
+          Improbidade Administrativa e Controle de Contas
         </h1>
       ),
       subtitle:
-        "Descubra se você pode receber compensação por danos causados pelo cancelamento do seu voo. Conte com suporte jurídico especializado para garantir seus direitos.",
-      buttonLabel: "Quero falar com um especialista",
-      ctaButtonAriaLabel:
-        "Botão para chamada de ação para contato pelo whatsapp",
+        "Seu primeiro ano de exercício pode definir toda a sua carreira. Domine as regras, evite erros fatais e proteja sua trajetória profissional!",
+      ctaButtonAriaLabel: "Garantir minha vaga agora!",
     },
   },
   features: {
     sectionHeader: {
-      miniTag: "RECLAME SEUS DIREITOS",
-      title: "Quem pode solicitar indenização?",
+      miniTag: "PROGRAMAÇÃO DO CURSO",
+      title: "Cada aula um passo para blindar sua carreira contra erros fatais",
     },
     cards: {
       card1: {
@@ -51,14 +53,31 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-plane"
+            class="lucide lucide-id-card"
           >
-            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+            <path d="M16 10h2" />
+            <path d="M16 14h2" />
+            <path d="M6.17 15a3 3 0 0 1 5.66 0" />
+            <circle cx="9" cy="11" r="2" />
+            <rect x="2" y="5" width="20" height="14" rx="2" />
           </svg>
         ),
-        title: "Voo cancelado sem aviso prévio",
-        description:
-          "Se sua viagem foi interrompida por um cancelamento inesperado e você não recebeu suporte adequado da companhia aérea, pode ter direito a uma indenização.",
+        title: (
+          <h1>
+            <span className="opacity-100 text-primary text-paragraph5">
+              Dia 22/04
+            </span>{" "}
+            <br></br>
+            Recepção e Credenciamento
+          </h1>
+        ),
+        description: (
+          <p>
+            <strong>15:00 às 17:00</strong>
+            <br />- Credenciamento e confirmação de inscrições <br /> -
+            Networking inicial com participantes
+          </p>
+        ),
       },
       card2: {
         icon: (
@@ -72,17 +91,36 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-clock-alert"
+            class="lucide lucide-notebook-pen"
           >
-            <path d="M12 6v6l4 2" />
-            <path d="M16 21.16a10 10 0 1 1 5-13.516" />
-            <path d="M20 11.5v6" />
-            <path d="M20 21.5h.01" />
+            <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
+            <path d="M2 6h4" />
+            <path d="M2 10h4" />
+            <path d="M2 14h4" />
+            <path d="M2 18h4" />
+            <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
           </svg>
         ),
-        title: "Atrasos superiores a 4 horas",
-        description:
-          "Se o seu voo sofreu um atraso de mais de 4 horas e a companhia não ofereceu reacomodação ou assistência adequada, você pode exigir compensação.",
+        title: (
+          <h1>
+            <span className="opacity-100 text-primary text-paragraph5">
+              Dia 23/04
+            </span>{" "}
+            <br></br>
+            Improbidade e Controle Fiscal
+          </h1>
+        ),
+        description: (
+          <p>
+            <strong>09:00 às 12:00 – Abertura</strong> <br /> - Entrega de
+            material <br /> - Apresentação dos temas
+            <br /> <br />
+            <strong>14:00 às 17:00 – Aula</strong>
+            <br />- Nova Lei de Improbidade Administrativa <br /> - Atos de
+            improbidade e controle fiscal <br /> - Orientações jurídicas para o
+            controle de contas e atos
+          </p>
+        ),
       },
       card3: {
         icon: (
@@ -96,21 +134,41 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-siren"
+            class="lucide lucide-notebook-pen"
           >
-            <path d="M7 18v-6a5 5 0 1 1 10 0v6" />
-            <path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z" />
-            <path d="M21 12h1" />
-            <path d="M18.5 4.5 18 5" />
-            <path d="M2 12h1" />
-            <path d="M12 2v1" />
-            <path d="m4.929 4.929.707.707" />
-            <path d="M12 12v6" />
+            <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
+            <path d="M2 6h4" />
+            <path d="M2 10h4" />
+            <path d="M2 14h4" />
+            <path d="M2 18h4" />
+            <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
           </svg>
         ),
-        title: "Perda de compromissos importantes",
-        description:
-          "Se o cancelamento ou atraso do voo fez você perder eventos, reuniões ou conexões essenciais, você pode ter direito a reparação por danos.",
+        title: (
+          <h1>
+            <span className="opacity-100 text-primary text-paragraph5">
+              Dia 24/04
+            </span>{" "}
+            <br></br>
+            Procedimentos e Licitações
+          </h1>
+        ),
+        description: (
+          <p>
+            <strong>09:00 às 12:00 – Aula</strong>
+            <br /> - Diferenças na prestação de contas
+            <br />
+            - Transparência em procedimentos administrativos
+            <br /> - Prevenção ao abuso de poder e fraudes
+            <br />
+            <br /> <strong>14:00 às 17:00 – Aula</strong>
+            <br />- Limites da dispensa de licitação
+            <br />- Métodos de contratação preventiva
+            <br />- Exemplos práticos para evitar erros
+            <br />
+            <br /> <strong>17:00 – Coffee-break</strong>
+          </p>
+        ),
       },
       card4: {
         icon: (
@@ -124,16 +182,31 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-triangle-alert"
+            class="lucide lucide-file-badge"
           >
-            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
-            <path d="M12 9v4" />
-            <path d="M12 17h.01" />
+            <path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" />
+            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            <path d="M5 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+            <path d="M7 16.5 8 22l-3-1-3 1 1-5.5" />
           </svg>
         ),
-        title: "Negativa de reembolso ou assistência",
-        description:
-          "Se a companhia aérea se recusou a reembolsar sua passagem ou não ofereceu alimentação e hospedagem quando necessário, podemos buscar seus direitos na justiça.",
+        title: (
+          <h1>
+            <span className="opacity-100 text-primary text-paragraph5">
+              Dia 25/04
+            </span>{" "}
+            <br></br>
+            Encerramento e Certificação
+          </h1>
+        ),
+        description: (
+          <p>
+            <strong>09:00 às 12:00</strong>
+            <br />
+            <br /> - Debate e esclarecimento de dúvidas
+            <br /> - Entrega de certificados
+          </p>
+        ),
       },
     },
   },
@@ -144,31 +217,77 @@ const contentLp01 = {
       alt: "Logomarca",
     },
     sectionHeader: {
-      miniTag: "EXCELÊNCIA NA DEFESA DOS SEUS DIREITOS",
-      title: "Dedicação e eficiência na sua indenização",
+      miniTag: "GESTÃO COM QUEM ENTENDE",
+      title:
+        "A capacitação que separa profissionais comuns de referências na gestão pública",
     },
     paragraph: (
       <p>
-        Sabemos que imprevistos em viagens podem causar grandes transtornos. Por
-        isso, atuo de maneira rápida e estratégica para garantir que seus
-        direitos sejam respeitados. Se você teve um voo cancelado, atrasado ou
-        não recebeu o suporte devido da companhia aérea, posso ajudar a buscar
-        sua indenização. <br />
-        <br /> Independentemente da sua situação, estou aqui para oferecer a
-        melhor solução jurídica. Entre em contato e descubra como podemos ser
-        fundamentais na defesa dos seus direitos.
+        No setor público, erro não é opção. O Mapa Cursos nasceu para
+        transformar agentes públicos em especialistas prontos para enfrentar os
+        desafios da administração. São anos de experiência preparando
+        servidores, vereadores, prefeitos e assessores com conhecimento real,
+        direto ao ponto e aplicável no dia a dia da gestão. Aqui, você não
+        aprende teoria vazia, aprende a dominar as regras do jogo e evitar
+        armadilhas que podem custar sua carreira.
       </p>
     ),
     buttonLabel: "Quero falar com um especialista",
-    ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
+    ctaButtonAriaLabel: "Fortaleça sua atuação na gestão pública.",
   },
   whyUs: {
     sectionHeader: {
-      miniTag: "A ESCOLHA CERTA",
-      title: "Por que nos escolher para garantir sua indenização?",
+      miniTag: "O ESPECIALISTA EM AÇÃO",
+      title: "Aprenda com quem já transformou a Gestão Pública",
     },
     cards: {
       card1: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-graduation-cap"
+          >
+            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+            <path d="M22 10v6" />
+            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+          </svg>
+        ),
+        title: "Formação acadêmica e experiência jurídica",
+        description:
+          "Bacharel em Direito pela UDC Cataratas, com mais de 40 processos de cassação eleitoral no Paraná. Dhiego Alves tem a experiência necessária para ensinar o que realmente importa na gestão pública.",
+      },
+      card2: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-vote"
+          >
+            <path d="m9 12 2 2 4-4" />
+            <path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
+            <path d="M22 19H2" />
+          </svg>
+        ),
+        title: "Especializações que fazem a diferença",
+        description:
+          "Pós-graduado em Controle de Constitucionalidade e Direito Eleitoral, Dhiego é especialista em áreas essenciais para quem atua na administração pública e quer evitar falhas jurídicas.",
+      },
+      card3: {
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -187,56 +306,9 @@ const contentLp01 = {
             <path d="M10 22h4" />
           </svg>
         ),
-        title: "Estratégia personalizada para o seu caso",
+        title: "Experiência em assessoria eleitoral",
         description:
-          "Analisamos cada detalhe do cancelamento ou atraso do seu voo para construir a melhor estratégia jurídica. Nosso objetivo é garantir que você receba a indenização que merece, com suporte especializado em todas as etapas do processo.",
-      },
-      card2: {
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-ruler"
-          >
-            <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" />
-            <path d="m14.5 12.5 2-2" />
-            <path d="m11.5 9.5 2-2" />
-            <path d="m8.5 6.5 2-2" />
-            <path d="m17.5 15.5 2-2" />
-          </svg>
-        ),
-        title: "Soluções sob medida",
-        description:
-          "Criamos um plano de ação específico para o seu caso, buscando uma solução rápida e eficaz. Cada passo é pensado estrategicamente para maximizar suas chances de indenização. Estamos aqui para transformar sua frustração em uma conquista.",
-      },
-      card3: {
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-shield-check"
-          >
-            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-            <path d="m9 12 2 2 4-4" />
-          </svg>
-        ),
-        title: "Compromisso total com seus direitos",
-        description:
-          "Defendemos seus direitos com total dedicação, acompanhando seu caso em cada fase do processo. Com nossa assistência, você pode ter certeza de que trabalhamos para garantir a melhor solução para você.",
+          "Assessor jurídico eleitoral com experiência prática em cassações eleitorais, Dhiego Alves traz a vivência necessária para a aplicação real dos conceitos no campo da gestão pública.",
       },
       card4: {
         icon: (
@@ -250,17 +322,17 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-hourglass"
+            class="lucide lucide-users"
           >
-            <path d="M5 22h14" />
-            <path d="M5 2h14" />
-            <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
-            <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
           </svg>
         ),
-        title: "Experiência que inspira confiança",
+        title: "Líder pedagógico do Mapa Cursos",
         description:
-          "Com ampla experiência em casos de cancelamento e atraso de voos, tratamos seu processo com máxima segurança e eficiência. Estaremos ao seu lado para garantir que seus direitos sejam respeitados e que você receba a compensação devida. Conte conosco para fazer a diferença na sua jornada!",
+          "Como coordenador pedagógico do Mapa Cursos, Dhiego Alves aplica seu vasto conhecimento para transformar a capacitação de agentes públicos, preparando-os para os desafios reais da administração.",
       },
     },
   },
@@ -333,6 +405,111 @@ const contentLp01 = {
       ),
       title: "Whatsapp",
       description: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
+    },
+  },
+  subscription: {
+    sectionHeader: {
+      miniTag: "INSCREVA-SE AGORA",
+      title: "Não perca a chance de transformar sua carreira",
+      subtitle:
+        "Garanta sua vaga e aprenda com quem realmente entende de gestão pública.",
+    },
+    cards: {
+      card1: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-plane"
+          >
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+          </svg>
+        ),
+        title: "Acadêmicos de universidades/faculdades",
+        valor: "R$200,00",
+        buttonLabel: "Inscrever-se",
+      },
+      card2: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-clock-alert"
+          >
+            <path d="M12 6v6l4 2" />
+            <path d="M16 21.16a10 10 0 1 1 5-13.516" />
+            <path d="M20 11.5v6" />
+            <path d="M20 21.5h.01" />
+          </svg>
+        ),
+        title: "Profissionais do Direito e da iniciativa privada",
+        valor: "R$400,00",
+        buttonLabel: "Inscrever-se",
+      },
+      card3: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-siren"
+          >
+            <path d="M7 18v-6a5 5 0 1 1 10 0v6" />
+            <path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z" />
+            <path d="M21 12h1" />
+            <path d="M18.5 4.5 18 5" />
+            <path d="M2 12h1" />
+            <path d="M12 2v1" />
+            <path d="m4.929 4.929.707.707" />
+            <path d="M12 12v6" />
+          </svg>
+        ),
+        title: "Servidores Públicos",
+        valor: "R$1.800,00",
+        buttonLabel: "Inscrever-se",
+      },
+      card4: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-triangle-alert"
+          >
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+            <path d="M12 9v4" />
+            <path d="M12 17h.01" />
+          </svg>
+        ),
+        title: "Dia 21/03 – Encerramento e Certificação",
+        description: "",
+      },
     },
   },
   footer: {

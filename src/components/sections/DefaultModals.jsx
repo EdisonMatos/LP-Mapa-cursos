@@ -12,10 +12,17 @@ import SectionShapeDiv from "../sectionElements/SectionShapeDiv";
 import IconButtonFeatureCard from "../cards/IconButtonFeatureCard";
 import Button from "../interactives/Button";
 import { FaWhatsapp } from "react-icons/fa";
+import contentLp01 from "../../content/contentLp01";
+import CardModal from "../cards/CardModal";
+import WhatsappForm from "../interactives/WhatsappForm";
+import "../../index.css";
+import FormCard1 from "../interactives/FormsCards/FormCard1";
+import FormCard2 from "../interactives/FormsCards/Form2";
+import FormCard3 from "../interactives/FormsCards/FormCard3";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
-export default function DefaultModals({ modal="true" }) {
+export default function DefaultModals({ modal = "true" }) {
   const [visible, setVisible] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modalSubtitle, setModalSubtitle] = useState("");
@@ -28,256 +35,178 @@ export default function DefaultModals({ modal="true" }) {
     setVisible(true);
   };
   return (
-    <div>
-      <SectionArea id="service" className="squares">
-        <SectionShapeDiv
-          shapeDivArrow={false}
-          shapeColor="text-bgSectionDark"
-          paddingbot={false}
-        />
-        <SectionHeader
-          className="text-center"
-          miniTitle={content.texts.features.miniTag}
-          sectionHeaderTitle={content.texts.features.title}
-          sectionHeaderSubtitle={content.texts.features.subtitle}
-          color="dark"
-        />
+    <div
+      className="bg-scroll bg-black bg-center bg-cover desktop1:bg-fixed bg-opacity-80"
+      style={{
+        backgroundImage: `url(${contentLp01.about.bgImg})`,
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="bg-black bg-opacity-80">
+        <SectionArea id="service">
+          <SectionShapeDiv
+            shapeDivArrow={false}
+            shapeColor="text-bgSectionDark"
+            paddingbot={false}
+          />
+          <SectionHeader
+            miniTitle={contentLp01.subscription.sectionHeader.miniTag}
+            className="text-center"
+            sectionHeaderTitle={contentLp01.subscription.sectionHeader.title}
+            sectionHeaderSubtitle={
+              contentLp01.subscription.sectionHeader.subtitle
+            }
+            color=""
+          />
 
-        <SectionWrapper>
-          <div className="flex flex-col items-center w-full justify-evenly tablet1:flex-row">
-            <div className="flex flex-wrap items-start justify-center w-full gap-[40px]">
-              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
-                <IconButtonFeatureCard
-                  icon={content.texts.features.card1.icon}
-                  title={content.texts.features.card1.title}
-                  paragraph="a_Definir"
-                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
-                />
-                {modal && (
-                  <Button
-                    size="small"
-                    label="Saber Mais"
-                    onClick={() =>
-                      onClick(
-                        content.texts.features.card1.title,
-                        content.texts.features.card1.subtitle,
-                        <>
-                          <p className="my-[20px]">
-                            Quer saber mais? Clique abaixo 👇
-                          </p>
-                          <div>
-                            <Button
-                              aria-label={
-                                content.texts.about.ctaButtonAriaLabel
-                              }
-                              label={content.texts.about.ctaButtonText}
-                              buttonLink={whatsappContactLink}
-                              animation={false}
-                              className="hover:scale-105"
-                              icon={<FaWhatsapp size={24} />}
-                            />
-                          </div>
-                        </>
-                      )
-                    }
-                    icon={
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-corner-down-right"
-                      >
-                        <polyline points="15 10 20 15 15 20" />
-                        <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                      </svg>
-                    }
+          <SectionWrapper>
+            <div className="flex flex-col items-center w-full justify-evenly tablet1:flex-row">
+              <div className="flex flex-wrap items-start justify-center w-full gap-[40px]">
+                <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[30%]">
+                  <CardModal
+                    title={contentLp01.subscription.cards.card1.title}
+                    valor={contentLp01.subscription.cards.card1.valor}
+                    className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
-                )}
-              </MotionDivDownToUp>
-              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
-                <IconButtonFeatureCard
-                  icon={content.texts.features.card2.icon}
-                  title={content.texts.features.card2.title}
-                  paragraph="a_Definir"
-                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
-                />
-                {modal && (
-                  <Button
-                    size="small"
-                    label="Saber Mais"
-                    onClick={() =>
-                      onClick(
-                        content.texts.features.card2.title,
-                        content.texts.features.card2.subtitle,
-                        <>
-                          <p className="my-[20px]">
-                            Quer saber mais? Clique abaixo 👇
-                          </p>
+                  {modal && (
+                    <Button
+                      size="small"
+                      label={contentLp01.subscription.cards.card1.buttonLabel}
+                      onClick={() =>
+                        onClick(
                           <div>
-                            <Button
-                              aria-label={
-                                content.texts.about.ctaButtonAriaLabel
-                              }
-                              label={content.texts.about.ctaButtonText}
-                              buttonLink={whatsappContactLink}
-                              animation={false}
-                              className="hover:scale-105"
-                              icon={<FaWhatsapp size={24} />}
-                            />
+                            <h1 className="text-title3">
+                              Preencha o Formulário
+                            </h1>
+                            <br />
+                            <div className="w-full ">
+                              {/* <FormCard1 className="w-full h-full" /> */}
+                            </div>
                           </div>
-                        </>
-                      )
-                    }
-                    icon={
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-corner-down-right"
-                      >
-                        <polyline points="15 10 20 15 15 20" />
-                        <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                      </svg>
-                    }
+                        )
+                      }
+                      icon={
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-corner-down-right"
+                        >
+                          <polyline points="15 10 20 15 15 20" />
+                          <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                        </svg>
+                      }
+                    />
+                  )}
+                </MotionDivDownToUp>
+
+                <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[30%]">
+                  <CardModal
+                    title={contentLp01.subscription.cards.card2.title}
+                    valor={contentLp01.subscription.cards.card2.valor}
+                    className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
-                )}
-              </MotionDivDownToUp>{" "}
-              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
-                <IconButtonFeatureCard
-                  icon={content.texts.features.card3.icon}
-                  title={content.texts.features.card3.title}
-                  paragraph="a_Definir."
-                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
-                />
-                {modal && (
-                  <Button
-                    size="small"
-                    label="Saber Mais"
-                    onClick={() =>
-                      onClick(
-                        content.texts.features.card3.title,
-                        content.texts.features.card3.subtitle,
-                        <>
-                          <p className="my-[20px]">
-                            Quer saber mais? Clique abaixo 👇
-                          </p>
+                  {modal && (
+                    <Button
+                      size="small"
+                      label={contentLp01.subscription.cards.card2.buttonLabel}
+                      onClick={() =>
+                        onClick(
                           <div>
-                            <Button
-                              aria-label={
-                                content.texts.about.ctaButtonAriaLabel
-                              }
-                              label={content.texts.about.ctaButtonText}
-                              buttonLink={whatsappContactLink}
-                              animation={false}
-                              className="hover:scale-105"
-                              icon={<FaWhatsapp size={24} />}
-                            />
+                            <h1 className="text-title3">
+                              Preencha o Formulário
+                            </h1>
+                            <br />
+                            <div className="w-full ">
+                              <FormCard2 className="w-full h-full" />
+                            </div>
                           </div>
-                        </>
-                      )
-                    }
-                    icon={
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-corner-down-right"
-                      >
-                        <polyline points="15 10 20 15 15 20" />
-                        <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                      </svg>
-                    }
+                        )
+                      }
+                      icon={
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-corner-down-right"
+                        >
+                          <polyline points="15 10 20 15 15 20" />
+                          <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                        </svg>
+                      }
+                    />
+                  )}
+                </MotionDivDownToUp>
+
+                <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[30%]">
+                  <CardModal
+                    title={contentLp01.subscription.cards.card3.title}
+                    valor={contentLp01.subscription.cards.card3.valor}
+                    className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
-                )}
-              </MotionDivDownToUp>{" "}
-              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px]">
-                <IconButtonFeatureCard
-                  icon={content.texts.features.card4.icon}
-                  title={content.texts.features.card4.title}
-                  paragraph="a_Definir "
-                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
-                />
-                {modal && (
-                  <Button
-                    size="small"
-                    label="Saber Mais"
-                    onClick={() =>
-                      onClick(
-                        content.texts.features.card4.title,
-                        content.texts.features.card4.subtitle,
-                        <>
-                          <p className="my-[20px]">
-                            Quer saber mais? Clique abaixo 👇
-                          </p>
+                  {modal && (
+                    <Button
+                      size="small"
+                      label={contentLp01.subscription.cards.card3.buttonLabel}
+                      onClick={() =>
+                        onClick(
                           <div>
-                            <Button
-                              aria-label={
-                                content.texts.about.ctaButtonAriaLabel
-                              }
-                              label={content.texts.about.ctaButtonText}
-                              buttonLink={whatsappContactLink}
-                              animation={false}
-                              className="hover:scale-105"
-                              icon={<FaWhatsapp size={24} />}
-                            />
+                            <h1 className="text-title3">
+                              Preencha o Formulário
+                            </h1>
+                            <br />
+                            <div className="w-full ">
+                              <FormCard3 className="w-full h-full" />
+                            </div>
                           </div>
-                        </>
-                      )
-                    }
-                    icon={
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-corner-down-right"
-                      >
-                        <polyline points="15 10 20 15 15 20" />
-                        <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                      </svg>
-                    }
-                  />
-                )}
-              </MotionDivDownToUp>{" "}
+                        )
+                      }
+                      icon={
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-corner-down-right"
+                        >
+                          <polyline points="15 10 20 15 15 20" />
+                          <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                        </svg>
+                      }
+                    />
+                  )}
+                </MotionDivDownToUp>
+              </div>
             </div>
-          </div>
-        </SectionWrapper>
-      </SectionArea>
+          </SectionWrapper>
+        </SectionArea>
 
-      <Dialog
-        className="font-secondFont"
-        header={modalTitle}
-        visible={visible}
-        onHide={() => setVisible(false)}
-        style={{ width: "50vw" }}
-        breakpoints={{ "4000px": "35vw", "1024px": "60vw", "641px": "90vw" }}
-      >
-        <h3>{modalSubtitle}</h3>
-        <p className="m-0">{modalContent}</p>
-      </Dialog>
+        <Dialog
+          className="font-secondFont"
+          header={modalTitle}
+          visible={visible}
+          onHide={() => setVisible(false)}
+          style={{ width: "50vw" }}
+          breakpoints={{ "4000px": "35vw", "1024px": "60vw", "641px": "90vw" }}
+        ></Dialog>
+      </div>
     </div>
   );
 }

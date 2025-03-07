@@ -193,9 +193,9 @@
 }
 
 .floating-whatsapp-button {
-  width: 50px !important; /* Tamanho fixo do botão */
+    width: 50px !important; /* Tamanho fixo do botão */
   height: 50px !important;
-  flex-shrink: 0 !important; /* Impede que o botão diminua se o tooltip aumentar */
+  flex-shrink: 0 !important; /* Impede que o botão diminua */
 }
 
 
@@ -320,8 +320,11 @@
   height: 5px;
   background: #21201e;
   position: relative;
-  margin: 0 auto;
+  margin-top: -50px; /* Teste valores maiores para subir mais */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 /* A barra de progresso interna */
 .progress-bar {
@@ -332,6 +335,19 @@
   top: 0;
   left: 0; 
 }
+
+.slick-dots {
+  position: absolute;
+  bottom: -30px !important; 
+  display: flex !important;
+  justify-content: center; 
+}
+
+
+.slick-active {
+  margin-bottom: 10px; 
+}
+
 
 
 @media (max-width: 374px) {
@@ -361,4 +377,12 @@
     width: 40%; 
     top: 15px; 
   }
+}
+
+
+.p-dialog-content {
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
