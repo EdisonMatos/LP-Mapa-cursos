@@ -22,15 +22,14 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          Teve seu <span className="text-primary"> voo cancelado</span>? Você
-          pode ter direito a<span className="text-primary"> indenização</span>!
+          O segredo para <span className="text-primary"> não cair</span>? Você
+          na malha da improbidade<span className="text-primary"> está aqui!</span>!
         </h1>
       ),
       subtitle:
-        "Descubra se você pode receber compensação por danos causados pelo cancelamento do seu voo. Conte com suporte jurídico especializado para garantir seus direitos.",
-      buttonLabel: "Quero falar com um especialista",
+        "Seu primeiro ano de exercício pode definir toda a sua carreira. Domine as regras, evite erros fatais e proteja sua trajetória profissional!",
       ctaButtonAriaLabel:
-        "Botão para chamada de ação para contato pelo whatsapp",
+        "Garantir minha vaga agora!",
     },
   },
   features: {
