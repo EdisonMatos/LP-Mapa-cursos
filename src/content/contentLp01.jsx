@@ -178,23 +178,23 @@ const contentLp01 = {
       alt: "Logomarca",
     },
     sectionHeader: {
-      miniTag: "EXCELÊNCIA NA DEFESA DOS SEUS DIREITOS",
-      title: "Dedicação e eficiência na sua indenização",
+      miniTag: "GESTÃO COM QUEM ENTENDE",
+      title:
+        "A capacitação que separa profissionais comuns de referências na gestão pública",
     },
     paragraph: (
       <p>
-        Sabemos que imprevistos em viagens podem causar grandes transtornos. Por
-        isso, atuo de maneira rápida e estratégica para garantir que seus
-        direitos sejam respeitados. Se você teve um voo cancelado, atrasado ou
-        não recebeu o suporte devido da companhia aérea, posso ajudar a buscar
-        sua indenização. <br />
-        <br /> Independentemente da sua situação, estou aqui para oferecer a
-        melhor solução jurídica. Entre em contato e descubra como podemos ser
-        fundamentais na defesa dos seus direitos.
+        No setor público, erro não é opção. O Mapa Cursos nasceu para
+        transformar agentes públicos em especialistas prontos para enfrentar os
+        desafios da administração. São anos de experiência preparando
+        servidores, vereadores, prefeitos e assessores com conhecimento real,
+        direto ao ponto e aplicável no dia a dia da gestão. Aqui, você não
+        aprende teoria vazia, aprende a dominar as regras do jogo e evitar
+        armadilhas que podem custar sua carreira.
       </p>
     ),
     buttonLabel: "Quero falar com um especialista",
-    ctaButtonAriaLabel: "Botão para chamada de ação para contato pelo whatsapp",
+    ctaButtonAriaLabel: "Fortaleça sua atuação na gestão pública.",
   },
   whyUs: {
     sectionHeader: {
