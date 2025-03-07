@@ -284,7 +284,7 @@ const FormCard1 = () => {
               className="w-6 h-6 mr-2 phone2:w-8 phone2:h-8"
               alt="WhatsApp Icon"
             />
-            <p>{isSubmitting ? "Enviando..." : "Enviar mensagem"}</p>
+            <p>{isSubmitting ? "Enviando..." : "Enviar inscrição"}</p>
           </div>
         </button>
       </div>
