@@ -198,8 +198,8 @@ const contentLp01 = {
   },
   whyUs: {
     sectionHeader: {
-      miniTag: "A ESCOLHA CERTA",
-      title: "Por que nos escolher para garantir sua indenização?",
+      miniTag: "O ESPECIALISTA EM AÇÃO",
+      title: "Aprenda com quem já transformou a Gestão Pública",
     },
     cards: {
       card1: {
@@ -221,9 +221,9 @@ const contentLp01 = {
             <path d="M10 22h4" />
           </svg>
         ),
-        title: "Estratégia personalizada para o seu caso",
+        title: "Formação acadêmica e experiência jurídica",
         description:
-          "Analisamos cada detalhe do cancelamento ou atraso do seu voo para construir a melhor estratégia jurídica. Nosso objetivo é garantir que você receba a indenização que merece, com suporte especializado em todas as etapas do processo.",
+          "Bacharel em Direito pela UDC Cataratas, com mais de 40 processos de cassação eleitoral no Paraná. Dhiego Alves tem a experiência necessária para ensinar o que realmente importa na gestão pública.",
       },
       card2: {
         icon: (
@@ -246,9 +246,9 @@ const contentLp01 = {
             <path d="m17.5 15.5 2-2" />
           </svg>
         ),
-        title: "Soluções sob medida",
+        title: "Especializações que fazem a diferença",
         description:
-          "Criamos um plano de ação específico para o seu caso, buscando uma solução rápida e eficaz. Cada passo é pensado estrategicamente para maximizar suas chances de indenização. Estamos aqui para transformar sua frustração em uma conquista.",
+          "Pós-graduado em Controle de Constitucionalidade e Direito Eleitoral, Dhiego é especialista em áreas essenciais para quem atua na administração pública e quer evitar falhas jurídicas.",
       },
       card3: {
         icon: (
@@ -268,9 +268,9 @@ const contentLp01 = {
             <path d="m9 12 2 2 4-4" />
           </svg>
         ),
-        title: "Compromisso total com seus direitos",
+        title: "Experiência em assessoria eleitoral",
         description:
-          "Defendemos seus direitos com total dedicação, acompanhando seu caso em cada fase do processo. Com nossa assistência, você pode ter certeza de que trabalhamos para garantir a melhor solução para você.",
+          "Assessor jurídico eleitoral com experiência prática em cassações eleitorais, Dhiego Alves traz a vivência necessária para a aplicação real dos conceitos no campo da gestão pública.",
       },
       card4: {
         icon: (
@@ -292,9 +292,9 @@ const contentLp01 = {
             <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
           </svg>
         ),
-        title: "Experiência que inspira confiança",
+        title: "Líder pedagógico do Mapa Cursos",
         description:
-          "Com ampla experiência em casos de cancelamento e atraso de voos, tratamos seu processo com máxima segurança e eficiência. Estaremos ao seu lado para garantir que seus direitos sejam respeitados e que você receba a compensação devida. Conte conosco para fazer a diferença na sua jornada!",
+          "Como coordenador pedagógico do Mapa Cursos, Dhiego Alves aplica seu vasto conhecimento para transformar a capacitação de agentes públicos, preparando-os para os desafios reais da administração.",
       },
     },
   },
