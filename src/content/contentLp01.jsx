@@ -214,11 +214,11 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-lightbulb"
+            class="lucide lucide-graduation-cap"
           >
-            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
-            <path d="M9 18h6" />
-            <path d="M10 22h4" />
+            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+            <path d="M22 10v6" />
+            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
           </svg>
         ),
         title: "Formação acadêmica e experiência jurídica",
@@ -237,13 +237,11 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-ruler"
+            class="lucide lucide-vote"
           >
-            <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" />
-            <path d="m14.5 12.5 2-2" />
-            <path d="m11.5 9.5 2-2" />
-            <path d="m8.5 6.5 2-2" />
-            <path d="m17.5 15.5 2-2" />
+            <path d="m9 12 2 2 4-4" />
+            <path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
+            <path d="M22 19H2" />
           </svg>
         ),
         title: "Especializações que fazem a diferença",
@@ -262,10 +260,11 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-shield-check"
+            class="lucide lucide-lightbulb"
           >
-            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-            <path d="m9 12 2 2 4-4" />
+            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+            <path d="M9 18h6" />
+            <path d="M10 22h4" />
           </svg>
         ),
         title: "Experiência em assessoria eleitoral",
@@ -284,12 +283,12 @@ const contentLp01 = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-hourglass"
+            class="lucide lucide-users"
           >
-            <path d="M5 22h14" />
-            <path d="M5 2h14" />
-            <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
-            <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
           </svg>
         ),
         title: "Líder pedagógico do Mapa Cursos",
@@ -373,7 +372,8 @@ const contentLp01 = {
     sectionHeader: {
       miniTag: "INSCREVA-SE AGORA",
       title: "Não perca a chance de transformar sua carreira",
-      subtitle: "Garanta sua vaga e aprenda com quem realmente entende de gestão pública.",
+      subtitle:
+        "Garanta sua vaga e aprenda com quem realmente entende de gestão pública.",
     },
     cards: {
       card1: {
