@@ -6,10 +6,9 @@ import imgVideoMockup from "../../assets/imgs/hero/videomockup.jpg";
 import MotionDivRightToLeft from "../animation/MotionDivRightToLeft";
 import MotionDivLeftToRight from "../animation/MotionDivLeftToRight";
 import CardHeroCursos from "../cards/CardHero";
-import imgCurso1 from "../../assets/imgs/hero/cursoHero1.jpeg";
-import imgCurso2 from "../../assets/imgs/hero/cursoHero2.jpeg";
-import imgCurso3 from "../../assets/imgs/hero/cursoHero3.jpeg";
-
+import imgCurso1 from "../../assets/imgs/hero/cursoHero1.jpg";
+import imgCurso2 from "../../assets/imgs/hero/cursoHero2.jpg";
+import imgCurso3 from "../../assets/imgs/hero/cursoHero3.jpg";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -117,58 +116,6 @@ export default function Hero({ appDownloadButtons }) {
               </MotionDivDownToUp>
             </div>
           </div>
-          <MotionDivDownToUp>
-            <div className="h-[200px] relative flex justify-center">
-              <div className="bg-bgSectionDark flex justify-between rounded-2xl h-fit w-[90%] max-w-[1215px] relative top-[-50px] p-[15px] tablet1:p-[30px]">
-               
-                <div className="flex flex-col w-full gap-8 ">
-                  <h1 className="flex justify-center text-center text-white text-title1 tablet1:text-title4 font-mainFont mt-[24px]">
-                    Próximos Cursos
-                  </h1>
-                  <div className="flex flex-col items-center gap-8 desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
-                    <CardHeroCursos
-                      imageUrl={imgCurso1}
-                      title="Improbidade e Controle de Contas"
-                      date={content.texts.features.card1.date}
-                      description="Garanta a transparência e evite irregularidades financeiras."
-                      buttonLink="/curso-improbidade-22-04"
-                      labelButton="Acesse agora!"
-                      className=""
-                      
-                    />
-
-                    <CardHeroCursos
-                      imageUrl={imgCurso2}
-                      title="Licitações e Contratações"
-                      date={content.texts.features.card2.date}
-                      description="Garanta eficiência e legalidade nas contratações públicas."
-                      labelButton="Em breve!"
-                      buttonColor="bg-black/30"
-                      className=""
-                    />
-
-                    <CardHeroCursos
-                      imageUrl={imgCurso3}
-                      title="Lei Orgânica Municipal"
-                      date={content.texts.features.card3.date}
-                      description="Entenda as regras que regem o município."
-                      labelButton="Em breve!"
-                      buttonColor="bg-black/30"
-                      className=""
-                    />
-                  </div>
-                  {/* <div>
-                    <a
-                      className="flex justify-center text-white underline transition-all text-p hover:scale-110"
-                      href="#"
-                    >
-                      Ver todos os Cursos
-                    </a>
-                  </div> */}
-                </div>
-              </div>
-            </div>
-          </MotionDivDownToUp>
         </div>
       </div>
     </div>

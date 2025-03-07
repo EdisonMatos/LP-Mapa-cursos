@@ -18,7 +18,7 @@ export default function CardHeroCursos(props) {
 
   const handleButtonClick = () => {
     // Redireciona para a rota que foi passada para o card
-    navigate(buttonLink);
+    window.open(buttonLink, "_blank");
     if (onClick) {
       onClick(); // Chama a função onClick, caso tenha sido passada como prop
     }
@@ -26,7 +26,7 @@ export default function CardHeroCursos(props) {
 
   return (
     <MotionDivDownToUp className="flex justify-center w-full">
-      <div className="max-w-[350px] tablet1:max-w-[400px] desktop2:max-w-[320px] bg-white flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 rounded-[10px]">
+      <div className="w-[90%] tablet1:max-w-[400px] desktop2:max-w-[360px] bg-white flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 rounded-[10px]">
         <div className="flex flex-col gap-4 w-full desktop2:p-[4px]">
           <img className="rounded-[10px]" src={imageUrl} alt="" />
           <div className="flex flex-col w-full h-full">
@@ -40,6 +40,7 @@ export default function CardHeroCursos(props) {
 
             <div className="flex">
               <Button
+                target="_blank"
                 removeAnchor={true}
                 label={labelButton}
                 color={buttonColor}

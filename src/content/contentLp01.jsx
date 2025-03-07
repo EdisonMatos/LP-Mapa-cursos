@@ -24,7 +24,7 @@ const contentLp01 = {
         <h1>
           <span className="bg-black/60 p-[10px] rounded-lg text-white text-title1">
             {" "}
-            De 18 a 21 de Março de 2025
+            De 22 a 24 de Abril de 2025
           </span>
           <br />
           Improbidade Administrativa e Controle de Contas
@@ -65,7 +65,7 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-              Dia 18/03
+              Dia 22/04
             </span>{" "}
             <br></br>
             Recepção e Credenciamento
@@ -104,7 +104,7 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-              Dia 19/03
+              Dia 23/04
             </span>{" "}
             <br></br>
             Improbidade e Controle Fiscal
@@ -147,7 +147,7 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-              Dia 20/03
+              Dia 24/04
             </span>{" "}
             <br></br>
             Procedimentos e Licitações
@@ -193,7 +193,7 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-              Dia 21/03
+              Dia 25/04
             </span>{" "}
             <br></br>
             Encerramento e Certificação
