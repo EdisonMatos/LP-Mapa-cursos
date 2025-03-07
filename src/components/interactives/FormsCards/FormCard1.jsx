@@ -197,6 +197,7 @@ const FormCard1 = () => {
               required
             />
           </div>
+          {errors.cpf && <p className="text-red-500">{errors.cpf}</p>}
         </div>
         {/* Telefone */}
         <div className="mb-6">
