@@ -56,7 +56,7 @@ export default function AboutParalaxeLP({ logo }) {
                     <div className="w-full">
                       <Button
                         aria-label={contentLp01.hero.textArea.ctaButtonAriaLabel}
-                        label={contentLp01.about.buttonLabel}
+                        label={contentLp01.about.ctaButtonAriaLabel}
                         buttonLink={contentLp01.links.ctaWhatsapp}
                         animation
                         className=""
