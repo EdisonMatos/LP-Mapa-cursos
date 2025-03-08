@@ -14,6 +14,8 @@ export default function CardHeroCursos(props) {
     onClick,
   } = props;
 
+  //comentário teste - o Mago agora coda em Mac
+
   const navigate = useNavigate(); // Cria a função navigate
 
   const handleButtonClick = () => {
