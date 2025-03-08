@@ -4,9 +4,9 @@ import "../../index.css";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgTestimonial1 from "../../assets/imgs/testimonials/depoiment1.png";
-import imgTestimonial2 from "../../assets/imgs/testimonials/depoiment2.png";
-import imgTestimonial3 from "../../assets/imgs/testimonials/depoiment3.png";
+import imgTestimonial1 from "../../assets/imgs/testimonials/depoiment1.webp";
+import imgTestimonial2 from "../../assets/imgs/testimonials/depoiment2.webp";
+import imgTestimonial3 from "../../assets/imgs/testimonials/depoiment3.webp";
 import SectionHeader from "../sectionElements/SectionHeader";
 import content from "../../content/content";
 
