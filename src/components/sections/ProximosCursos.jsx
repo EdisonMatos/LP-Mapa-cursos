@@ -4,9 +4,9 @@ import CardHeroCursos from "../cards/CardHero";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgCurso1 from "../../assets/imgs/hero/cursoHero1.jpg";
-import imgCurso2 from "../../assets/imgs/hero/cursoHero2.jpg";
-import imgCurso3 from "../../assets/imgs/hero/cursoHero3.jpg";
+import imgCurso1 from "../../assets/imgs/hero/cursoHero1.webp";
+import imgCurso2 from "../../assets/imgs/hero/cursoHero2.webp";
+import imgCurso3 from "../../assets/imgs/hero/cursoHero3.webp";
 
 export default function ProximosCursos() {
   return (

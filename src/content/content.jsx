@@ -1,12 +1,12 @@
-import logo from "../assets/imgs/logo/logo.png";
+import logo from "../assets/imgs/logo/logo.webp";
 import heroImg from "../assets/imgs/hero/lawHero.jpg";
 import imgFeatures from "../assets/imgs/features/imgServices.jpg";
 import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
-import aboutSocial from "../assets/imgs/about/aboutSocial.jpeg";
+import aboutSocial from "../assets/imgs/about/aboutSocial.webp";
 import aboutSocialImg from "../assets/imgs/about/aboutSocial.png";
-import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
-import bgHeroImg from "../assets/imgs/hero/mapaHero.jpg";
+import bgHeroImg from "../assets/imgs/hero/mapaHero.webp";
 import imgAppStore from "../assets/imgs/hero/appStore.webp";
 import imgGooglePlay from "../assets/imgs/hero/googlePlay.webp";
 
@@ -18,10 +18,10 @@ import trustedByImg1 from "../assets/imgs/trustedBy/item1.jpg";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.jpg";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.jpg";
 
-import featuresImg1 from "../assets/imgs/features/featuresImg1.jpeg";
-import featuresImg2 from "../assets/imgs/features/featuresImg2.jpeg";
-import featuresImg3 from "../assets/imgs/features/featuresImg3.jpeg";
-import featuresImg4 from "../assets/imgs/features/featuresImg4.jpeg";
+import featuresImg1 from "../assets/imgs/features/featuresImg1.webp";
+import featuresImg2 from "../assets/imgs/features/featuresImg2.webp";
+import featuresImg3 from "../assets/imgs/features/featuresImg3.webp";
+import featuresImg4 from "../assets/imgs/features/featuresImg4.webp";
 
 import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.jpg";
 import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.jpg";

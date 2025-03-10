@@ -18,11 +18,11 @@ import { MoveRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import Item1 from "../../assets/imgs/about/itemAbout1.jpeg";
-import Item2 from "../../assets/imgs/about/itemAbout2.jpeg";
-import Item3 from "../../assets/imgs/about/itemAbout3.jpeg";
-import Item4 from "../../assets/imgs/about/itemAbout4.jpeg";
-import Item5 from "../../assets/imgs/about/itemAbout5.jpeg";
+import Item1 from "../../assets/imgs/about/itemAbout1.webp";
+import Item2 from "../../assets/imgs/about/itemAbout2.webp";
+import Item3 from "../../assets/imgs/about/itemAbout3.webp";
+import Item4 from "../../assets/imgs/about/itemAbout4.webp";
+import Item5 from "../../assets/imgs/about/itemAbout5.webp";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
