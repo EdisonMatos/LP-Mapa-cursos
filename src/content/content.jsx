@@ -70,7 +70,7 @@ export const infos = {
   obs: <span className="italic">A Definir</span>,
   instagramProfile: "mapacursos", // Sem o @
   facebookProfile: "A_Definir",
-  linkeDinProfile: "dhiegobalves",
+  linkeDinProfile: "company/mapa-cursos",
   x: "A_Definir",
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
