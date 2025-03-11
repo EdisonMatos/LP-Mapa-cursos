@@ -475,8 +475,8 @@ const contentLp01 = {
             <path d="M12 12v6" />
           </svg>
         ),
-        title: "Servidores Públicos",
-        valor: "R$1.800,00",
+        title: "Servidores Públicos / Agentes Políticos",
+        valor: "R$2.500,00",
         buttonLabel: "Inscrever-se",
       },
       card4: {
