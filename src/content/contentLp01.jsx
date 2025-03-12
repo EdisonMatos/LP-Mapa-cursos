@@ -24,7 +24,7 @@ const contentLp01 = {
         <h1>
           <span className="bg-black/60 p-[10px] rounded-lg text-white text-title1">
             {" "}
-            De 22 a 24 de Abril de 2025
+            De 22 a 25 de Abril de 2025
           </span>
           <br />
           Improbidade Administrativa e Controle de Contas
@@ -65,7 +65,7 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-            Dia 22/04 – Recepção e Credenciamento
+              Dia 22/04 – Recepção e Credenciamento
             </span>{" "}
           </h1>
         ),
@@ -102,16 +102,19 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-            Dia 23/04 – Improbidade e Controle Fiscal
+              Dia 23/04 – Improbidade e Controle Fiscal
             </span>{" "}
           </h1>
         ),
         description: (
           <p>
-            <strong>09:00 às 12:00 – Abertura</strong> <br /> - Entrega de material <br /> - Apresentação dos temas
+            <strong>09:00 às 12:00 – Abertura</strong> <br /> - Entrega de
+            material <br /> - Apresentação dos temas
             <br /> <br />
             <strong>14:00 às 17:00 – Aula</strong>
-            <br />- Nova Lei de Improbidade Administrativa <br /> - Atos de improbidade e controle fiscal <br /> - Orientações jurídicas para o controle de contas e atos
+            <br />- Nova Lei de Improbidade Administrativa <br /> - Atos de
+            improbidade e controle fiscal <br /> - Orientações jurídicas para o
+            controle de contas e atos
             <br />
             <br /> <strong>15:30 - Coffee Break</strong>
           </p>
@@ -142,7 +145,7 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-            Dia 24/04 – Procedimentos e Licitações
+              Dia 24/04 – Procedimentos e Licitações
             </span>{" "}
           </h1>
         ),
@@ -186,7 +189,7 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-            Dia 25/04 – Encerramento e Certificação
+              Dia 25/04 – Encerramento e Certificação
             </span>{" "}
           </h1>
         ),
