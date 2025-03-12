@@ -22,8 +22,8 @@ export default function Index() {
     <div>
       <Navbar LightMode={false} />
       <Hero appDownloadButtons={false} />
-      <CursosMinistrados />
       <ProximosCursos />
+      <CursosMinistrados />
       <Features
         defaultFeature={false}
         imageFeatures={true}
