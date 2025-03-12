@@ -43,7 +43,7 @@ export default function CursosMinistrados() {
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior3}
                     title="A Escola e o Conselho Tutelar"
-                    date="02 de 2025"
+                    date="02 de fevereiro de 2025"
                     description="Um elo de integração na rede de proteção e garantia de direitos da criança e do adolescente."
                     button={false}
                   />
