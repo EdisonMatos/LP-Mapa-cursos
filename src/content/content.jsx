@@ -55,8 +55,8 @@ export const infos = {
   endereco: (
     <div>
       <p>Endereço:</p>
-      <p>Rua Otelo Celestino de Castilho, Nº 768</p>
-      <p> Coqueiral Cascavel - PR</p>
+      <p>Rua Otelo Celestino de Castilho, Nº 768 Coqueiral </p>
+      <p>Cascavel - PR</p>
       <p>CEP 85807-590</p>
     </div>
   ),
