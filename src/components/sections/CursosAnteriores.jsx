@@ -11,7 +11,7 @@ import imgCursoAnterior3 from "../../assets/imgs/hero/cursoAnteriorHero3.webp";
 export default function CursosMinistrados() {
   return (
     <div>
-      <SectionArea className="bg-bgSectionDark">
+      <SectionArea paddingbot={false} className="bg-bgSectionDark">
         <SectionWrapper>
           <SectionHeader
             className="text-center"
