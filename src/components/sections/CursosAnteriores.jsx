@@ -26,25 +26,25 @@ export default function CursosMinistrados() {
                 <div className="flex flex-col tablet1:flex-row tablet1:items-start items-center gap-4 desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior1}
-                    title="Improbidade e Controle de Contas"
-                    date="Data teste"
-                    description="Garanta a transparência e evite irregularidades financeiras."
+                    title="STF, Prefeituras e Câmaras"
+                    date="04 de dezembro de 2024"
+                    description="Os reflexos e os efeitos das decisões do Judiciário no Executivo e no Legislativo no encerramento de mandato."
                     button={false}
                   />
 
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior2}
-                    title="Licitações e Contratação"
-                    date="Data teste"
-                    description="Garanta eficiência e legalidade nas contratações públicas."
+                    title="Atividade Parlamentar"
+                    date="26 de junho de 2024"
+                    description="Estrutura  daAdministração Pública e a fiscalização do Legislativo."
                     button={false}
                   />
 
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior3}
-                    title="Lei Orgânica Municipal"
-                    date="Data teste"
-                    description="Garanta eficiência e legalidade nas contratações públicas."
+                    title="A Escola e o Conselho Tutelar"
+                    date="02 de 2025"
+                    description="Um elo de integração na rede de proteção e garantia de direitos da criança e do adolescente."
                     button={false}
                   />
                 </div>

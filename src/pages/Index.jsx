@@ -23,7 +23,6 @@ export default function Index() {
       <Navbar LightMode={false} />
       <Hero appDownloadButtons={false} />
       <ProximosCursos />
-      <CursosMinistrados/>
       <Features
         defaultFeature={false}
         imageFeatures={true}
@@ -43,10 +42,12 @@ export default function Index() {
         test={true}
       />
       <Depoimentos />
+
       <Cta />
       <Steps />
       <Form />
       <Faq />
+      <CursosMinistrados />
       <FooterSocial
         addres={true}
         instagram={true}
