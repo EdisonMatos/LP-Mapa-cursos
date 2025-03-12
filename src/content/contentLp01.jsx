@@ -65,10 +65,8 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-              Dia 22/04
+            Dia 22/04 – Recepção e Credenciamento
             </span>{" "}
-            <br></br>
-            Recepção e Credenciamento
           </h1>
         ),
         description: (
@@ -104,21 +102,18 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-              Dia 23/04
+            Dia 23/04 – Improbidade e Controle Fiscal
             </span>{" "}
-            <br></br>
-            Improbidade e Controle Fiscal
           </h1>
         ),
         description: (
           <p>
-            <strong>09:00 às 12:00 – Abertura</strong> <br /> - Entrega de
-            material <br /> - Apresentação dos temas
+            <strong>09:00 às 12:00 – Abertura</strong> <br /> - Entrega de material <br /> - Apresentação dos temas
             <br /> <br />
             <strong>14:00 às 17:00 – Aula</strong>
-            <br />- Nova Lei de Improbidade Administrativa <br /> - Atos de
-            improbidade e controle fiscal <br /> - Orientações jurídicas para o
-            controle de contas e atos
+            <br />- Nova Lei de Improbidade Administrativa <br /> - Atos de improbidade e controle fiscal <br /> - Orientações jurídicas para o controle de contas e atos
+            <br />
+            <br /> <strong>15:30 - Coffee Break</strong>
           </p>
         ),
       },
@@ -147,10 +142,8 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-              Dia 24/04
+            Dia 24/04 – Procedimentos e Licitações
             </span>{" "}
-            <br></br>
-            Procedimentos e Licitações
           </h1>
         ),
         description: (
@@ -166,7 +159,7 @@ const contentLp01 = {
             <br />- Métodos de contratação preventiva
             <br />- Exemplos práticos para evitar erros
             <br />
-            <br /> <strong>17:00 – Coffee-break</strong>
+            <br /> <strong>15:30 - Coffee Break</strong>
           </p>
         ),
       },
@@ -193,10 +186,8 @@ const contentLp01 = {
         title: (
           <h1>
             <span className="opacity-100 text-primary text-paragraph5">
-              Dia 25/04
+            Dia 25/04 – Encerramento e Certificação
             </span>{" "}
-            <br></br>
-            Encerramento e Certificação
           </h1>
         ),
         description: (
@@ -484,8 +475,8 @@ const contentLp01 = {
             <path d="M12 12v6" />
           </svg>
         ),
-        title: "Servidores Públicos",
-        valor: "R$1.800,00",
+        title: "Servidores Públicos / Agentes Políticos",
+        valor: "R$2.500,00",
         buttonLabel: "Inscrever-se",
       },
       card4: {

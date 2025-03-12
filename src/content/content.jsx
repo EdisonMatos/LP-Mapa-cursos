@@ -45,8 +45,8 @@ const currentYear = new Date().getFullYear();
 
 export const infos = {
   name: "Mapa Cursos",
-  email: "contato", // Email desejado pelo cliente
-  domain: "mapacursos.com", // Sem "www"
+  email: "mapacursos", // Email desejado pelo cliente
+  domain: "outlook.com", // Sem "www"
   phone: {
     ddd: "45",
     firstPart: "99129", // Apenas os 5 primeiros números (incluindo o 9)
@@ -70,7 +70,7 @@ export const infos = {
   obs: <span className="italic">A Definir</span>,
   instagramProfile: "mapacursos", // Sem o @
   facebookProfile: "A_Definir",
-  linkeDinProfile: "dhiegobalves",
+  linkeDinProfile: "company/mapa-cursos",
   x: "A_Definir",
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",

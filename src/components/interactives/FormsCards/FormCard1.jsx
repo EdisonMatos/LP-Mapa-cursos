@@ -247,7 +247,7 @@ const FormCard1 = () => {
               id="institution"
               value={institution}
               onChange={(e) => setInstitution(e.target.value)}
-              placeholder="Instituição"
+              placeholder="Instituição de ensino em que estuda"
               required
             />
           </div>
