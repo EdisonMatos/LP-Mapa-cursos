@@ -15,6 +15,7 @@ import Form from "../components/sections/Form";
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import BackToTopButton from "../components/interactives/BackToTopButton";
 import ProximosCursos from "../components/sections/ProximosCursos";
+import CursosMinistrados from "../components/sections/CursosAnteriores";
 
 export default function Index() {
   return (
@@ -22,6 +23,7 @@ export default function Index() {
       <Navbar LightMode={false} />
       <Hero appDownloadButtons={false} />
       <ProximosCursos />
+      <CursosMinistrados/>
       <Features
         defaultFeature={false}
         imageFeatures={true}
