@@ -19,7 +19,7 @@ export default function DocumentButtonFeatureCard(props) {
         </p>
       </div>
 
-      <button className="mt-2 px-4 py-2 w-full tablet2:w-auto bg-primary text-white rounded-md">
+      <button className="mt-2 px-4 py-2 w-full tablet2:w-auto bg-primary text-white rounded-md desktop1:hover:scale-110 transition">
         Baixar
       </button>
       {children}
