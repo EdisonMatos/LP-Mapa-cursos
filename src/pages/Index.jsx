@@ -16,6 +16,7 @@ import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappB
 import BackToTopButton from "../components/interactives/BackToTopButton";
 import ProximosCursos from "../components/sections/ProximosCursos";
 import CursosMinistrados from "../components/sections/CursosAnteriores";
+import DownloadArchives from "../components/sections/Downloads";
 
 export default function Index() {
   return (
@@ -43,10 +44,10 @@ export default function Index() {
         test={true}
       />
       <Depoimentos />
-
       <Cta />
       <Steps />
       <Form />
+      <DownloadArchives/>
       <Faq />
       <FooterSocial
         addres={true}
