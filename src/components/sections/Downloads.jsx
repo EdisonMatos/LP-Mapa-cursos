@@ -20,7 +20,7 @@ const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 export default function DownloadArchives() {
   return (
     <div>
-      <SectionArea className="bg-neutral-100">
+      <SectionArea className="bg-neutral-100" paddingbot={false}>
         <SectionShapeDiv
           shapeDivArrow={false}
           paddingbot={false}
