@@ -8,6 +8,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import DocumentButtonFeatureCard from "../cards/CardDocuments";
 import Doc from "../../assets/imgs/docs/docs.png";
 import negativaTrabalhista from "../../assets/imgs/pdfs/negativaTrabalhista.pdf";
+import negativaReceitaFederal from "../../assets/imgs/pdfs/negativaReceitaFederal.pdf";
+import negativaMenoresEmpregados from "../../assets/imgs/pdfs/negativaMenoresEmpregados.pdf";
 import negativaTCU from "../../assets/imgs/pdfs/negativaTCU.pdf";
 import negativaPrefeituraCascavel from "../../assets/imgs/pdfs/negativaPrefeituraCascavel.pdf";
 import negativaParana from "../../assets/imgs/pdfs/negativaParana.pdf";
@@ -48,12 +50,13 @@ export default function DownloadArchives() {
               link={negativaTCU}
               className="w-full desktop1:w-auto"
             />
-            {/* <DocumentButtonFeatureCard
+            <DocumentButtonFeatureCard
               img={Doc}
               title="Negativa Receita Federal"
               paragraph="Comprova que não há débitos com a Receita Federal."
+              link={negativaReceitaFederal}
               className="w-full desktop1:w-auto"
-            /> */}
+            />
             <DocumentButtonFeatureCard
               img={Doc}
               title="Negativa Prefeitura Cascavel"
@@ -65,15 +68,16 @@ export default function DownloadArchives() {
               img={Doc}
               title="Negativa Prefeitura Paraná"
               paragraph="Atesta que não existem pendências com a Prefeitura do Paraná."
-              linl={negativaParana}
+              link={negativaParana}
               className="w-full desktop1:w-auto"
             />
-            {/* <DocumentButtonFeatureCard
+            <DocumentButtonFeatureCard
               img={Doc}
               title="Negativa Menores Empregados"
               paragraph="Comprova que não há irregularidades no emprego de menores."
+              link={negativaMenoresEmpregados}
               className="w-full desktop1:w-auto"
-            /> */}
+            />
             <DocumentButtonFeatureCard
               img={Doc}
               title="Negativa FGTS"
