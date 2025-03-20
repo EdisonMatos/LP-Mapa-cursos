@@ -46,9 +46,9 @@ export default function ProximosCursos() {
 
                   <CardHeroCursos
                     imageUrl={imgCurso3}
-                    title="Lei Orgânica Municipal"
+                    title="A integração dos poderes na Gestão Pública"
                     date={content.texts.features.card3.date}
-                    description="Entenda as regras que regem o município."
+                    description="Fortaleça a governança com colaboração entre os poderes."
                     labelButton="Em breve!"
                     buttonColor="bg-black/30"
                     className=""
