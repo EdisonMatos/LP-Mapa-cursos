@@ -241,7 +241,7 @@ const content = {
       card3: {
         img: featuresImg3,
         title: "Seminários e congressos",
-        date: "24/06/2025 - 15h",
+        date: "13/05/2025 - 15h",
         subtitle: "Eventos para atualização e networking profissional.",
         description: (
           <div>

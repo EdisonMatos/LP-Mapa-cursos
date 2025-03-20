@@ -23,7 +23,7 @@ export default function ProximosCursos() {
           <MotionDivDownToUp>
             <div className="flex justify-center w-full">
               <div className="flex flex-col w-full gap-8 ">
-                <div className="flex flex-col tablet1:flex-row tablet1:items-start items-center gap-4 desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
+                <div className="flex flex-col items-center gap-4 tablet1:flex-row tablet1:items-start desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                   <CardHeroCursos
                     imageUrl={imgCurso1}
                     title="Improbidade e Controle de Contas"
@@ -35,20 +35,20 @@ export default function ProximosCursos() {
                   />
 
                   <CardHeroCursos
-                    imageUrl={imgCurso2}
-                    title="Licitações e Contratação"
-                    date={content.texts.features.card2.date}
-                    description="Garanta eficiência e legalidade nas contratações públicas."
+                    imageUrl={imgCurso3}
+                    title="A integração dos poderes na Gestão Pública"
+                    date={content.texts.features.card3.date}
+                    description="Fortaleça a governança com colaboração entre os poderes."
                     labelButton="Em breve!"
                     buttonColor="bg-black/30"
                     className=""
                   />
 
                   <CardHeroCursos
-                    imageUrl={imgCurso3}
-                    title="A integração dos poderes na Gestão Pública"
-                    date={content.texts.features.card3.date}
-                    description="Fortaleça a governança com colaboração entre os poderes."
+                    imageUrl={imgCurso2}
+                    title="Licitações e Contratação"
+                    date={content.texts.features.card2.date}
+                    description="Garanta eficiência e legalidade nas contratações públicas."
                     labelButton="Em breve!"
                     buttonColor="bg-black/30"
                     className=""
