@@ -11,7 +11,7 @@ import imgCursoAnterior3 from "../../assets/imgs/hero/cursoAnteriorHero3.webp";
 export default function CursosMinistrados() {
   return (
     <div>
-      <SectionArea paddingtop={false} className="bg-bgSectionDark">
+      <SectionArea className="bg-bgSectionDark">
         <SectionWrapper>
           <SectionHeader
             className="text-center"
@@ -23,7 +23,7 @@ export default function CursosMinistrados() {
           <MotionDivDownToUp>
             <div className="flex justify-center w-full">
               <div className="flex flex-col w-full gap-8 ">
-                <div className="flex flex-col tablet1:flex-row tablet1:items-start items-center gap-4 desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
+                <div className="flex flex-col items-center gap-4 tablet1:flex-row tablet1:items-start desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior1}
                     title="STF, Prefeituras e Câmaras"
