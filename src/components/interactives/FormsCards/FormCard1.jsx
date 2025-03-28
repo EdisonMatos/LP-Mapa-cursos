@@ -82,7 +82,7 @@ const FormCard1 = () => {
     }
 
     // Aqui o número do WhatsApp precisa estar no formato correto
-    const whatsappNumber = "5599984234461"; // Certifique-se de que este número está correto com o código do país
+    const whatsappNumber = "45991290837"; // Certifique-se de que este número está correto com o código do país
     const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
 
     const whatsappMessage = `Olá! Meu nome é ${name}.%0A
