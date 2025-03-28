@@ -1,6 +1,5 @@
 import BackToTopButton from "../components/interactives/BackToTopButton";
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
-import LPFloatingWhatsappButton from "../components/interactives/LPFloatingWhatsappButton";
 import Faq from "../components/sections/Faq";
 import AboutParalaxeLP from "../components/sections/lp01/AboutParalaxeLP";
 import ContactLP from "../components/sections/lp01/ContactLP";

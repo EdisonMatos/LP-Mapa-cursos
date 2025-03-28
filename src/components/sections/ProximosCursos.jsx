@@ -11,14 +11,14 @@ import imgCurso3 from "../../assets/imgs/hero/cursoHero3.webp";
 export default function ProximosCursos() {
   return (
     <div>
-      <SectionArea className="bg-bgSectionDark">
+      <SectionArea className="bg-white squares">
         <SectionWrapper>
           <SectionHeader
             className="text-center"
             miniTitle="Cursos"
             sectionHeaderTitle="Próximos Cursos"
             sectionHeaderSubtitle="Acompanhe nossa agenda de cursos para não perder nenhuma oportunidade"
-            color=""
+            color="dark"
           />
           <MotionDivDownToUp>
             <div className="flex justify-center w-full">

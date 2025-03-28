@@ -26,7 +26,7 @@ export default function CardHeroCursos({
   return (
     <MotionDivDownToUp className="flex justify-center w-full">
       <div
-        className={`w-[90%] tablet1:max-w-[400px] desktop2:max-w-[360px] bg-white flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 rounded-[10px] ${className}`}
+        className={`w-[90%] tablet1:max-w-[400px] desktop2:max-w-[360px] bg-white flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 shadow-xl rounded-[10px] ${className}`}
       >
         <div className="flex flex-col gap-4 w-full desktop2:p-[4px]">
           <img className="rounded-[10px]" src={imageUrl} alt={title} />
@@ -35,7 +35,7 @@ export default function CardHeroCursos({
             <h1 className="text-title1 leading-[27px] font-medium mt-[2px] mb-[12px]">
               {title}
             </h1>
-            <p className="text-paragraph2 desktop2:text-paragraph3 mb-[32px] text-black/60 leading-[18px] desktop1:leading-[21px]">
+            <p className="text-paragraph2 desktop2:text-paragraph3 mb-[8px] text-black/60 leading-[18px] desktop1:leading-[21px]">
               {description}
             </p>
 
