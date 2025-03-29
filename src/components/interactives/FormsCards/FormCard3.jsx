@@ -72,7 +72,6 @@ const FormCard3 = () => {
       validationErrors.email = "E-mail inválido.";
     }
 
-   
     if (!cpf) {
       validationErrors.cpf = "O campo Cpf é obrigatório.";
     } else !validateCpf(cpf);
@@ -90,7 +89,6 @@ const FormCard3 = () => {
       validationErrors.uf = "O campo Uf é obrigatório.";
     } else !validateUf(uf);
 
-
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       setIsSubmitting(false);
@@ -101,13 +99,14 @@ const FormCard3 = () => {
     const whatsappNumber = "45991290837"; // Envio pro wpp
     const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
 
-    const whatsappMessage = `Olá! Meu nome é ${name}.%0A
-    Cpf: ${cpf}
-    Telefone: ${formattedPhone}.%0A
-    Município - UF: ${uf}.%0A
-    E-mail: ${email}.%0A
-    Profission: ${cargo}.%0A
-    Instituição: ${empresa}`;
+    const whatsappMessage = `Olá!
+Meu nome é ${name}.%0A
+Cpf: ${cpf}.
+Telefone: ${formattedPhone}.%0A
+Município - UF: ${uf}.%0A
+E-mail: ${email}.%0A
+Profission: ${cargo}.%0A
+Instituição: ${empresa}.`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -144,7 +143,7 @@ const FormCard3 = () => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email.trim());
   };
- 
+
   const validateCargo = (cargo) => {
     const cargoPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
     return cargoPattern.test(cargo.trim());
@@ -163,7 +162,6 @@ const FormCard3 = () => {
   const validateUf = (uf) => {
     return uf.trim().length >= 5; // Requer ao menos 5 caracteres para Cidade e Estado
   };
-
 
   const formatPhoneNumber = (phoneNumber) => {
     let cleaned = phoneNumber.replace(/\D/g, ""); // Remove tudo que não for número

@@ -80,11 +80,12 @@ const FormCard1 = () => {
     const whatsappNumber = "45991290837"; // Envio pro wpp
     const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
 
-    const whatsappMessage = `Olá! Meu nome é ${name}.%0A
-    Cpf: ${cpf}.%0A
-    Telefone: ${formattedPhone}.%0A
-    E-mail: ${email}.%0A
-    Instituição: ${institution}`;
+    const whatsappMessage = `Olá!
+Meu nome é ${name}.%0A
+Cpf: ${cpf}.%0A
+Telefone: ${formattedPhone}.%0A
+E-mail: ${email}.%0A
+Instituição: ${institution}.`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
