@@ -80,12 +80,11 @@ const FormCard1 = () => {
     const whatsappNumber = "45991290837"; // Envio pro wpp
     const formatPhone = (phone) => {
       const formattedPhone = phone.replace(/\D/g, ""); // Remove caracteres não numéricos
-    
+
       if (formattedPhone.length !== 11) return phone; // Retorna original se não tiver 11 dígitos
-    
+
       return formattedPhone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
     };
-    
 
     const whatsappMessage = `Olá! 
 Essa é uma mensagem de inscrição do curso ${content.texts.proximosCursos.card1.title}, 
@@ -136,12 +135,19 @@ Instituição: ${institution}.`;
     return institutionPattern.test(institution.trim());
   };
 
-  const validateCpf = (cpf) => {
-    const cpfPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
-    return cpfPattern.test(cpf.trim());
-  };
+  const formatCpf = (value) => {
+    const onlyNumbers = value.replace(/\D/g, ""); // Remove caracteres não numéricos
+    const limitedNumbers = onlyNumbers.slice(0, 11); // Limita a 11 dígitos
 
-  // const validateMessage = (message) => !!message;
+    return limitedNumbers
+      .replace(/(\d{3})(\d)/, "$1.$2")
+      .replace(/(\d{3})\.(\d{3})(\d)/, "$1.$2.$3")
+      .replace(/(\d{3})\.(\d{3})\.(\d{3})(\d{1,2})/, "$1.$2.$3-$4");
+  };
+  const handleCpfChange = (e) => {
+    const formattedCpf = formatCpf(e.target.value);
+    setCpf(formattedCpf);
+  };
 
   const formatPhoneNumber = (phoneNumber) => {
     let cleaned = phoneNumber.replace(/\D/g, ""); // Remove tudo que não for número
@@ -194,7 +200,7 @@ Instituição: ${institution}.`;
               type="tel"
               id="cpf"
               value={cpf}
-              onChange={(e) => setCpf(e.target.value)}
+              onChange={handleCpfChange}
               placeholder="Cpf"
               required
             />
