@@ -26,9 +26,9 @@ export default function ProximosCursos() {
                 <div className="flex flex-col items-center gap-4 tablet1:flex-row tablet1:items-start desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                   <CardHeroCursos
                     imageUrl={imgCurso1}
-                    title="Improbidade e Controle de Contas"
+                    title={content.texts.proximosCursos.card1.title}
                     date={content.texts.features.card1.date}
-                    description="Garanta a transparência e evite irregularidades financeiras."
+                    description={content.texts.proximosCursos.card1.description}
                     buttonLink="/curso-improbidade-22-04"
                     labelButton="Saiba mais"
                     className=""
@@ -36,9 +36,9 @@ export default function ProximosCursos() {
 
                   <CardHeroCursos
                     imageUrl={imgCurso3}
-                    title="A integração dos poderes na Gestão Pública"
+                    title={content.texts.proximosCursos.card2.title}
                     date={content.texts.features.card3.date}
-                    description="Fortaleça a governança com colaboração entre os poderes."
+                    description={content.texts.proximosCursos.card2.description}
                     labelButton="Em breve!"
                     buttonColor="bg-black/30"
                     className=""
@@ -46,9 +46,9 @@ export default function ProximosCursos() {
 
                   <CardHeroCursos
                     imageUrl={imgCurso2}
-                    title="Licitações e Contratação"
+                    title={content.texts.proximosCursos.card3.title}
                     date={content.texts.features.card2.date}
-                    description="Garanta eficiência e legalidade nas contratações públicas."
+                    description={content.texts.proximosCursos.card3.description}
                     labelButton="Em breve!"
                     buttonColor="bg-black/30"
                     className=""

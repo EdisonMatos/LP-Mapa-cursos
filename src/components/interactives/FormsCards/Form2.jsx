@@ -9,6 +9,8 @@ import {
   CiCreditCard1,
   CiFileOn,
 } from "react-icons/ci";
+import content from "../../../content/content";
+import contentLp01 from "../../../content/contentLp01";
 
 const FormCard2 = () => {
   const [name, setName] = useState("");
@@ -86,16 +88,26 @@ const FormCard2 = () => {
 
     // Aqui o número do WhatsApp precisa estar no formato correto
     const whatsappNumber = "45991290837"; // Envio pro wpp
-    const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
+    const formatPhone = (phone) => {
+      const formattedPhone = phone.replace(/\D/g, ""); // Remove caracteres não numéricos
+    
+      if (formattedPhone.length !== 11) return phone; // Retorna original se não tiver 11 dígitos
+    
+      return formattedPhone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+    };
 
-    const whatsappMessage = `Olá!
+    const whatsappMessage = `Olá! 
+Essa é uma mensagem de inscrição do curso ${content.texts.proximosCursos.card1.title}, 
+o meu grupo é o de ${contentLp01.subscription.cards.card2.title}. 
+%0A
+%0A
 Meu nome é ${name}.%0A
 Cpf: ${cpf}.%0A
-Telefone: ${formattedPhone}.%0A
+Telefone: ${phone}.%0A
 E-mail: ${email}.%0A
-Instituição: ${empresa}
+Instituição: ${empresa}.%0A
 Inscrição: ${subscription}.%0A
-Profission: ${profission}.`;
+Profissão: ${profission}.`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
