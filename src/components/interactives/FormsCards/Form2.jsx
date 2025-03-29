@@ -70,10 +70,6 @@ const FormCard2 = () => {
         "O campo Orgão de Classe ou Empresa é obrigatório.";
     } else !validateEmpresa(empresa);
 
-    if (!cpf) {
-      validationErrors.cpf = "O campo Cpf é obrigatório.";
-    } else !validateCpf(cpf);
-
     if (!subscription) {
       validationErrors.subscription = "O campo Inscrição é obrigatório.";
     } else !validateSubscription(subscription);
@@ -89,7 +85,7 @@ const FormCard2 = () => {
     }
 
     // Aqui o número do WhatsApp precisa estar no formato correto
-    const whatsappNumber = "5599984234461"; // Certifique-se de que este número está correto com o código do país
+    const whatsappNumber = "45991290837"; // Envio pro wpp
     const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
 
     const whatsappMessage = `Olá! Meu nome é ${name}.%0A
@@ -148,6 +144,11 @@ const FormCard2 = () => {
   const validateProfission = (profission) => {
     const profissionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
     return profissionPattern.test(profission.trim());
+  };
+
+  const validateCpf = (cpf) => {
+    const cpfPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
+    return cpfPattern.test(cpf.trim());
   };
 
   const formatPhoneNumber = (phoneNumber) => {

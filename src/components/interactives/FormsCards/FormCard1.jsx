@@ -10,8 +10,7 @@ const FormCard1 = () => {
   const [institution, setInstitution] = useState("");
   const [cpf, setCpf] = useState("");
 
-  // const [uf, setUf] = useState("");
-  // const [message, setMessage] = useState("");
+ 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -41,7 +40,6 @@ const FormCard1 = () => {
   };
 
   const sendToWhatsapp = async () => {
-    // setIsSubmitting(true);
     const validationErrors = {};
 
     // Validação de campos
@@ -71,9 +69,6 @@ const FormCard1 = () => {
       validationErrors.cpf = "O campo Cpf é obrigatório.";
     } else !validateInstitution(institution);
 
-    // if (!validateMessage(message)) {
-    //   validationErrors.message = "O campo mensagem é obrigatório.";
-    // }
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -82,7 +77,7 @@ const FormCard1 = () => {
     }
 
     // Aqui o número do WhatsApp precisa estar no formato correto
-    const whatsappNumber = "45991290837"; // Certifique-se de que este número está correto com o código do país
+    const whatsappNumber = "45991290837"; // Envio pro wpp
     const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
 
     const whatsappMessage = `Olá! Meu nome é ${name}.%0A
@@ -162,7 +157,6 @@ const FormCard1 = () => {
   return (
     <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
       <div className="w-full text-paragraph3 phone3:text-paragraph4 ">
-        {/* <h1 className="w-full mb-2 font-medium text-white">Fale conosco</h1> */}
         {/* Nome */}
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
@@ -255,23 +249,6 @@ const FormCard1 = () => {
             <p className="text-red-500">{errors.institution}</p>
           )}
         </div>
-        {/* Mensagem */}
-        {/* <div className="mb-6">
-          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-            <div className="flex items-start justify-center w-12 px-1 bg-white">
-              <CiChat1 className="mt-[14px]" />
-            </div>
-            <textarea
-              className="w-full px-1 py-2 border-0 rounded-none"
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Conte um pouco sua situação:"
-              required
-            />
-          </div>
-          {errors.message && <p className="text-red-500">{errors.message}</p>}
-        </div> */}
         {/* Botão */}
         <button
           type="button"
