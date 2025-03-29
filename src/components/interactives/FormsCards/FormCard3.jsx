@@ -10,6 +10,8 @@ import {
   CiMedal,
   CiShop,
 } from "react-icons/ci";
+import content from "../../../content/content";
+import contentLp01 from "../../../content/contentLp01";
 
 const FormCard3 = () => {
   const [name, setName] = useState("");
@@ -19,7 +21,6 @@ const FormCard3 = () => {
   const [email, setEmail] = useState("");
   const [empresa, setEmpresa] = useState("");
   const [cargo, setCargo] = useState("");
-  const [institution, setInstitution] = useState("");
 
   // const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
@@ -73,13 +74,9 @@ const FormCard3 = () => {
       validationErrors.email = "E-mail inválido.";
     }
 
-    if (!institution) {
-      validationErrors.institution = "O campo Instituição é obrigatório.";
-    } else !validateInstitution(institution);
-
     if (!cpf) {
       validationErrors.cpf = "O campo Cpf é obrigatório.";
-    } else !validateInstitution(institution);
+    }
 
     if (!cargo) {
       validationErrors.cargo = "O campo Função é obrigatório.";
@@ -92,11 +89,7 @@ const FormCard3 = () => {
 
     if (!uf) {
       validationErrors.uf = "O campo Uf é obrigatório.";
-    } else !validateInstitution(uf);
-
-    // if (!validateMessage(message)) {
-    //   validationErrors.message = "O campo mensagem é obrigatório.";
-    // }
+    } else !validateUf(uf);
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -105,16 +98,26 @@ const FormCard3 = () => {
     }
 
     // Aqui o número do WhatsApp precisa estar no formato correto
-    const whatsappNumber = "5599984234461"; // Certifique-se de que este número está correto com o código do país
-    const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
+    const whatsappNumber = "45991290837"; // Envio pro wpp
+    const formatPhone = (phone) => {
+      const formattedPhone = phone.replace(/\D/g, ""); // Remove caracteres não numéricos
 
-    const whatsappMessage = `Olá! Meu nome é ${name}.%0A
-    Cpf: ${cpf}
-    Telefone: ${formattedPhone}.%0A
-    Município - UF: ${uf}.%0A
-    E-mail: ${email}.%0A
-    Profission: ${profission}.%0A
-    Instituição: ${institution}`;
+      if (formattedPhone.length !== 11) return phone; // Retorna original se não tiver 11 dígitos
+
+      return formattedPhone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+    };
+    const whatsappMessage = `Olá! 
+Essa é uma mensagem de inscrição do curso ${content.texts.proximosCursos.card1.title}, 
+o meu grupo é o de ${contentLp01.subscription.cards.card3.title}. 
+%0A
+%0A
+Meu nome é ${name}.%0A
+Cpf: ${cpf}.%0A
+Telefone: ${phone}.%0A
+Município - UF: ${uf}.%0A
+E-mail: ${email}.%0A
+Profissão: ${cargo}.%0A
+Instituição: ${empresa}.`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -151,10 +154,6 @@ const FormCard3 = () => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email.trim());
   };
-  const validateInstitution = (institution) => {
-    const institutionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
-    return institutionPattern.test(institution.trim());
-  };
 
   const validateCargo = (cargo) => {
     const cargoPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
@@ -166,11 +165,23 @@ const FormCard3 = () => {
     return empresaPattern.test(empresa.trim());
   };
 
+  const formatCpf = (value) => {
+    const onlyNumbers = value.replace(/\D/g, ""); // Remove caracteres não numéricos
+    const limitedNumbers = onlyNumbers.slice(0, 11); // Limita a 11 dígitos
+
+    return limitedNumbers
+      .replace(/(\d{3})(\d)/, "$1.$2")
+      .replace(/(\d{3})\.(\d{3})(\d)/, "$1.$2.$3")
+      .replace(/(\d{3})\.(\d{3})\.(\d{3})(\d{1,2})/, "$1.$2.$3-$4");
+  };
+  const handleCpfChange = (e) => {
+    const formattedCpf = formatCpf(e.target.value);
+    setCpf(formattedCpf);
+  };
+
   const validateUf = (uf) => {
     return uf.trim().length >= 5; // Requer ao menos 5 caracteres para Cidade e Estado
   };
-
-  // const validateMessage = (message) => !!message;
 
   const formatPhoneNumber = (phoneNumber) => {
     let cleaned = phoneNumber.replace(/\D/g, ""); // Remove tudo que não for número
@@ -194,7 +205,6 @@ const FormCard3 = () => {
   return (
     <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
       <div className="w-full text-paragraph3 phone3:text-paragraph4 ">
-        {/* <h1 className="w-full mb-2 font-medium text-white">Fale conosco</h1> */}
         {/* Nome */}
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
@@ -224,7 +234,7 @@ const FormCard3 = () => {
               type="tel"
               id="cpf"
               value={cpf}
-              onChange={(e) => setCpf(e.target.value)}
+              onChange={handleCpfChange}
               placeholder="Cpf"
               required
             />
@@ -325,7 +335,7 @@ const FormCard3 = () => {
         {/* Botão */}
         <button
           type="button"
-          className="flex items-center w-full font-medium text-[#0E2B40] bg-primary transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
+          className="flex items-center w-full font-medium text-white bg-primary transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
           onClick={sendToWhatsapp}
         >
           <div className="flex items-center justify-center w-full">
