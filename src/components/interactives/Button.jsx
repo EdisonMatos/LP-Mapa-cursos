@@ -40,7 +40,7 @@ export default function Button({
       <MotionDivDownToUp className="w-auto">
         <button
           onClick={onClick}
-          className={`flex ${className} ${sizeFeatures} flex-row items-center justify-around transition ${color} text-labelsIcons desktop1hover:scale-110`}
+          className={`flex ${className} ${sizeFeatures} flex-row items-center justify-around transition ${color} text-labelsIcons desktop1:hover:scale-110`}
         >
           <div className={`flex items-center text-center text-white ${gap} min-h-[24px]`}>
             <div className="">{icon}</div>
