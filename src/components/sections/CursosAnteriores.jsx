@@ -1,12 +1,8 @@
-import content from "../../content/content";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import CardHeroCursos from "../cards/CardHero";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgCursoAnterior1 from "../../assets/imgs/hero/cursoAnteriorHero1.webp";
-import imgCursoAnterior2 from "../../assets/imgs/hero/cursoAnteriorHero2.webp";
-import imgCursoAnterior3 from "../../assets/imgs/hero/cursoAnteriorHero3.webp";
 import cursosContent from "../../content/contentCursos";
 import contentCursos from "../../content/contentCursos";
 

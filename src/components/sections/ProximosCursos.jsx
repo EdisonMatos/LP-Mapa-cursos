@@ -3,9 +3,6 @@ import CardHeroCursos from "../cards/CardHero";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgCurso1 from "../../assets/imgs/hero/cursoHero1.webp";
-import imgCurso2 from "../../assets/imgs/hero/cursoHero2.webp";
-import imgCurso3 from "../../assets/imgs/hero/cursoHero3.webp";
 import contentCursos from "../../content/contentCursos";
 
 export default function ProximosCursos() {

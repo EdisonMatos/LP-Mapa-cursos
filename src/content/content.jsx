@@ -173,22 +173,6 @@ const content = {
       },
       bgImg: bgHeroImg,
     },
-    proximosCursos: {
-      card1: {
-        title: "Improbidade e Controle de Contas",
-        description:
-          "Garanta a transparência e evite irregularidades financeiras.",
-      },
-      card2: {
-        title: "A integração dos poderes na Gestão Pública",
-        description: "Fortaleça a governança com colaboração entre os poderes.",
-      },
-      card3: {
-        title: "Licitações e Contratação",
-        description:
-          "Garanta eficiência e legalidade nas contratações públicas.",
-      },
-    },
     features: {
       miniTag: "A ESCOLHA CERTA",
       title: "Por que a Mapa Cursos é a melhor escolha?",
