@@ -149,18 +149,7 @@ export default function DefaultModals({ modal = "true" }) {
               </div>
             </div>
             <div className="w-full">
-              <p className="text-white text-paragraph2 desktop2:text-paragraph4 mt-[26px] tablet1:mt-[40px] desktop1:mt-[72px] text-center">
-                Nossa empresa está em total conformidade com a Lei Geral de
-                Proteção de Dados (LGPD). Para garantir a segurança e a
-                privacidade das suas informações, a confirmação de inscrição
-                será realizada exclusivamente por e-mail e/ou WhatsApp, após o
-                envio do formulário preenchido. <br /> <br /> Pedimos que
-                complete o formulário de maneira detalhada para que nossa equipe
-                possa entrar em contato e concluir sua inscrição. A Nota Fiscal
-                Eletrônica (NFe) será emitida em até 1 (um) dia útil após a
-                confirmação do pagamento. Assim que a NFe for gerada, ela será
-                encaminhada para o e-mail cadastrado no formulário de inscrição.
-              </p>
+              <p className="text-white text-paragraph2 desktop2:text-paragraph4 mt-[26px] tablet1:mt-[40px] desktop1:mt-[72px] text-center">{cursosDataBase.inscricao.paragrafoRodape}</p>
             </div>
           </SectionWrapper>
         </SectionArea>

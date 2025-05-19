@@ -372,6 +372,20 @@ const cursosDataBase = {
       valor: "R$2.500,00",
       buttonLabel: "Inscrever-se",
     },
+    paragrafoRodape: (
+      <p>
+        {" "}
+        Nossa empresa está em total conformidade com a Lei Geral de Proteção de
+        Dados (LGPD). Para garantir a segurança e a privacidade das suas
+        informações, a confirmação de inscrição será realizada exclusivamente
+        por e-mail e/ou WhatsApp, após o envio do formulário preenchido. <br />{" "}
+        <br /> Pedimos que complete o formulário de maneira detalhada para que
+        nossa equipe possa entrar em contato e concluir sua inscrição. A Nota
+        Fiscal Eletrônica (NFe) será emitida em até 1 (um) dia útil após a
+        confirmação do pagamento. Assim que a NFe for gerada, ela será
+        encaminhada para o e-mail cadastrado no formulário de inscrição.
+      </p>
+    ),
   },
 };
 
