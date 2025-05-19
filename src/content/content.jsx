@@ -173,22 +173,7 @@ const content = {
       },
       bgImg: bgHeroImg,
     },
-    proximosCursos: {
-      card1: {
-        title: "Improbidade e Controle de Contas",
-        description:
-          "Garanta a transparência e evite irregularidades financeiras.",
-      },
-      card2: {
-        title: "A integração dos poderes na Gestão Pública",
-        description: "Fortaleça a governança com colaboração entre os poderes.",
-      },
-      card3: {
-        title: "Licitações e Contratação",
-        description:
-          "Garanta eficiência e legalidade nas contratações públicas.",
-      },
-    },
+
     features: {
       miniTag: "A ESCOLHA CERTA",
       title: "Por que a Mapa Cursos é a melhor escolha?",
@@ -199,7 +184,6 @@ const content = {
       card1: {
         img: featuresImg1,
         title: "Cursos presenciais e à distância",
-        date: "22/04/2025 - 15h",
         subtitle: "Flexibilidade para aprender onde e quando quiser.",
         description: (
           <div>
@@ -228,7 +212,6 @@ const content = {
       card2: {
         img: featuresImg2,
         title: "Aprendizagem na prática",
-        date: "29/05/2025 - 15h",
         subtitle: "Metodologia prática para aplicação imediata.",
         description: (
           <div>
@@ -257,7 +240,6 @@ const content = {
       card3: {
         img: featuresImg3,
         title: "Seminários e congressos",
-        date: "13/05/2025 - 15h",
         subtitle: "Eventos para atualização e networking profissional.",
         description: (
           <div>
