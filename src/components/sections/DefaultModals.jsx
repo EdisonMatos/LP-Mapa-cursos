@@ -19,6 +19,7 @@ import "../../index.css";
 import FormCard1 from "../interactives/FormsCards/FormCard1";
 import FormCard2 from "../interactives/FormsCards/Form2";
 import FormCard3 from "../interactives/FormsCards/FormCard3";
+import contentCursos from "../../content/contentCursos";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -50,11 +51,11 @@ export default function DefaultModals({ modal = "true" }) {
             paddingbot={false}
           />
           <SectionHeader
-            miniTitle={contentLp01.subscription.sectionHeader.miniTag}
+            miniTitle={contentCursos.subscription.sectionHeader.miniTag}
             className="text-center"
-            sectionHeaderTitle={contentLp01.subscription.sectionHeader.title}
+            sectionHeaderTitle={contentCursos.subscription.sectionHeader.title}
             sectionHeaderSubtitle={
-              contentLp01.subscription.sectionHeader.subtitle
+              contentCursos.subscription.sectionHeader.subtitle
             }
             color=""
           />
@@ -64,14 +65,14 @@ export default function DefaultModals({ modal = "true" }) {
               <div className="flex flex-wrap items-start justify-center w-full gap-[40px]">
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[40%]">
                   <CardModal
-                    title={contentLp01.subscription.cards.card1.title}
-                    valor={contentLp01.subscription.cards.card1.valor}
+                    title={contentCursos.subscription.cards.card1.title}
+                    valor={contentCursos.subscription.cards.card1.valor}
                     className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
                   {modal && (
                     <Button
                       size="small"
-                      label={contentLp01.subscription.cards.card1.buttonLabel}
+                      label={contentCursos.subscription.cards.card1.buttonLabel}
                       onClick={() =>
                         onClick(
                           <div>
@@ -108,14 +109,14 @@ export default function DefaultModals({ modal = "true" }) {
 
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[40%]">
                   <CardModal
-                    title={contentLp01.subscription.cards.card2.title}
-                    valor={contentLp01.subscription.cards.card2.valor}
+                    title={contentCursos.subscription.cards.card2.title}
+                    valor={contentCursos.subscription.cards.card2.valor}
                     className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
                   {modal && (
                     <Button
                       size="small"
-                      label={contentLp01.subscription.cards.card2.buttonLabel}
+                      label={contentCursos.subscription.cards.card2.buttonLabel}
                       onClick={() =>
                         onClick(
                           <div>
@@ -152,14 +153,14 @@ export default function DefaultModals({ modal = "true" }) {
 
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[40%]">
                   <CardModal
-                    title={contentLp01.subscription.cards.card3.title}
-                    valor={contentLp01.subscription.cards.card3.valor}
+                    title={contentCursos.subscription.cards.card3.title}
+                    valor={contentCursos.subscription.cards.card3.valor}
                     className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
                   {modal && (
                     <Button
                       size="small"
-                      label={contentLp01.subscription.cards.card3.buttonLabel}
+                      label={contentCursos.subscription.cards.card3.buttonLabel}
                       onClick={() =>
                         onClick(
                           <div>
@@ -196,18 +197,7 @@ export default function DefaultModals({ modal = "true" }) {
               </div>
             </div>
             <div className="w-full">
-              <p className="text-white text-paragraph2 desktop2:text-paragraph4 mt-[26px] tablet1:mt-[40px] desktop1:mt-[72px] text-center">
-                Nossa empresa está em total conformidade com a Lei Geral de
-                Proteção de Dados (LGPD). Para garantir a segurança e a
-                privacidade das suas informações, a confirmação de inscrição
-                será realizada exclusivamente por e-mail e/ou WhatsApp, após o
-                envio do formulário preenchido. <br /> <br /> Pedimos que
-                complete o formulário de maneira detalhada para que nossa equipe
-                possa entrar em contato e concluir sua inscrição. A Nota Fiscal
-                Eletrônica (NFe) será emitida em até 1 (um) dia útil após a
-                confirmação do pagamento. Assim que a NFe for gerada, ela será
-                encaminhada para o e-mail cadastrado no formulário de inscrição.
-              </p>
+              <p>{contentCursos.subscription.paragraphs}</p>
             </div>
           </SectionWrapper>
         </SectionArea>

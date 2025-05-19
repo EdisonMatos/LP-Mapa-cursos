@@ -37,8 +37,8 @@ const contentLp01 = {
   },
   features: {
     sectionHeader: {
-      miniTag: "PROGRAMAÇÃO DO CURSO",
-      title: "Cada aula um passo para blindar sua carreira contra erros fatais",
+      miniTag: "A_Definir",
+      title: "A_Definir",
     },
     cards: {
       card1: {

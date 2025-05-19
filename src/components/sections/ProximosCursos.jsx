@@ -25,31 +25,43 @@ export default function ProximosCursos() {
               <div className="flex flex-col w-full gap-8 ">
                 <div className="flex flex-col items-center gap-4 tablet1:flex-row tablet1:items-start desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                   <CardHeroCursos
-                    imageUrl={contentCursos.texts.curso1.img.imgCurso1}
-                    title={contentCursos.texts.curso1.title}
-                    date={contentCursos.texts.curso1.date}
-                    description={contentCursos.texts.curso1.description}
+                    imageUrl={contentCursos.proximosCursos.curso1.img.imgCurso1}
+                    title={contentCursos.proximosCursos.curso1.title}
+                    date={contentCursos.proximosCursos.curso1.date}
+                    description={
+                      contentCursos.proximosCursos.curso1.description
+                    }
                     buttonLink="/curso-improbidade-22-04"
-                    labelButton={contentCursos.texts.curso1.labelButton}
+                    labelButton={
+                      contentCursos.proximosCursos.curso1.labelButton
+                    }
                     className=""
                   />
 
                   <CardHeroCursos
-                    imageUrl={contentCursos.texts.curso2.img.imgCurso2}
-                    title={contentCursos.texts.curso2.title}
-                    date={contentCursos.texts.curso2.date}
-                    description={contentCursos.texts.curso2.description}
-                    labelButton={contentCursos.texts.curso2.labelButton}
+                    imageUrl={contentCursos.proximosCursos.curso2.img.imgCurso2}
+                    title={contentCursos.proximosCursos.curso2.title}
+                    date={contentCursos.proximosCursos.curso2.date}
+                    description={
+                      contentCursos.proximosCursos.curso2.description
+                    }
+                    labelButton={
+                      contentCursos.proximosCursos.curso2.labelButton
+                    }
                     buttonColor="bg-black/30"
                     className=""
                   />
 
                   <CardHeroCursos
-                    imageUrl={contentCursos.texts.curso3.img.imgCurso3}
-                    title={contentCursos.texts.curso3.title}
-                    date={contentCursos.texts.curso3.date}
-                    description={contentCursos.texts.curso3.description}
-                    labelButton={contentCursos.texts.curso3.labelButton}
+                    imageUrl={contentCursos.proximosCursos.curso3.img.imgCurso3}
+                    title={contentCursos.proximosCursos.curso3.title}
+                    date={contentCursos.proximosCursos.curso3.date}
+                    description={
+                      contentCursos.proximosCursos.curso3.description
+                    }
+                    labelButton={
+                      contentCursos.proximosCursos.curso2.labelButton
+                    }
                     buttonColor="bg-black/30"
                     className=""
                   />

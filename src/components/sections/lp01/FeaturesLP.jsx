@@ -3,6 +3,7 @@ import SectionArea from "../../sectionElements/SectionArea";
 import SectionHeader from "../../sectionElements/SectionHeader";
 import SectionWrapper from "../../sectionElements/SectionWrapper";
 import FeatureCardLP from "./FeatureCardLP";
+import contentCursos from "../../../content/contentCursos";
 
 export default function FeaturesLP({ className }) {
   return (
@@ -10,34 +11,34 @@ export default function FeaturesLP({ className }) {
       <SectionArea>
         <SectionWrapper>
           <SectionHeader
-            miniTitle={contentLp01.features.sectionHeader.miniTag}
+            miniTitle={contentCursos.cursosProgramados.sectionHeader.miniTag}
             className="text-center"
-            sectionHeaderTitle={contentLp01.features.sectionHeader.title}
+            sectionHeaderTitle={contentCursos.cursosProgramados.sectionHeader.title}
             color="dark"
           />
           <div className="w-full flex flex-wrap justify-evenly gap-y-[32px]">
             <FeatureCardLP
-              icon={contentLp01.features.cards.card1.icon}
-              title={contentLp01.features.cards.card1.title}
-              description={contentLp01.features.cards.card1.description}
+              icon={contentCursos.cursosProgramados.card1.icon}
+              title={contentCursos.cursosProgramados.card1.title}
+              description={contentCursos.cursosProgramados.card1.description}
               className="w-full tablet1:w-[60%]"
             />
             <FeatureCardLP
-              icon={contentLp01.features.cards.card2.icon}
-              title={contentLp01.features.cards.card2.title}
-              description={contentLp01.features.cards.card2.description}
+              icon={contentCursos.cursosProgramados.card2.icon}
+              title={contentCursos.cursosProgramados.card2.title}
+              description={contentCursos.cursosProgramados.card2.description}
               className="w-full tablet1:w-[60%]"
             />
             <FeatureCardLP
-              icon={contentLp01.features.cards.card3.icon}
-              title={contentLp01.features.cards.card3.title}
-              description={contentLp01.features.cards.card3.description}
+              icon={contentCursos.cursosProgramados.card3.icon}
+              title={contentCursos.cursosProgramados.card3.title}
+              description={contentCursos.cursosProgramados.card3.description}
               className="w-full tablet1:w-[60%]"
             />
             <FeatureCardLP
-              icon={contentLp01.features.cards.card4.icon}
-              title={contentLp01.features.cards.card4.title}
-              description={contentLp01.features.cards.card4.description}
+              icon={contentCursos.cursosProgramados.card4.icon}
+              title={contentCursos.cursosProgramados.card4.title}
+              description={contentCursos.cursosProgramados.card4.description}
               className="w-full tablet1:w-[60%]"
             />
           </div>

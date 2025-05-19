@@ -7,6 +7,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import imgCursoAnterior1 from "../../assets/imgs/hero/cursoAnteriorHero1.webp";
 import imgCursoAnterior2 from "../../assets/imgs/hero/cursoAnteriorHero2.webp";
 import imgCursoAnterior3 from "../../assets/imgs/hero/cursoAnteriorHero3.webp";
+import contentCursos from "../../content/contentCursos";
 
 export default function CursosMinistrados() {
   return (
@@ -25,26 +26,41 @@ export default function CursosMinistrados() {
               <div className="flex flex-col w-full gap-8 ">
                 <div className="flex flex-col items-center gap-4 tablet1:flex-row tablet1:items-start desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                   <CardHeroCursos
-                    imageUrl={imgCursoAnterior1}
-                    title="STF, Prefeituras e Câmaras"
-                    date="04 de dezembro de 2024"
-                    description="Os reflexos e os efeitos das decisões do Judiciário no Executivo e no Legislativo no encerramento de mandato."
+                    imageUrl={
+                      contentCursos.cursosMinistrados.curso1.img
+                        .imgCursoAnterior1
+                    }
+                    title={contentCursos.cursosMinistrados.curso1.title}
+                    date={contentCursos.cursosMinistrados.curso1.date}
+                    description={
+                      contentCursos.cursosMinistrados.curso1.description
+                    }
                     button={false}
                   />
 
                   <CardHeroCursos
-                    imageUrl={imgCursoAnterior2}
-                    title="Atividade Parlamentar"
-                    date="26 de junho de 2024"
-                    description="Estrutura  daAdministração Pública e a fiscalização do Legislativo."
+                    imageUrl={
+                      contentCursos.cursosMinistrados.curso2.img
+                        .imgCursoAnterior2
+                    }
+                    title={contentCursos.cursosMinistrados.curso2.title}
+                    date={contentCursos.cursosMinistrados.curso2.date}
+                    description={
+                      contentCursos.cursosMinistrados.curso2.description
+                    }
                     button={false}
                   />
 
                   <CardHeroCursos
-                    imageUrl={imgCursoAnterior3}
-                    title="A Escola e o Conselho Tutelar"
-                    date="Fevereiro de 2025"
-                    description="Um elo de integração na rede de proteção e garantia de direitos da criança e do adolescente."
+                    imageUrl={
+                      contentCursos.cursosMinistrados.curso3.img
+                        .imgCursoAnterior3
+                    }
+                    title={contentCursos.cursosMinistrados.curso3.title}
+                    date={contentCursos.cursosMinistrados.curso3.date}
+                    description={
+                      contentCursos.cursosMinistrados.curso3.description
+                    }
                     button={false}
                   />
                 </div>
