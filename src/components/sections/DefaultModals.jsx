@@ -19,7 +19,8 @@ import "../../index.css";
 import FormCard1 from "../interactives/FormsCards/FormCard1";
 import FormCard2 from "../interactives/FormsCards/Form2";
 import FormCard3 from "../interactives/FormsCards/FormCard3";
-import contentCursos from "../../content/contentCursos";
+import { contentCursos } from "../../content/contentCursos";
+import { cursosDataBase } from "../../content/contentCursos";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -65,14 +66,14 @@ export default function DefaultModals({ modal = "true" }) {
               <div className="flex flex-wrap items-start justify-center w-full gap-[40px]">
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[40%]">
                   <CardModal
-                    title={contentCursos.subscription.cards.card1.title}
-                    valor={contentCursos.subscription.cards.card1.valor}
+                    title={cursosDataBase.curso.curso1.landingPage.inscricao.card1.title}
+                    valor={cursosDataBase.curso.curso1.landingPage.inscricao.card1.valor}
                     className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
                   {modal && (
                     <Button
                       size="small"
-                      label={contentCursos.subscription.cards.card1.buttonLabel}
+                      label={cursosDataBase.curso.curso1.landingPage.inscricao.card1.buttonLabel}
                       onClick={() =>
                         onClick(
                           <div>
@@ -109,14 +110,14 @@ export default function DefaultModals({ modal = "true" }) {
 
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[40%]">
                   <CardModal
-                    title={contentCursos.subscription.cards.card2.title}
-                    valor={contentCursos.subscription.cards.card2.valor}
+                    title=""
+                    valor=""
                     className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
                   {modal && (
                     <Button
                       size="small"
-                      label={contentCursos.subscription.cards.card2.buttonLabel}
+                      label=""
                       onClick={() =>
                         onClick(
                           <div>
@@ -153,14 +154,14 @@ export default function DefaultModals({ modal = "true" }) {
 
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[40%]">
                   <CardModal
-                    title={contentCursos.subscription.cards.card3.title}
-                    valor={contentCursos.subscription.cards.card3.valor}
+                    title=""
+                    valor=""
                     className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
                   {modal && (
                     <Button
                       size="small"
-                      label={contentCursos.subscription.cards.card3.buttonLabel}
+                      label=""
                       onClick={() =>
                         onClick(
                           <div>

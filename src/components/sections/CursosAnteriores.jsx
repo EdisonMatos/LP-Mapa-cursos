@@ -7,7 +7,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import imgCursoAnterior1 from "../../assets/imgs/hero/cursoAnteriorHero1.webp";
 import imgCursoAnterior2 from "../../assets/imgs/hero/cursoAnteriorHero2.webp";
 import imgCursoAnterior3 from "../../assets/imgs/hero/cursoAnteriorHero3.webp";
-import contentCursos from "../../content/contentCursos";
+import { contentCursos } from "../../content/contentCursos";
 
 export default function CursosMinistrados() {
   return (

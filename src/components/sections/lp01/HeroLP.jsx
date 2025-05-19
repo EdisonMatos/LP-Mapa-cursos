@@ -4,13 +4,14 @@ import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
 import Button from "../../interactives/Button";
 import content from "../../../content/content";
 import contentLp01 from "../../../content/contentLp01";
+import { cursosDataBase } from "../../../content/contentCursos";
 
 export default function HeroLP() {
   return (
     <div
       className="w-full bg-top bg-no-repeat bg-cover font-mainFont"
       style={{
-        backgroundImage: `url(${contentLp01.hero.bgImg})`,
+        backgroundImage: `url(${cursosDataBase.curso.curso1.imgs.imgHero})`,
       }}
     >
       <SectionArea
@@ -37,7 +38,7 @@ export default function HeroLP() {
                   </MotionDivDownToUp> */}
                 <MotionDivDownToUp>
                   <div className="flex text-lighter justify-center desktop1:justify-start font-bold leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[70px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
-                    {contentLp01.hero.textArea.title}
+                    {cursosDataBase.curso.nome}
                   </div>
                 </MotionDivDownToUp>
                 <MotionDivDownToUp>
