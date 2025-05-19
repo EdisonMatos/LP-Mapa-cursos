@@ -36,21 +36,21 @@ export default function ProximosCursos() {
                   />
 
                   <CardHeroCursos
-                    imageUrl={imgCurso3}
-                    title={content.texts.proximosCursos.card2.title}
-                    date={content.texts.features.card3.date}
-                    description={content.texts.proximosCursos.card2.description}
-                    labelButton="Em breve!"
+                    imageUrl={cursosDataBase.curso.curso2.imgs.imgCard.imgCurso2}
+                    title={cursosDataBase.curso.curso2.titulo}
+                    date={cursosDataBase.curso.curso2.data}
+                    description={cursosDataBase.curso.curso2.subtitulo}
+                    labelButton={cursosDataBase.curso.curso2.labelButton}
                     buttonColor="bg-black/30"
                     className=""
                   />
 
                   <CardHeroCursos
-                    imageUrl={imgCurso2}
-                    title={content.texts.proximosCursos.card3.title}
-                    date={content.texts.features.card2.date}
-                    description={content.texts.proximosCursos.card3.description}
-                    labelButton="Em breve!"
+                    imageUrl={cursosDataBase.curso.curso3.imgs.imgCard.imgCurso3}
+                    title={cursosDataBase.curso.curso3.titulo}
+                    date={cursosDataBase.curso.curso3.data}
+                    description={cursosDataBase.curso.curso3.subtitulo}
+                    labelButton={cursosDataBase.curso.curso3.labelButton}
                     buttonColor="bg-black/30"
                     className=""
                   />
