@@ -4,6 +4,7 @@ import WhatsAppIcon from "../../../assets/importAssets/WhatsAppIcon.webp";
 import { CiUser, CiPhone, CiMail, CiCreditCard1, CiBank } from "react-icons/ci";
 import content from "../../../content/content";
 import contentLp01 from "../../../content/contentLp01";
+import { cursosDataBase } from "../../../content/contentCursos";
 
 const FormCard1 = () => {
   const [name, setName] = useState("");
@@ -88,7 +89,7 @@ const FormCard1 = () => {
 
     const whatsappMessage = `Olá! 
 Essa é uma mensagem de inscrição do curso ${content.texts.proximosCursos.card1.title}, 
-o meu grupo é o de ${contentLp01.subscription.cards.card1.title}. 
+o meu grupo é o de ${cursosDataBase.inscricao.card1.title}. 
 %0A
 %0A
 Meu nome é ${name}.%0A
