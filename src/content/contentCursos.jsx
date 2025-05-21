@@ -208,7 +208,7 @@ const cursosDataBase = {
       subtitulo:
         "Parceria essencial na proteção dos direitos da criança e do adolescente.",
       status: "ativo", //realizado ou futuro
-      rota: content.texts.links.ctaWhatsapp, // (/rota)
+      rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
         imgCard: { imgCurso2 }, //img do card
         imgHero: bgImg,
@@ -224,7 +224,7 @@ const cursosDataBase = {
       subtitulo:
         "Cumprimento das obrigações legais e transparência na gestão pública.",
       status: "ativo", //realizado ou futuro
-      rota: content.texts.links.ctaWhatsapp, // (/rota)
+      rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
         imgCard: { imgCurso3 }, //img do card
         imgHero: bgImg,
