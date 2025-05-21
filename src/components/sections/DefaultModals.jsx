@@ -19,6 +19,7 @@ import "../../index.css";
 import FormCard1 from "../interactives/FormsCards/FormCard1";
 import FormCard2 from "../interactives/FormsCards/Form2";
 import FormCard3 from "../interactives/FormsCards/FormCard3";
+import { cursosDataBase } from "../../content/contentCursos";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -64,14 +65,14 @@ export default function DefaultModals({ modal = "true" }) {
               <div className="flex flex-wrap items-start justify-center w-full gap-[40px]">
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[40%]">
                   <CardModal
-                    title={contentLp01.subscription.cards.card1.title}
-                    valor={contentLp01.subscription.cards.card1.valor}
+                    title={cursosDataBase.inscricao.card1.title}
+                    valor={cursosDataBase.inscricao.card1.valor}
                     className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
                   {modal && (
                     <Button
                       size="small"
-                      label={contentLp01.subscription.cards.card1.buttonLabel}
+                      label={cursosDataBase.inscricao.card1.buttonLabel}
                       onClick={() =>
                         onClick(
                           <div>
@@ -85,37 +86,21 @@ export default function DefaultModals({ modal = "true" }) {
                           </div>
                         )
                       }
-                      icon={
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-corner-down-right"
-                        >
-                          <polyline points="15 10 20 15 15 20" />
-                          <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                        </svg>
-                      }
+                      icon={cursosDataBase.inscricao.card1.icon}
                     />
                   )}
                 </MotionDivDownToUp>
 
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[40%]">
                   <CardModal
-                    title={contentLp01.subscription.cards.card2.title}
-                    valor={contentLp01.subscription.cards.card2.valor}
+                    title={cursosDataBase.inscricao.card2.title}
+                    valor={cursosDataBase.inscricao.card2.valor}
                     className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
                   {modal && (
                     <Button
                       size="small"
-                      label={contentLp01.subscription.cards.card2.buttonLabel}
+                      label={cursosDataBase.inscricao.card2.buttonLabel}
                       onClick={() =>
                         onClick(
                           <div>
@@ -129,37 +114,21 @@ export default function DefaultModals({ modal = "true" }) {
                           </div>
                         )
                       }
-                      icon={
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-corner-down-right"
-                        >
-                          <polyline points="15 10 20 15 15 20" />
-                          <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                        </svg>
-                      }
+                      icon={cursosDataBase.inscricao.card2.icon}
                     />
                   )}
                 </MotionDivDownToUp>
 
                 <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] bg-white rounded-xl w-full tablet1:w-[40%]">
                   <CardModal
-                    title={contentLp01.subscription.cards.card3.title}
-                    valor={contentLp01.subscription.cards.card3.valor}
+                    title={cursosDataBase.inscricao.card3.title}
+                    valor={cursosDataBase.inscricao.card3.valor}
                     className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
                   />
                   {modal && (
                     <Button
                       size="small"
-                      label={contentLp01.subscription.cards.card3.buttonLabel}
+                      label={cursosDataBase.inscricao.card3.buttonLabel}
                       onClick={() =>
                         onClick(
                           <div>
@@ -173,41 +142,14 @@ export default function DefaultModals({ modal = "true" }) {
                           </div>
                         )
                       }
-                      icon={
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-corner-down-right"
-                        >
-                          <polyline points="15 10 20 15 15 20" />
-                          <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                        </svg>
-                      }
+                      icon={cursosDataBase.inscricao.card3.icon}
                     />
                   )}
                 </MotionDivDownToUp>
               </div>
             </div>
             <div className="w-full">
-              <p className="text-white text-paragraph2 desktop2:text-paragraph4 mt-[26px] tablet1:mt-[40px] desktop1:mt-[72px] text-center">
-                Nossa empresa está em total conformidade com a Lei Geral de
-                Proteção de Dados (LGPD). Para garantir a segurança e a
-                privacidade das suas informações, a confirmação de inscrição
-                será realizada exclusivamente por e-mail e/ou WhatsApp, após o
-                envio do formulário preenchido. <br /> <br /> Pedimos que
-                complete o formulário de maneira detalhada para que nossa equipe
-                possa entrar em contato e concluir sua inscrição. A Nota Fiscal
-                Eletrônica (NFe) será emitida em até 1 (um) dia útil após a
-                confirmação do pagamento. Assim que a NFe for gerada, ela será
-                encaminhada para o e-mail cadastrado no formulário de inscrição.
-              </p>
+              <p className="text-white text-paragraph2 desktop2:text-paragraph4 mt-[26px] tablet1:mt-[40px] desktop1:mt-[72px] text-center">{cursosDataBase.inscricao.paragrafoRodape}</p>
             </div>
           </SectionWrapper>
         </SectionArea>
