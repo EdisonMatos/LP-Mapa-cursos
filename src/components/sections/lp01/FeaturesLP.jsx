@@ -23,6 +23,7 @@ export default function FeaturesLP({ className }) {
               description={
                 cursosDataBase.landingPage.programacao.card1.subtitulo
               }
+              
               className="w-full tablet1:w-[60%]"
             />
             <FeatureCardLP

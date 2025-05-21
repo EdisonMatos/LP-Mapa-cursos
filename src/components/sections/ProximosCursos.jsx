@@ -26,9 +26,12 @@ export default function ProximosCursos() {
               <div className="flex flex-col w-full gap-8 ">
                 <div className="flex flex-col items-center gap-4 tablet1:flex-row tablet1:items-start desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                   <CardHeroCursos
-                    imageUrl={cursosDataBase.curso.curso1.imgs.imgCard.imgCurso1}
+                    imageUrl={
+                      cursosDataBase.curso.curso1.imgs.imgCard.imgCurso1
+                    }
                     title={cursosDataBase.curso.curso1.titulo}
                     date={cursosDataBase.curso.curso1.data}
+                    hora={cursosDataBase.curso.curso1.hora}
                     description={cursosDataBase.curso.curso1.subtitulo}
                     buttonLink={cursosDataBase.curso.curso1.rota}
                     labelButton={cursosDataBase.curso.curso1.labelButton}
@@ -36,9 +39,12 @@ export default function ProximosCursos() {
                   />
 
                   <CardHeroCursos
-                    imageUrl={cursosDataBase.curso.curso2.imgs.imgCard.imgCurso2}
+                    imageUrl={
+                      cursosDataBase.curso.curso2.imgs.imgCard.imgCurso2
+                    }
                     title={cursosDataBase.curso.curso2.titulo}
                     date={cursosDataBase.curso.curso2.data}
+                    hora={cursosDataBase.curso.curso2.hora}
                     description={cursosDataBase.curso.curso2.subtitulo}
                     labelButton={cursosDataBase.curso.curso2.labelButton}
                     buttonColor="bg-black/30"
@@ -46,9 +52,12 @@ export default function ProximosCursos() {
                   />
 
                   <CardHeroCursos
-                    imageUrl={cursosDataBase.curso.curso3.imgs.imgCard.imgCurso3}
+                    imageUrl={
+                      cursosDataBase.curso.curso3.imgs.imgCard.imgCurso3
+                    }
                     title={cursosDataBase.curso.curso3.titulo}
                     date={cursosDataBase.curso.curso3.data}
+                    hora={cursosDataBase.curso.curso3.hora}
                     description={cursosDataBase.curso.curso3.subtitulo}
                     labelButton={cursosDataBase.curso.curso3.labelButton}
                     buttonColor="bg-black/30"

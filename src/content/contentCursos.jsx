@@ -6,6 +6,9 @@ import imgCursoAnterior2 from "../assets/imgs/hero/cursoAnteriorHero2.webp";
 import imgCursoAnterior3 from "../assets/imgs/hero/cursoAnteriorHero3.webp";
 import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
 import logo from "../assets/imgs/logo/logo.png";
+import { infos } from "./content";
+
+const currentYear = new Date().getFullYear();
 
 const landingPageInfos = {
   about: {
@@ -145,8 +148,8 @@ const cursosDataBase = {
     curso1: {
       id: "001",
       nome: "Primeiro Curso",
-      data: "22/04/2025 - 15h",
-      hora: "A_Definir",
+      data: "22/04/2025 ",
+      hora: "15h",
       titulo: "Improbidade e Controle de Contas",
       subtitulo: "Garanta a transparência e evite irregularidades financeiras.",
       status: "A_Definir", //realizado ou futuro
@@ -199,8 +202,8 @@ const cursosDataBase = {
     curso2: {
       id: "002",
       nome: "Segundo Curso",
-      data: "29/05/2025 - 15h",
-      hora: "A_Definir",
+      data: "29/05/2025 ",
+      hora: "15h",
       titulo: "A integração dos poderes na Gestão Pública",
       subtitulo: "Fortaleça a governança com colaboração entre os poderes.",
       status: "futuro", //realizado ou futuro
@@ -214,8 +217,8 @@ const cursosDataBase = {
     curso3: {
       id: "003",
       nome: "Terceiro Curso",
-      data: "13/05/2025 - 15h",
-      hora: "A_Definir",
+      data: "13/05/2025 ",
+      hora: "15h",
       titulo: "Licitações e Contratação",
       subtitulo: "Garanta eficiência e legalidade nas contratações públicas.",
       status: "futuro", //realizado ou futuro

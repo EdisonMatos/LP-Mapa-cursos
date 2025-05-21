@@ -6,6 +6,7 @@ export default function CardHeroCursos({
   imageUrl,
   title,
   date,
+  hora,
   className = "", // Adicionando className como propriedade
   description,
   buttonLink,
@@ -31,7 +32,7 @@ export default function CardHeroCursos({
         <div className="flex flex-col gap-4 w-full desktop2:p-[4px]">
           <img className="rounded-[10px]" src={imageUrl} alt={title} />
           <div className="flex flex-col w-full h-full">
-            <p className="text-black/50 text-paragraph2">{date}</p>
+            <p className="text-black/50 text-paragraph2">{date} - {hora}</p>
             <h1 className="text-title1 leading-[27px] font-medium mt-[2px] mb-[12px]">
               {title}
             </h1>
