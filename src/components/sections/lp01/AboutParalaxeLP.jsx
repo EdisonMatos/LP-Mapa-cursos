@@ -5,13 +5,14 @@ import Button from "../../interactives/Button";
 import SectionArea from "../../sectionElements/SectionArea";
 import SectionHeader from "../../sectionElements/SectionHeader";
 import SectionWrapper from "../../sectionElements/SectionWrapper";
+import { cursosDataBase, landingPageInfos } from "../../../content/contentCursos";
 
 export default function AboutParalaxeLP({ logo }) {
   return (
     <div
       className="bg-scroll bg-center bg-cover desktop1:bg-fixed"
       style={{
-        backgroundImage: `url(${contentLp01.about.bgImg})`,
+        backgroundImage: `url(${landingPageInfos.about.bgImg})`,
         backgroundRepeat: "no-repeat",
       }}
       id="contact"
@@ -25,8 +26,8 @@ export default function AboutParalaxeLP({ logo }) {
                   {/* Logo */}
                   {logo ? (
                     <img
-                      src={contentLp01.about.logo.logoImg}
-                      alt={contentLp01.about.logo.alt}
+                      src={landingPageInfos.about.logo.logoImg}
+                      alt={landingPageInfos.about.logo.alt}
                       className="w-[90%] desktop1:w-[70%]"
                     />
                   ) : (
@@ -42,21 +43,21 @@ export default function AboutParalaxeLP({ logo }) {
                 <div className={logo ? "desktop1:w-[60%]" : "desktop1:w-[1300px]"}>
                   <SectionHeader
                     className="text-center"
-                    miniTitle={contentLp01.about.sectionHeader.miniTag}
-                    sectionHeaderTitle={contentLp01.about.sectionHeader.title}
+                    miniTitle={landingPageInfos.about.sectionHeader.miniTag}
+                    sectionHeaderTitle={landingPageInfos.about.sectionHeader.title}
                     color=""
                     type="article"
                   />
                   <MotionDivDownToUp>
                     <p className="font-mainFont mb-[36px]">
-                      {contentLp01.about.paragraph}
+                      {landingPageInfos.about.paragraph}
                     </p>
                   </MotionDivDownToUp>
                   <MotionDivDownToUp>
                     <div className="w-full">
                       <Button
-                        aria-label={contentLp01.hero.textArea.ctaButtonAriaLabel}
-                        label={contentLp01.about.ctaButtonAriaLabel}
+                        aria-label={landingPageInfos.about.ctaButtonAriaLabel}
+                        label={landingPageInfos.about.ctaButtonAriaLabel}
                         buttonLink={contentLp01.links.ctaWhatsapp}
                         animation
                         className=""

@@ -1,5 +1,4 @@
 import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
-import logo from "../assets/imgs/logo/logo.png";
 import { infos } from "./content";
 
 const currentYear = new Date().getFullYear();
@@ -48,28 +47,17 @@ const contentLp01 = {
       alt: "Logomarca",
     },
     sectionHeader: {
-      miniTag: "GESTÃO COM QUEM ENTENDE",
-      title:
-        "A capacitação que separa profissionais comuns de referências na gestão pública",
+      miniTag: "A_Definir",
+      title: "A_Definir",
     },
-    paragraph: (
-      <p>
-        No setor público, erro não é opção. O Mapa Cursos nasceu para
-        transformar agentes públicos em especialistas prontos para enfrentar os
-        desafios da administração. São anos de experiência preparando
-        servidores, vereadores, prefeitos e assessores com conhecimento real,
-        direto ao ponto e aplicável no dia a dia da gestão. Aqui, você não
-        aprende teoria vazia, aprende a dominar as regras do jogo e evitar
-        armadilhas que podem custar sua carreira.
-      </p>
-    ),
-    buttonLabel: "Quero falar com um especialista",
-    ctaButtonAriaLabel: "Fortaleça sua atuação na gestão pública.",
+    paragraph: <p>A_Definir</p>,
+    buttonLabel: "A_Definir",
+    ctaButtonAriaLabel: "A_Definir",
   },
   whyUs: {
     sectionHeader: {
-      miniTag: "O ESPECIALISTA EM AÇÃO",
-      title: "Aprenda com quem já transformou a Gestão Pública",
+      miniTag: "A_Definir",
+      title: "A_Definir",
     },
     cards: {
       card1: {
@@ -91,9 +79,8 @@ const contentLp01 = {
             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
           </svg>
         ),
-        title: "Formação acadêmica e experiência jurídica",
-        description:
-          "Bacharel em Direito pela UDC Cataratas, com mais de 40 processos de cassação eleitoral no Paraná. Dhiego Alves tem a experiência necessária para ensinar o que realmente importa na gestão pública.",
+        title: "A_Definir",
+        description: "A_Definir",
       },
       card2: {
         icon: (
@@ -114,9 +101,8 @@ const contentLp01 = {
             <path d="M22 19H2" />
           </svg>
         ),
-        title: "Especializações que fazem a diferença",
-        description:
-          "Pós-graduado em Controle de Constitucionalidade e Direito Eleitoral, Dhiego é especialista em áreas essenciais para quem atua na administração pública e quer evitar falhas jurídicas.",
+        title: "A_Definir",
+        description: "A_Definir",
       },
       card3: {
         icon: (
@@ -137,9 +123,8 @@ const contentLp01 = {
             <path d="M10 22h4" />
           </svg>
         ),
-        title: "Experiência em assessoria eleitoral",
-        description:
-          "Assessor jurídico eleitoral com experiência prática em cassações eleitorais, Dhiego Alves traz a vivência necessária para a aplicação real dos conceitos no campo da gestão pública.",
+        title: "A_Definir",
+        description: "A_Definir",
       },
       card4: {
         icon: (
@@ -161,9 +146,8 @@ const contentLp01 = {
             <path d="M16 3.13a4 4 0 0 1 0 7.75" />
           </svg>
         ),
-        title: "Líder pedagógico do Mapa Cursos",
-        description:
-          "Como coordenador pedagógico do Mapa Cursos, Dhiego Alves aplica seu vasto conhecimento para transformar a capacitação de agentes públicos, preparando-os para os desafios reais da administração.",
+        title: "A_Definir",
+        description: "A_Definir",
       },
     },
   },

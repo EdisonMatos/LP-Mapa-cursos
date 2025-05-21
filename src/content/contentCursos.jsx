@@ -5,16 +5,138 @@ import imgCursoAnterior1 from "../assets/imgs/hero/cursoAnteriorHero1.webp";
 import imgCursoAnterior2 from "../assets/imgs/hero/cursoAnteriorHero2.webp";
 import imgCursoAnterior3 from "../assets/imgs/hero/cursoAnteriorHero3.webp";
 import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
+import logo from "../assets/imgs/logo/logo.png";
 
 const landingPageInfos = {
   about: {
-    //trazer todo conteúdo do about
+    bgImg: bgImg,
+    logo: {
+      logoImg: logo,
+      alt: "Logomarca",
+    },
+    sectionHeader: {
+      miniTag: "GESTÃO COM QUEM ENTENDE",
+      title:
+        "A capacitação que separa profissionais comuns de referências na gestão pública",
+    },
+    paragraph: (
+      <p>
+        No setor público, erro não é opção. O Mapa Cursos nasceu para
+        transformar agentes públicos em especialistas prontos para enfrentar os
+        desafios da administração. São anos de experiência preparando
+        servidores, vereadores, prefeitos e assessores com conhecimento real,
+        direto ao ponto e aplicável no dia a dia da gestão. Aqui, você não
+        aprende teoria vazia, aprende a dominar as regras do jogo e evitar
+        armadilhas que podem custar sua carreira.
+      </p>
+    ),
+    buttonLabel: "Quero falar com um especialista",
+    ctaButtonAriaLabel: "Fortaleça sua atuação na gestão pública.",
   },
   whyUs: {
-    //trazer todo conteúdo do whyUs
+    sectionHeader: {
+      miniTag: "O ESPECIALISTA EM AÇÃO",
+      title: "Aprenda com quem já transformou a Gestão Pública",
+    },
+    cards: {
+      card1: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-graduation-cap"
+          >
+            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+            <path d="M22 10v6" />
+            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+          </svg>
+        ),
+        title: "Formação acadêmica e experiência jurídica",
+        description:
+          "Bacharel em Direito pela UDC Cataratas, com mais de 40 processos de cassação eleitoral no Paraná. Dhiego Alves tem a experiência necessária para ensinar o que realmente importa na gestão pública.",
+      },
+      card2: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-vote"
+          >
+            <path d="m9 12 2 2 4-4" />
+            <path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
+            <path d="M22 19H2" />
+          </svg>
+        ),
+        title: "Especializações que fazem a diferença",
+        description:
+          "Pós-graduado em Controle de Constitucionalidade e Direito Eleitoral, Dhiego é especialista em áreas essenciais para quem atua na administração pública e quer evitar falhas jurídicas.",
+      },
+      card3: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-lightbulb"
+          >
+            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+            <path d="M9 18h6" />
+            <path d="M10 22h4" />
+          </svg>
+        ),
+        title: "Experiência em assessoria eleitoral",
+        description:
+          "Assessor jurídico eleitoral com experiência prática em cassações eleitorais, Dhiego Alves traz a vivência necessária para a aplicação real dos conceitos no campo da gestão pública.",
+      },
+      card4: {
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-users"
+          >
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+        ),
+        title: "Líder pedagógico do Mapa Cursos",
+        description:
+          "Como coordenador pedagógico do Mapa Cursos, Dhiego Alves aplica seu vasto conhecimento para transformar a capacitação de agentes públicos, preparando-os para os desafios reais da administração.",
+      },
+    },
   },
   footer: {
-    //trazer todo conteúdo do footer
+    copyrightLine: `© ${currentYear} ${infos.name}. Todos os direitos reservados.`,
+    disclaimer: `Este site não é um produto Meta Platforms, Inc., Google LLC, tampouco oferece serviços públicos oficiais. ${infos.name} oferece serviços jurídicos privativos de advogado, de acordo com a legislação vigente e o Código de Ética e Disciplina da Ordem dos Advogados do Brasil.`,
   },
 };
 
