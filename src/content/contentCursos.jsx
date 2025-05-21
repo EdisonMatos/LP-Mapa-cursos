@@ -1,12 +1,12 @@
-import imgCurso1 from "../assets/imgs/hero/cursoHero1.webp";
-import imgCurso3 from "../assets/imgs/hero/cursoHero2.webp";
-import imgCurso2 from "../assets/imgs/hero/cursoHero3.webp";
+import imgCurso1 from "../assets/imgs/hero/curso1.jpeg";
+import imgCurso3 from "../assets/imgs/hero/curso2.jpg";
+import imgCurso2 from "../assets/imgs/hero/curso3.jpg";
 import imgCursoAnterior1 from "../assets/imgs/hero/cursoAnteriorHero1.webp";
 import imgCursoAnterior2 from "../assets/imgs/hero/cursoAnteriorHero2.webp";
 import imgCursoAnterior3 from "../assets/imgs/hero/cursoAnteriorHero3.webp";
 import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
 import logo from "../assets/imgs/logo/logo.png";
-import { infos } from "./content";
+import content, { infos } from "./content";
 
 const currentYear = new Date().getFullYear();
 
@@ -150,15 +150,15 @@ const cursosDataBase = {
       nome: "Primeiro Curso",
       data: "22/04/2025 ",
       hora: "15h",
-      titulo: "Improbidade e Controle de Contas",
-      subtitulo: "Garanta a transparência e evite irregularidades financeiras.",
+      titulo: "Licitações e Contratações",
+      subtitulo: "Garanta eficiência e legalidade nas contratações públicas.",
       status: "A_Definir", //realizado ou futuro
-      rota: "/curso-improbidade-22-04", // (/rota)
+      rota: content.texts.links.ctaWhatsapp, // (/rota)
       imgs: {
         imgCard: { imgCurso1 }, //img do card
         imgHero: bgImg,
       },
-      labelButton: "Saiba mais",
+      labelButton: "Acesse agora!",
       landingPage: {
         programacao: {
           icon: (
@@ -204,30 +204,32 @@ const cursosDataBase = {
       nome: "Segundo Curso",
       data: "29/05/2025 ",
       hora: "15h",
-      titulo: "A integração dos poderes na Gestão Pública",
-      subtitulo: "Fortaleça a governança com colaboração entre os poderes.",
-      status: "futuro", //realizado ou futuro
-      rota: "A_Definir", // (/rota)
+      titulo: "A Escola e o Conselho Tutelar",
+      subtitulo:
+        "Parceria essencial na proteção dos direitos da criança e do adolescente.",
+      status: "ativo", //realizado ou futuro
+      rota: content.texts.links.ctaWhatsapp, // (/rota)
       imgs: {
         imgCard: { imgCurso2 }, //img do card
         imgHero: bgImg,
       },
-      labelButton: "Em breve!",
+      labelButton: "Acesse agora!",
     },
     curso3: {
       id: "003",
       nome: "Terceiro Curso",
       data: "13/05/2025 ",
       hora: "15h",
-      titulo: "Licitações e Contratação",
-      subtitulo: "Garanta eficiência e legalidade nas contratações públicas.",
-      status: "futuro", //realizado ou futuro
-      rota: "A_Definir", // (/rota)
+      titulo: "Responsabilidade Administrativa e Fiscal",
+      subtitulo:
+        "Cumprimento das obrigações legais e transparência na gestão pública.",
+      status: "ativo", //realizado ou futuro
+      rota: content.texts.links.ctaWhatsapp, // (/rota)
       imgs: {
         imgCard: { imgCurso3 }, //img do card
         imgHero: bgImg,
       },
-      labelButton: "Em breve!",
+      labelButton: "Acesse agora!",
       landingPage: {
         programacao: {
           icon: (
