@@ -148,17 +148,17 @@ const cursosDataBase = {
     curso1: {
       id: "001",
       nome: "Primeiro Curso",
-      data: "22/04/2025 ",
-      hora: "15h",
+      data: "29 E 30 DE MAIO DE 2025",
+      hora: "",
       titulo: "Licitações e Contratações",
       subtitulo: "Garanta eficiência e legalidade nas contratações públicas.",
       status: "A_Definir", //realizado ou futuro
-      rota: content.texts.links.ctaWhatsapp, // (/rota)
+      rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
         imgCard: { imgCurso1 }, //img do card
         imgHero: bgImg,
       },
-      labelButton: "Acesse agora!",
+      labelButton: "Inscreva-se agora",
       landingPage: {
         programacao: {
           icon: (
@@ -202,8 +202,8 @@ const cursosDataBase = {
     curso2: {
       id: "002",
       nome: "Segundo Curso",
-      data: "29/05/2025 ",
-      hora: "15h",
+      data: "26 E 27 DE JUNHO DE 2025",
+      hora: "",
       titulo: "A Escola e o Conselho Tutelar",
       subtitulo:
         "Parceria essencial na proteção dos direitos da criança e do adolescente.",
@@ -213,13 +213,13 @@ const cursosDataBase = {
         imgCard: { imgCurso2 }, //img do card
         imgHero: bgImg,
       },
-      labelButton: "Acesse agora!",
+      labelButton: "Inscreva-se agora",
     },
     curso3: {
       id: "003",
       nome: "Terceiro Curso",
-      data: "13/05/2025 ",
-      hora: "15h",
+      data: "11 A 13 DE JUNHO DE 2025",
+      hora: "",
       titulo: "Responsabilidade Administrativa e Fiscal",
       subtitulo:
         "Cumprimento das obrigações legais e transparência na gestão pública.",
@@ -229,7 +229,7 @@ const cursosDataBase = {
         imgCard: { imgCurso3 }, //img do card
         imgHero: bgImg,
       },
-      labelButton: "Acesse agora!",
+      labelButton: "Inscreva-se agora",
       landingPage: {
         programacao: {
           icon: (
