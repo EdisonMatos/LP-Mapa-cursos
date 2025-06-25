@@ -1,6 +1,6 @@
-import imgCurso1 from "../assets/imgs/hero/curso1.jpeg";
-import imgCurso3 from "../assets/imgs/hero/curso2.jpg";
-import imgCurso2 from "../assets/imgs/hero/curso3.jpg";
+import imgCurso1 from "../assets/imgs/hero/curso1.jpg";
+import imgCurso2 from "../assets/imgs/hero/curso2.jpg";
+import imgCurso3 from "../assets/imgs/hero/curso3.jpg";
 import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
 import logo from "../assets/imgs/logo/logo.png";
 import content, { infos } from "./content";

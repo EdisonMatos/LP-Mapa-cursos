@@ -27,7 +27,7 @@ export default function CursosMinistrados() {
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior1}
                     title="STF, Prefeituras e Câmaras"
-                    date="04 de dezembro de 2024"
+                    date="Fevereiro de 2025"
                     description="Os reflexos e os efeitos das decisões do Judiciário no Executivo e no Legislativo no encerramento de mandato."
                     button={false}
                   />
@@ -35,7 +35,7 @@ export default function CursosMinistrados() {
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior2}
                     title="Atividade Parlamentar"
-                    date="26 de junho de 2024"
+                    date="29 a 30 de Maio"
                     description="Estrutura  daAdministração Pública e a fiscalização do Legislativo."
                     button={false}
                   />
@@ -43,7 +43,7 @@ export default function CursosMinistrados() {
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior3}
                     title="A Escola e o Conselho Tutelar"
-                    date="Fevereiro de 2025"
+                    date="11 a 13 de Junho"
                     description="Um elo de integração na rede de proteção e garantia de direitos da criança e do adolescente."
                     button={false}
                   />
