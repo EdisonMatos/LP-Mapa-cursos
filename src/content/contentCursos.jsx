@@ -145,17 +145,18 @@ const cursosDataBase = {
     curso1: {
       id: "001",
       nome: "Primeiro Curso",
-      data: "29 E 30 DE MAIO DE 2025",
+      data: "26 e 27 de Junho de 2025",
       hora: "",
-      titulo: "Licitações e Contratações",
-      subtitulo: "Garanta eficiência e legalidade nas contratações públicas.",
+      titulo: "A Escola e o Conselho Tutelar",
+      subtitulo:
+        "Parceria essencial na proteção dos direitos da criança e do adolescente.",
       status: "A_Definir", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
         imgCard: { imgCurso1 }, //img do card
         imgHero: bgImg,
       },
-      labelButton: "Inscreva-se agora",
+      labelButton: "Inscreva-se agora!",
       landingPage: {
         programacao: {
           icon: (
@@ -199,34 +200,34 @@ const cursosDataBase = {
     curso2: {
       id: "002",
       nome: "Segundo Curso",
-      data: "26 E 27 DE JUNHO DE 2025",
+      data: "09 a 11 de Julho de 2025",
       hora: "",
-      titulo: "A Escola e o Conselho Tutelar",
+      titulo: "1º Encontro Decifra o Direito",
       subtitulo:
-        "Parceria essencial na proteção dos direitos da criança e do adolescente.",
+        "Conhecimento jurídico descomplicado para estudantes e profissionais em um evento imperdível.",
       status: "ativo", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
         imgCard: { imgCurso2 }, //img do card
         imgHero: bgImg,
       },
-      labelButton: "Inscreva-se agora",
+      labelButton: "Inscreva-se agora!",
     },
     curso3: {
       id: "003",
       nome: "Terceiro Curso",
-      data: "11 A 13 DE JUNHO DE 2025",
+      data: "06 a 08 de Agosto de 2025",
       hora: "",
-      titulo: "Responsabilidade Administrativa e Fiscal",
+      titulo: "Integração Municipal ao Governo Federal",
       subtitulo:
-        "Cumprimento das obrigações legais e transparência na gestão pública.",
+        "Fortalecendo a cooperação entre municípios e a União para uma gestão mais eficiente.",
       status: "ativo", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
         imgCard: { imgCurso3 }, //img do card
         imgHero: bgImg,
       },
-      labelButton: "Inscreva-se agora",
+      labelButton: "Inscreva-se agora!",
       landingPage: {
         programacao: {
           icon: (
