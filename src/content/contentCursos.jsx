@@ -1,9 +1,6 @@
 import imgCurso1 from "../assets/imgs/hero/curso1.jpeg";
 import imgCurso3 from "../assets/imgs/hero/curso2.jpg";
 import imgCurso2 from "../assets/imgs/hero/curso3.jpg";
-import imgCursoAnterior1 from "../assets/imgs/hero/cursoAnteriorHero1.webp";
-import imgCursoAnterior2 from "../assets/imgs/hero/cursoAnteriorHero2.webp";
-import imgCursoAnterior3 from "../assets/imgs/hero/cursoAnteriorHero3.webp";
 import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
 import logo from "../assets/imgs/logo/logo.png";
 import content, { infos } from "./content";
