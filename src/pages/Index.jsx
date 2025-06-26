@@ -17,6 +17,7 @@ import BackToTopButton from "../components/interactives/BackToTopButton";
 import ProximosCursos from "../components/sections/ProximosCursos";
 import CursosMinistrados from "../components/sections/CursosAnteriores";
 import DownloadArchives from "../components/sections/Downloads";
+import Structure from "../components/sections/Structure";
 
 export default function Index() {
   return (
@@ -47,7 +48,8 @@ export default function Index() {
       <Cta />
       <Steps />
       <Form />
-      <DownloadArchives/>
+      <DownloadArchives />
+      <Structure />
       <Faq />
       <FooterSocial
         addres={true}
