@@ -47,7 +47,7 @@ export default function Index() {
       <Cta />
       <Steps />
       <Form />
-      <DownloadArchives/>
+      <DownloadArchives />
       <Faq />
       <FooterSocial
         addres={true}
@@ -56,6 +56,7 @@ export default function Index() {
         linkedin={true}
         x={false}
         obs={false}
+        icon={true}
       />
       <FloatingWhatsappButton />
       <BackToTopButton />
