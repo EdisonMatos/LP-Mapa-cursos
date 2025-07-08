@@ -13,6 +13,7 @@ import { CalendarCheck2 } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { Mail } from "lucide-react";
 import { classNames } from "primereact/utils";
+import icon0 from "../../assets/imgs/icons/icon0.png";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -24,6 +25,7 @@ export default function FooterSocial({
   facebook,
   linkedin,
   x,
+  icon,
 }) {
   return (
     <footer
@@ -288,6 +290,26 @@ export default function FooterSocial({
                                 <rect width="4" height="12" x="2" y="9" />
                                 <circle cx="4" cy="4" r="2" />
                               </svg>
+                            }
+                          />
+                        </a>
+                      </MotionDivDownToUp>
+                    )}
+
+                    {icon && (
+                      <MotionDivDownToUp>
+                        {" "}
+                        <a
+                          href="//www.instagram.com/p/DJuxNAJuOat/?img_index=1"
+                          target="_blank"
+                        >
+                          <IconButton
+                            icon={
+                              <img
+                                src={icon0}
+                                alt="ícone"
+                                className="w-5 h-5"
+                              />
                             }
                           />
                         </a>
