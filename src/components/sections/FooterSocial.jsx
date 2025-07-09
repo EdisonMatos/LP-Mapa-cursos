@@ -311,7 +311,7 @@ export default function FooterSocial({
                         <MotionDivDownToUp>
                           {" "}
                           <a
-                            href="//www.instagram.com/p/DJuxNAJuOat/?img_index=1"
+                            href="https://www.instagram.com/agencia.28/"
                             target="_blank"
                           >
                             <IconButton
@@ -323,7 +323,7 @@ export default function FooterSocial({
                                 <img
                                   src={icon0}
                                   alt="ícone"
-                                  className="w-20 h-20 "
+                                  className="w-20 h-20"
                                 />
                               }
                             />
