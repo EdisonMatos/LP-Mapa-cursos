@@ -1,9 +1,15 @@
 export default function IconButton(props) {
-  const { icon, label, ariaLabel, className } = props;
+  const {
+    icon,
+    label,
+    ariaLabel,
+    className = "",
+    padding = "px-[12px] py-[10px]", // valor padrão se não passar
+  } = props;
 
   return (
     <button
-      className={`${className} flex flex-row items-center justify-center transition rounded-[10px] px-[12px] py-[10px] bg-primary hover:scale-110 text-primary border-primary`}
+      className={`${className} ${padding} flex flex-row items-center justify-center transition rounded-[10px] bg-primary hover:scale-110 text-primary border-primary`}
       aria-label={ariaLabel}
     >
       <div className="flex items-center text-center gap-[10px]">

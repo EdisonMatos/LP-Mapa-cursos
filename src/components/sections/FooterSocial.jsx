@@ -14,6 +14,7 @@ import { MapPin } from "lucide-react";
 import { Mail } from "lucide-react";
 import { classNames } from "primereact/utils";
 import icon0 from "../../assets/imgs/icons/icon0.png";
+import Button from "../interactives/Button";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
@@ -165,48 +166,6 @@ export default function FooterSocial({
                 <div className="mt-2 opacity-90">
                   {" "}
                   <div className="flex gap-[10px] items-center">
-                    {/* Instagram icon */}
-                    {instagram && (
-                      <MotionDivDownToUp>
-                        {" "}
-                        <a
-                          href={content.texts.links.instagram}
-                          target="_blank"
-                          aria-label="Link para o Instagram"
-                        >
-                          <IconButton
-                            ariaLabel="Botão para o Instagram"
-                            icon={
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="transparent"
-                                stroke="white"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-instagram"
-                              >
-                                <rect
-                                  width="20"
-                                  height="20"
-                                  x="2"
-                                  y="2"
-                                  rx="5"
-                                  ry="5"
-                                />
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                              </svg>
-                            }
-                          />
-                        </a>
-                        {/* Instagram icon */}
-                      </MotionDivDownToUp>
-                    )}
-
                     {facebook && (
                       <MotionDivDownToUp>
                         {" "}
@@ -238,83 +197,140 @@ export default function FooterSocial({
                       </MotionDivDownToUp>
                     )}
 
-                    {x && (
-                      <MotionDivDownToUp>
+                    <div>
+                      <div className="flex gap-3">
                         {" "}
-                        <a
-                          href={content.texts.links.x}
-                          target="_blank"
-                          aria-label="Link para o Facebook"
-                        >
-                          <IconButton
-                            ariaLabel="Botão para o Facebook"
-                            icon={
-                              <svg
-                                viewBox="0 0 21.573 19.5"
-                                version="1.1"
-                                id="svg4"
-                                width="20"
-                                height="20"
-                              >
-                                <defs id="defs8" />
-                                <path
-                                  d="m 16.998462,0 h 3.308 l -7.227,8.26 8.502,11.24 h -6.657 l -5.2139994,-6.817 -5.966,6.817 H 0.43446256 L 8.1644626,10.665 0.00846256,0 H 6.8344626 l 4.7129994,6.231 z m -1.161,17.52 h 1.833 L 5.8384626,1.876 h -1.967 z"
-                                  id="path2"
-                                />
-                              </svg>
-                            }
-                          />
-                        </a>
-                      </MotionDivDownToUp>
-                    )}
-
-                    {linkedin && (
-                      <MotionDivDownToUp>
-                        {" "}
-                        <a href={content.texts.links.linkedin} target="_blank">
-                          <IconButton
-                            icon={
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="transparent"
-                                stroke="white"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-linkedin"
-                              >
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                <rect width="4" height="12" x="2" y="9" />
-                                <circle cx="4" cy="4" r="2" />
-                              </svg>
-                            }
-                          />
-                        </a>
-                      </MotionDivDownToUp>
-                    )}
-
-                    {icon && (
-                      <MotionDivDownToUp>
-                        {" "}
-                        <a
-                          href="//www.instagram.com/p/DJuxNAJuOat/?img_index=1"
-                          target="_blank"
-                        >
-                          <IconButton
-                            icon={
-                              <img
-                                src={icon0}
-                                alt="ícone"
-                                className="w-5 h-5"
+                        {x && (
+                          <MotionDivDownToUp>
+                            {" "}
+                            <a
+                              href={content.texts.links.x}
+                              target="_blank"
+                              aria-label="Link para o Facebook"
+                            >
+                              <IconButton
+                                ariaLabel="Botão para o Facebook"
+                                icon={
+                                  <svg
+                                    viewBox="0 0 21.573 19.5"
+                                    version="1.1"
+                                    id="svg4"
+                                    width="20"
+                                    height="20"
+                                  >
+                                    <defs id="defs8" />
+                                    <path
+                                      d="m 16.998462,0 h 3.308 l -7.227,8.26 8.502,11.24 h -6.657 l -5.2139994,-6.817 -5.966,6.817 H 0.43446256 L 8.1644626,10.665 0.00846256,0 H 6.8344626 l 4.7129994,6.231 z m -1.161,17.52 h 1.833 L 5.8384626,1.876 h -1.967 z"
+                                      id="path2"
+                                    />
+                                  </svg>
+                                }
                               />
-                            }
-                          />
-                        </a>
-                      </MotionDivDownToUp>
-                    )}
+                            </a>
+                          </MotionDivDownToUp>
+                        )}
+                        {/* Instagram icon */}
+                        {instagram && (
+                          <MotionDivDownToUp>
+                            {" "}
+                            <a
+                              href={content.texts.links.instagram}
+                              target="_blank"
+                              aria-label="Link para o Instagram"
+                            >
+                              <IconButton
+                                ariaLabel="Botão para o Instagram"
+                                icon={
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="transparent"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-instagram"
+                                  >
+                                    <rect
+                                      width="20"
+                                      height="20"
+                                      x="2"
+                                      y="2"
+                                      rx="5"
+                                      ry="5"
+                                    />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line
+                                      x1="17.5"
+                                      x2="17.51"
+                                      y1="6.5"
+                                      y2="6.5"
+                                    />
+                                  </svg>
+                                }
+                              />
+                            </a>
+                            {/* Instagram icon */}
+                          </MotionDivDownToUp>
+                        )}
+                        {linkedin && (
+                          <MotionDivDownToUp>
+                            {" "}
+                            <a
+                              href={content.texts.links.linkedin}
+                              target="_blank"
+                            >
+                              <IconButton
+                                icon={
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="transparent"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-linkedin"
+                                  >
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect width="4" height="12" x="2" y="9" />
+                                    <circle cx="4" cy="4" r="2" />
+                                  </svg>
+                                }
+                              />
+                            </a>
+                          </MotionDivDownToUp>
+                        )}
+                      </div>
+
+                      {icon && (
+                        <MotionDivDownToUp>
+                          {" "}
+                          <a
+                            href="//www.instagram.com/p/DJuxNAJuOat/?img_index=1"
+                            target="_blank"
+                          >
+                            <IconButton
+                              className="bg-transparent mt-4"
+                              padding="p-0"
+                              size="small"
+                              gap={false}
+                              icon={
+                                <img
+                                  src={icon0}
+                                  alt="ícone"
+                                  className="w-20 h-20 "
+                                />
+                              }
+                            />
+                          </a>
+                        </MotionDivDownToUp>
+                      )}
+                    </div>
                   </div>
                 </div>
               </MotionDivDownToUp>
