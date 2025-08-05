@@ -26,25 +26,25 @@ export default function CursosMinistrados() {
                 <div className="flex flex-col items-center gap-4 tablet1:flex-row tablet1:items-start desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior1}
-                    title="STF, Prefeituras e Câmaras"
-                    date="Fevereiro de 2025"
-                    description="Os reflexos e os efeitos das decisões do Judiciário no Executivo e no Legislativo no encerramento de mandato."
+                    title="A escola e o conselho tutelar"
+                    date="26 e 27 de Junho"
+                    description="Atendimento, acolhimento e gerenciamos de crise de adolescentes, o elo que integra a rede de proteção e a garantia de direitos da criança e do adolescente."
                     button={false}
                   />
 
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior2}
-                    title="Atividade Parlamentar"
-                    date="29 a 30 de Maio"
-                    description="Estrutura  daAdministração Pública e a fiscalização do Legislativo."
+                    title="1º Encontro (Descifra o Direito)"
+                    date="09 a 11 de Julho"
+                    description="Prefeitos, Vereadores e Servidores: conhecimento jurídico na prática."
                     button={false}
                   />
 
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior3}
-                    title="A Escola e o Conselho Tutelar"
-                    date="11 a 13 de Junho"
-                    description="Um elo de integração na rede de proteção e garantia de direitos da criança e do adolescente."
+                    title="Integração Municipal ao Governo Federal"
+                    date="06 a 08 de Agosto"
+                    description="Projeções para arrecadação e recebimento de recursos federais."
                     button={false}
                   />
                 </div>
