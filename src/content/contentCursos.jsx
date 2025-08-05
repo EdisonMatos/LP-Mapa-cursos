@@ -145,11 +145,11 @@ const cursosDataBase = {
     curso1: {
       id: "001",
       nome: "Primeiro Curso",
-      data: "26 e 27 de Junho de 2025",
+      data: "13 a 15 de Agosto de 2025",
       hora: "",
-      titulo: "A Escola e o Conselho Tutelar",
+      titulo: "Execução Fiscal Municipal e Conciliação",
       subtitulo:
-        "Parceria essencial na proteção dos direitos da criança e do adolescente.",
+        "A utilização dos juizados especiais da Fazenda Pública para o aumento e captação de receitas para as Prefeituras",
       status: "A_Definir", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
@@ -200,11 +200,11 @@ const cursosDataBase = {
     curso2: {
       id: "002",
       nome: "Segundo Curso",
-      data: "09 a 11 de Julho de 2025",
+      data: "27 a 29 de Agosto de 2025",
       hora: "",
-      titulo: "1º Encontro Decifra o Direito",
+      titulo: "Processo Administrativo Disciplinar",
       subtitulo:
-        "Conhecimento jurídico descomplicado para estudantes e profissionais em um evento imperdível.",
+        "As diretrizes e a uniformização da legislação municipal e federal na condução dos processos disciplinares.",
       status: "ativo", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
@@ -216,11 +216,11 @@ const cursosDataBase = {
     curso3: {
       id: "003",
       nome: "Terceiro Curso",
-      data: "06 a 08 de Agosto de 2025",
+      data: "17 a 19 de Setembro de 2025",
       hora: "",
-      titulo: "Integração Municipal ao Governo Federal",
+      titulo: "Habitação e Moradia: Referência de destaque",
       subtitulo:
-        "Fortalecendo a cooperação entre municípios e a União para uma gestão mais eficiente.",
+        "Capacitação com especialista na área em políticas eficazes de habitação e moradia para populações em risco social.",
       status: "ativo", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
