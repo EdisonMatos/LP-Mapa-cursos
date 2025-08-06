@@ -34,7 +34,7 @@ export default function CursosMinistrados() {
 
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior2}
-                    title="1º Encontro (Descifra o Direito)"
+                    title="1º Encontro (Decifra o Direito)"
                     date="09 a 11 de Julho"
                     description="Prefeitos, Vereadores e Servidores: conhecimento jurídico na prática."
                     button={false}
