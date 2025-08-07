@@ -47,7 +47,7 @@ export default function Index() {
       <Cta />
       <Steps />
       <Form />
-      <DownloadArchives />
+      {/* <DownloadArchives /> */}
       <Faq />
       <FooterSocial
         addres={true}
