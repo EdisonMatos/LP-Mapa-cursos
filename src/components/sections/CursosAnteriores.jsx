@@ -4,9 +4,9 @@ import CardHeroCursos from "../cards/CardHero";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgCursoAnterior1 from "../../assets/imgs/hero/cursoAnteriorHero1.jpg";
-import imgCursoAnterior2 from "../../assets/imgs/hero/cursoAnteriorHero2.jpg";
-import imgCursoAnterior3 from "../../assets/imgs/hero/cursoAnteriorHero3.jpg";
+import imgCursoAnterior1 from "../../assets/imgs/hero/cursoAnteriorHero1.webp";
+import imgCursoAnterior2 from "../../assets/imgs/hero/cursoAnteriorHero2.webp";
+import imgCursoAnterior3 from "../../assets/imgs/hero/cursoAnteriorHero3.webp";
 
 export default function CursosMinistrados() {
   return (
@@ -26,25 +26,25 @@ export default function CursosMinistrados() {
                 <div className="flex flex-col items-center gap-4 tablet1:flex-row tablet1:items-start desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior1}
-                    title="A escola e o conselho tutelar"
-                    date="26 e 27 de Junho"
-                    description="Atendimento, acolhimento e gerenciamos de crise de adolescentes, o elo que integra a rede de proteção e a garantia de direitos da criança e do adolescente."
+                    title="Execução Fiscal Municipal e Conciliação"
+                    date="13 a 15 de Agosto"
+                    description="A utilização dos juizados especiais da Fazenda Pública para o aumento e captação de receitas para as Prefeituras."
                     button={false}
                   />
 
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior2}
-                    title="1º Encontro (Decifra o Direito)"
-                    date="09 a 11 de Julho"
-                    description="Prefeitos, Vereadores e Servidores: conhecimento jurídico na prática."
+                    title="Processo Administrativo Disciplinar"
+                    date="27 a 29 de Agosto"
+                    description="As diretrizes e a uniformização da legislação municipal e federal na condução dos processos disciplinares."
                     button={false}
                   />
 
                   <CardHeroCursos
                     imageUrl={imgCursoAnterior3}
-                    title="Integração Municipal ao Governo Federal"
-                    date="06 a 08 de Agosto"
-                    description="Projeções para arrecadação e recebimento de recursos federais."
+                    title="Habitação e Moradia: Referência de Destaque"
+                    date="17 a 19 de Setembro"
+                    description="Capacitação com especialista na área em políticas eficazes de habitação e de moradia [ara populações em risco social."
                     button={false}
                   />
                 </div>

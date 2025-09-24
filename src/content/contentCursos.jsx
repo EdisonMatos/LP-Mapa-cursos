@@ -1,6 +1,6 @@
-import imgCurso1 from "../assets/imgs/hero/curso1.jpg";
-import imgCurso2 from "../assets/imgs/hero/curso2.jpg";
-import imgCurso3 from "../assets/imgs/hero/curso3.jpg";
+import imgCurso1 from "../assets/imgs/hero/curso1.webp";
+import imgCurso2 from "../assets/imgs/hero/curso2.webp";
+import imgCurso3 from "../assets/imgs/hero/curso3.webp";
 import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
 import logo from "../assets/imgs/logo/logo.png";
 import content, { infos } from "./content";
@@ -145,11 +145,11 @@ const cursosDataBase = {
     curso1: {
       id: "001",
       nome: "Primeiro Curso",
-      data: "13 a 15 de Agosto de 2025",
+      data: "15 a 17 de Outubro de 2025",
       hora: "",
-      titulo: "Execução Fiscal Municipal e Conciliação",
+      titulo: "Prefeituras: Concurso público e PSS",
       subtitulo:
-        "A utilização dos juizados especiais da Fazenda Pública para o aumento e captação de receitas para as Prefeituras",
+        "O estudo preliminar e os critérios legais para abertura dos procedimentos de contratação de funcionários.",
       status: "A_Definir", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
@@ -200,11 +200,11 @@ const cursosDataBase = {
     curso2: {
       id: "002",
       nome: "Segundo Curso",
-      data: "27 a 29 de Agosto de 2025",
+      data: "22 a 24 de Outubro de 2025",
       hora: "",
-      titulo: "Processo Administrativo Disciplinar",
+      titulo: "Violência nas escolas: Desafios pedagógicos",
       subtitulo:
-        "As diretrizes e a uniformização da legislação municipal e federal na condução dos processos disciplinares.",
+        "A condução da gestão de crise e soluções para problemas de segurança pública que envolvam crianças e adolescentes na rede municipal.",
       status: "ativo", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
@@ -216,11 +216,11 @@ const cursosDataBase = {
     curso3: {
       id: "003",
       nome: "Terceiro Curso",
-      data: "17 a 19 de Setembro de 2025",
+      data: "29 a 31 de Outubro de 2025",
       hora: "",
-      titulo: "Habitação e Moradia: Referência de destaque",
+      titulo: "Reformas administrativas municipais",
       subtitulo:
-        "Capacitação com especialista na área em políticas eficazes de habitação e moradia para populações em risco social.",
+        "A necessidade de atualização do ordenamento jurídico municipal diante dos avanços tecnológicos dos ambientes de trabalho e da gestão de serviços públicos.",
       status: "ativo", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
