@@ -44,7 +44,7 @@ import TypewriterComponent from "../components/animation/TypeWriter";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Mapa Cursos",
+  name: "Mapa Instituto ",
   email: "mapacursos", // Email desejado pelo cliente
   domain: "outlook.com", // Sem "www"
   phone: {
@@ -55,9 +55,9 @@ export const infos = {
   endereco: (
     <div>
       <p>Endereço:</p>
-      <p>Rua Otelo Celestino de Castilho, Nº 768 Coqueiral </p>
-      <p>Cascavel - PR</p>
-      <p>CEP 85807-590</p>
+      <p>Rua Paraná, nº 5906, bairro Coqueiral, </p>
+      <p>Cascavel - PR,</p>
+      <p>CEP: 85807-040</p>
     </div>
   ),
   expediente: (
@@ -68,7 +68,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A Definir</span>,
-  instagramProfile: "mapacursos", // Sem o @
+  instagramProfile: "mapainstituto", // Sem o @
   facebookProfile: "A_Definir",
   linkeDinProfile: "company/mapa-cursos",
   x: "A_Definir",
@@ -191,7 +191,7 @@ const content = {
     },
     features: {
       miniTag: "A ESCOLHA CERTA",
-      title: "Por que a Mapa Cursos é a melhor escolha?",
+      title: "Por que a Mapa Instituto é a melhor escolha?",
       subtitle:
         "Transformando seu futuro com ensino de qualidade e suporte personalizado.",
       imgFeatures: imgFeatures,
@@ -389,14 +389,14 @@ const content = {
         img: aboutImg1,
         alt: "Imagem profissional de escritório/advogado(a)",
       },
-      miniTag: "QUEM É A MAPA CURSOS",
+      miniTag: "QUEM É A MAPA INSTITUTO",
       title: "Nossa trajetória",
       subtitle:
         "Capacitando agentes públicos com ensino de excelência e aplicação prática.",
       paragraph: (
         <div>
           Fundado com o propósito de qualificar agentes públicos e fortalecer a
-          administração pública, o Mapa Cursos se tornou referência na
+          administração pública, o Mapa Instituto se tornou referência na
           capacitação de profissionais que atuam diretamente na gestão e na
           governança do país.
         </div>
@@ -405,7 +405,7 @@ const content = {
       modal: (
         <p>
           Fundado com o propósito de qualificar agentes públicos e fortalecer a
-          administração pública, o Mapa Cursos se tornou referência na
+          administração pública, o Mapa Instituto se tornou referência na
           capacitação de profissionais que atuam diretamente na gestão e na
           governança do país.
           <br />
@@ -431,23 +431,23 @@ const content = {
           pública.
           <br />
           <br />
-          À frente do Mapa Cursos está Dhiego Bernardo Alves, advogado com mais
-          de 10 anos de experiência e especialista em Direito Constitucional,
-          Administrativo e Eleitoral. Além de atuar como assessor jurídico de
-          parlamentares, Dhiego tem se dedicado à docência há mais de dois anos,
-          compartilhando sua expertise para capacitar profissionais do Direito e
-          do setor público.
+          À frente do Mapa Instituto está Dhiego Bernardo Alves, advogado com
+          mais de 10 anos de experiência e especialista em Direito
+          Constitucional, Administrativo e Eleitoral. Além de atuar como
+          assessor jurídico de parlamentares, Dhiego tem se dedicado à docência
+          há mais de dois anos, compartilhando sua expertise para capacitar
+          profissionais do Direito e do setor público.
           <br />
           <br />
-          Como fundador e diretor geral do Mapa Cursos, ele desenvolveu um
+          Como fundador e diretor geral do Mapa Instituto, ele desenvolveu um
           método de ensino que une uma base teórica sólida com a aplicação
           prática, garantindo que os alunos estejam preparados para os desafios
           reais da gestão pública.
           <br />
           <br />
-          O compromisso do Mapa Cursos vai além do ensino: é um projeto voltado
-          para a construção de um setor público mais qualificado, ético e
-          eficiente, impactando diretamente a sociedade e promovendo uma
+          O compromisso do Mapa Instituto vai além do ensino: é um projeto
+          voltado para a construção de um setor público mais qualificado, ético
+          e eficiente, impactando diretamente a sociedade e promovendo uma
           administração mais transparente e eficaz.
           <br />
           <br />
@@ -613,7 +613,7 @@ const content = {
       subtitle:
         "Utilize o mapa abaixo para chegar até nós com mais facilidade.",
       embedsrc:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5228.594742930791!2d-51.169466!3d-23.321824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb435bf9b37d8f%3A0xfb3125702df9f29d!2sMolina%20%26%20Spigarollo%20%7C%20Advogados%20Associados!5e1!3m2!1spt-BR!2sbr!4v1736876812303!5m2!1spt-BR!2sbr",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.4009268790483!2d-53.49094078847178!3d-24.95247041407768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d6b2a59fc7b9%3A0x6c8edc11e02ae267!2sR.%20Paran%C3%A1%2C%205906%20-%20Bairro%20Coqueiral%2C%20Cascavel%20-%20PR%2C%2085807-040!5e0!3m2!1spt-BR!2sbr!4v1759431227980!5m2!1spt-BR!2sbr",
     },
     team: {
       title: "A_Definir",

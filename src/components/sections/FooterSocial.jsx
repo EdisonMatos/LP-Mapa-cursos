@@ -66,8 +66,8 @@ export default function FooterSocial({
               <MotionDivDownToUp>
                 <div className="flex full gap-x-[12px] items-center opacity-90">
                   <Mail />
-
-                  <p className="text-paragraph2">{content.texts.infos.email}</p>
+                  <p className="text-paragraph2">mapainstituto@outlook.com</p>
+                  {/* <p className="text-paragraph2">{content.texts.infos.email}</p> */}
                 </div>
               </MotionDivDownToUp>
               {addres && (
