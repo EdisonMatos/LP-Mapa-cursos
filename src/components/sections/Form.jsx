@@ -62,7 +62,7 @@ export default function Form() {
             </p> */}
             <div className="opacity-90">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.3038891068445!2d-53.460854324083016!3d-24.955773414298356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d41255163be7%3A0xa84988c1eb304712!2sAv.%20Brasil%2C%206269%20-%20Centro%2C%20Cascavel%20-%20PR%2C%2085801-000!5e0!3m2!1spt-BR!2sbr!4v1741716896129!5m2!1spt-BR!2sbr"
+                src={content.texts.maps.embedsrc}
                 width="100%"
                 height=""
                 style={{ border: 0 }}
@@ -71,7 +71,6 @@ export default function Form() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-[10px] h-[350px] desktop1:h-[420px]"
               />
-
             </div>
             {/* <img
               alt="Imagem de efeito pontilhado"
