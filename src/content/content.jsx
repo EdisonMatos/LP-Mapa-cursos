@@ -98,15 +98,15 @@ const content = {
       miniTag: "ASSESSORIA PARA ÓRGÃOS E AGENTES PÚBLICOS EM CASCAVEL - PR",
       title: (
         <h1 className="mb-[16px]">
-          Esteja
+          Capacite-se com o Mapa Instituto e conquiste soluções práticas
           <span className="text-white">
             {" "}
-            <TypewriterComponent
+            para a gestão pública eficiente.{" "}
+            {/* <TypewriterComponent
               strings={["qualificado", "atualizado", "preparado"]}
               className="my-typewriter"
-            />{" "}
+            />{" "} */}
           </span>
-          para os desafios do serviço público
         </h1>
       ),
       subtitle:
@@ -191,7 +191,7 @@ const content = {
     },
     features: {
       miniTag: "A ESCOLHA CERTA",
-      title: "Por que a Mapa Instituto é a melhor escolha?",
+      title: "Por que o Mapa Instituto é a melhor escolha?",
       subtitle:
         "Transformando seu futuro com ensino de qualidade e suporte personalizado.",
       imgFeatures: imgFeatures,
@@ -389,7 +389,7 @@ const content = {
         img: aboutImg1,
         alt: "Imagem profissional de escritório/advogado(a)",
       },
-      miniTag: "QUEM É A MAPA INSTITUTO",
+      miniTag: "QUEM É O MAPA INSTITUTO",
       title: "Nossa trajetória",
       subtitle:
         "Capacitando agentes públicos com ensino de excelência e aplicação prática.",
