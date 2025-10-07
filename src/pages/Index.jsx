@@ -17,6 +17,7 @@ import BackToTopButton from "../components/interactives/BackToTopButton";
 import ProximosCursos from "../components/sections/ProximosCursos";
 import CursosMinistrados from "../components/sections/CursosAnteriores";
 import DownloadArchives from "../components/sections/Downloads";
+import Team from "../components/sections/Team";
 
 export default function Index() {
   return (
@@ -43,6 +44,7 @@ export default function Index() {
         x={false}
         test={true}
       />
+      <Team />
       <Depoimentos />
       <Cta />
       <Steps />

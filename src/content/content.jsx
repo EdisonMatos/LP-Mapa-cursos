@@ -616,16 +616,18 @@ const content = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.4009268790483!2d-53.49094078847178!3d-24.95247041407768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d6b2a59fc7b9%3A0x6c8edc11e02ae267!2sR.%20Paran%C3%A1%2C%205906%20-%20Bairro%20Coqueiral%2C%20Cascavel%20-%20PR%2C%2085807-040!5e0!3m2!1spt-BR!2sbr!4v1759431227980!5m2!1spt-BR!2sbr",
     },
     team: {
-      title: "A_Definir",
-      subtitle: "A_Definir",
+      minitag: "NOSSO TIME",
+      title: "Conheça os profissionais que fazem a diferença",
+      subtitle:
+        "Um time multidisciplinar, experiente e comprometido com a excelência em ensino, pesquisa e gestão pública.",
       members: {
         member1: {
           img: {
             img: teamMemberImg1,
-            alt: "Edison Matos",
+            alt: "Memnro 1 da equipe",
           },
-          name: "Edison Matos",
-          role: "CEO & Diretor de Desenvolvimento",
+          name: "Dhiego Bernardo Alves",
+          role: "Advogado atuante em mais de 40 processos, Fundador e Coordenador do Mapa Instituto",
           socialMedia: {
             icon1: (
               <svg
@@ -688,10 +690,10 @@ const content = {
         member2: {
           img: {
             img: teamMemberImg2,
-            alt: "Gabriel Adans",
+            alt: "Menro 2 da equipe",
           },
-          name: "Gabriel Adans",
-          role: "Marketing Outsourcing",
+          name: "Margareth Alves",
+          role: "Formada em Direito, Ciências Biológicas, Letras/Literatura e Marketing.",
           socialMedia: {
             icon1: (
               <svg
@@ -754,10 +756,10 @@ const content = {
         member3: {
           img: {
             img: teamMemberImg3,
-            alt: "Gabriel Souza",
+            alt: "Membro 3 da equipe",
           },
-          name: "Gabriel Souza",
-          role: "Desenvolvedor Frontend",
+          name: "Ian Vargas",
+          role: "Advogado. Pós-graduação em Direito do Estado pela Universidade Estadual de Londrina (UEL)",
           socialMedia: {
             icon1: (
               <svg
@@ -820,10 +822,10 @@ const content = {
         member4: {
           img: {
             img: teamMemberImg4,
-            alt: "Luiz Felipe",
+            alt: "Membro 4 da Equipe",
           },
-          name: "Luiz Felipe",
-          role: "Designer Ourtsourcing",
+          name: "Amauri de Lima",
+          role: "Doutor em Letras. Assessor Pedagógico do Programa 'A União Faz a Vida' (Fundação Sicredi 2014-2022).",
           socialMedia: {
             icon1: (
               <svg
