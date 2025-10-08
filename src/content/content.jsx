@@ -98,19 +98,19 @@ const content = {
       miniTag: "ASSESSORIA PARA ÓRGÃOS E AGENTES PÚBLICOS EM CASCAVEL - PR",
       title: (
         <h1 className="mb-[16px]">
-          Capacite-se com o Mapa Instituto e conquiste soluções práticas
+          Esteja
           <span className="text-white">
             {" "}
-            para a gestão pública eficiente.{" "}
-            {/* <TypewriterComponent
+            <TypewriterComponent
               strings={["qualificado", "atualizado", "preparado"]}
               className="my-typewriter"
-            />{" "} */}
+            />{" "}
           </span>
+          para os desafios do serviço público
         </h1>
       ),
       subtitle:
-        "Capacite-se com a Mapa Cursos e conquiste soluções práticas para a gestão pública eficiente.",
+        "Capacite-se com o Mapa Instituto e conquiste soluções práticas para a gestão pública eficiente.",
       heroImg: heroImg,
       ctaButtonText: "Entre em contato",
       obsHero: {
