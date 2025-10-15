@@ -627,7 +627,7 @@ const content = {
             alt: "Memnro 1 da equipe",
           },
           name: "Dhiego Bernardo Alves",
-          role: "Advogado atuante em mais de 40 processos, Fundador e Coordenador do Mapa Instituto",
+          role: "Advogado, fundador e coordenador do Mapa Instituto",
           socialMedia: {
             icon1: (
               <svg
@@ -693,7 +693,7 @@ const content = {
             alt: "Menro 2 da equipe",
           },
           name: "Margareth Alves",
-          role: "Formada em Direito, Ciências Biológicas, Letras/Literatura e Marketing.",
+          role: "Policial e professora. Formada em Direito, Ciências Biológicas, Letras/Literatura e Marketing",
           socialMedia: {
             icon1: (
               <svg
@@ -759,7 +759,7 @@ const content = {
             alt: "Membro 3 da equipe",
           },
           name: "Ian Vargas",
-          role: "Advogado. Pós-graduação em Direito do Estado pela Universidade Estadual de Londrina (UEL)",
+          role: "Advogado, Mestre em Direito",
           socialMedia: {
             icon1: (
               <svg
