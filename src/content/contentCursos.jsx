@@ -1,6 +1,6 @@
-import imgCurso1 from "../assets/imgs/hero/curso1.webp";
-import imgCurso2 from "../assets/imgs/hero/curso2.webp";
-import imgCurso3 from "../assets/imgs/hero/curso3.webp";
+import imgCurso1 from "../assets/imgs/cursos/curso1.webp";
+import imgCurso2 from "../assets/imgs/cursos/curso2.webp";
+import imgCurso3 from "../assets/imgs/cursos/curso3.webp";
 import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
 import logo from "../assets/imgs/logo/logo.png";
 import content, { infos } from "./content";
@@ -145,11 +145,11 @@ const cursosDataBase = {
     curso1: {
       id: "001",
       nome: "Primeiro Curso",
-      data: "15 a 17 de Outubro de 2025",
+      data: "05 a 07 de Novembro de 2025",
       hora: "",
-      titulo: "Prefeituras: Concurso público e PSS",
+      titulo: "Liderança e Alta Performance no Setor Público",
       subtitulo:
-        "O estudo preliminar e os critérios legais para abertura dos procedimentos de contratação de funcionários.",
+        "Ferramentas práticas para gestores que querem motivar equipes, melhorar entregas e revolucionar a cultura organizacional.",
       status: "A_Definir", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
@@ -200,11 +200,11 @@ const cursosDataBase = {
     curso2: {
       id: "002",
       nome: "Segundo Curso",
-      data: "22 a 24 de Outubro de 2025",
+      data: "12 a 14 de Novembro de 2025",
       hora: "",
-      titulo: "Violência nas escolas: Desafios pedagógicos",
+      titulo: "Compras Governamentais Inteligentes",
       subtitulo:
-        "A condução da gestão de crise e soluções para problemas de segurança pública que envolvam crianças e adolescentes na rede municipal.",
+        "Do planejamento ao pregão: reduza riscos, aumente a eficiência e economize recursos públicos com segurança jurídica.",
       status: "ativo", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
@@ -216,11 +216,11 @@ const cursosDataBase = {
     curso3: {
       id: "003",
       nome: "Terceiro Curso",
-      data: "29 a 31 de Outubro de 2025",
+      data: "26 a 28 de Novembro de 2025",
       hora: "",
-      titulo: "Reformas administrativas municipais",
+      titulo: "Gestão Pública Estratégica para Pequenos Municípios",
       subtitulo:
-        "A necessidade de atualização do ordenamento jurídico municipal diante dos avanços tecnológicos dos ambientes de trabalho e da gestão de serviços públicos.",
+        "Como planejar, executar e transformar políticas públicas mesmo com equipe enxuta e orçamento limitado.",
       status: "ativo", //realizado ou futuro
       rota: content.texts.links.ctaWhatsappCurso, // (/rota)
       imgs: {
