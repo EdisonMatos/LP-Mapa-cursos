@@ -4,9 +4,6 @@ import CardHeroCursos from "../cards/CardHero";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgCurso1 from "../../assets/imgs/hero/cursoHero1.webp";
-import imgCurso2 from "../../assets/imgs/hero/cursoHero2.webp";
-import imgCurso3 from "../../assets/imgs/hero/cursoHero3.webp";
 import { cursosDataBase } from "../../content/contentCursos";
 
 export default function ProximosCursos() {
@@ -36,6 +33,7 @@ export default function ProximosCursos() {
                     buttonLink={cursosDataBase.curso.curso1.rota}
                     labelButton={cursosDataBase.curso.curso1.labelButton}
                     className=""
+                    button={false}
                   />
 
                   <CardHeroCursos
@@ -49,6 +47,7 @@ export default function ProximosCursos() {
                     buttonLink={cursosDataBase.curso.curso2.rota}
                     labelButton={cursosDataBase.curso.curso2.labelButton}
                     className=""
+                    button={false}
                   />
 
                   <CardHeroCursos
@@ -62,6 +61,7 @@ export default function ProximosCursos() {
                     buttonLink={cursosDataBase.curso.curso3.rota}
                     labelButton={cursosDataBase.curso.curso3.labelButton}
                     className=""
+                    button={false}
                   />
                 </div>
               </div>
