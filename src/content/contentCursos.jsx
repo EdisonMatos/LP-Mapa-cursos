@@ -153,7 +153,6 @@ const cursosDataBase = {
         titulo: "Prefeituras: Concurso público e PSS",
         subtitulo:
           "O estudo preliminar e os critérios legais para abertura dos procedimentos de contratação de funcionários.",
-        status: "A_Definir",
         imgs: curso1,
       },
       {
@@ -163,7 +162,6 @@ const cursosDataBase = {
         titulo: "Violência nas escolas: Desafios pedagógicos",
         subtitulo:
           "A condução da gestão de crise e soluções para problemas de segurança pública que envolvam crianças e adolescentes na rede municipal.",
-        status: "ativo",
         imgs: curso2,
       },
       {
@@ -173,51 +171,42 @@ const cursosDataBase = {
         titulo: "Reformas administrativas municipais",
         subtitulo:
           "A necessidade de atualização do ordenamento jurídico municipal diante dos avanços tecnológicos dos ambientes de trabalho e da gestão de serviços públicos.",
-        status: "ativo",
         imgs: curso3,
       },
       {
         id: 4,
-        nome: "Primeiro Curso",
         data: "05 a 07 de Novembro de 2025",
         hora: "",
         titulo: "Liderança e Alta Performance no Setor Público",
         subtitulo:
           "Ferramentas práticas para gestores que querem motivar equipes, melhorar entregas e revolucionar a cultura organizacional.",
-        status: "A_Definir",
         imgs: curso4,
       },
       {
         id: 5,
-        nome: "Segundo Curso",
         data: "12 a 14 de Novembro de 2025",
         hora: "",
         titulo: "Compras Governamentais Inteligentes",
         subtitulo:
           "Do planejamento ao pregão: reduza riscos, aumente a eficiência e economize recursos públicos com segurança jurídica.",
-        status: "ativo",
         imgs: curso5,
       },
       {
         id: 6,
-        nome: "Terceiro Curso",
         data: "26 a 28 de Novembro de 2025",
         hora: "",
         titulo: "Gestão Pública Estratégica para Pequenos Municípios",
         subtitulo:
           "Como planejar, executar e transformar políticas públicas mesmo com equipe enxuta e orçamento limitado.",
-        status: "ativo",
         imgs: curso6,
       },
       {
         id: 7,
-        nome: "Segundo Curso",
         data: "20 de Agosto de 2025",
         hora: "",
         titulo: "Compras Governamentais Inteligentes",
         subtitulo:
           "Do planejamento ao pregão: reduza riscos, aumente a eficiência e economize recursos públicos com segurança jurídica.",
-        status: "ativo",
         imgs: curso6,
       },
     ],
