@@ -56,11 +56,11 @@ export default function CursosMinistrados() {
         />
 
         <MotionDivDownToUp>
-          <div className="flex flex-wrap gap-6 w-full">
+          <div className="flex flex-wrap justify-center gap-5 w-full">
             {ministradosOrdenados.map((card) => (
               <CardHeroCursos
                 key={card.id}
-                imageUrl={card.imgs.imgCard}
+                imageUrl={card.imgs}
                 title={card.titulo}
                 date={card.data}
                 hora={card.hora}
