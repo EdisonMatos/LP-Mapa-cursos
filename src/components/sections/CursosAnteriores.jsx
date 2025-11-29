@@ -1,58 +1,78 @@
-import content from "../../content/content";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import CardHeroCursos from "../cards/CardHero";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import imgCursoAnterior1 from "../../assets/imgs/cursos/cursoAnteriorHero1.webp";
-import imgCursoAnterior2 from "../../assets/imgs/cursos/cursoAnteriorHero2.webp";
-import imgCursoAnterior3 from "../../assets/imgs/cursos/cursoAnteriorHero3.webp";
+import { cursosDataBase } from "../../content/contentCursos";
+import content from "../../content/content";
 
 export default function CursosMinistrados() {
+  // pega apenas os ministrados
+  const ministradosCursosData = cursosDataBase.curso.ministrados;
+
+  // converte "15 a 17 de Outubro de 2025" → Date
+  function getDataInicio(curso) {
+    const texto = curso.data;
+
+    const diaInicio = Number(texto.match(/\d{1,2}/)[0]);
+
+    const mesNome = texto.match(
+      /Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro/
+    )[0];
+
+    const ano = Number(texto.match(/\d{4}/)[0]);
+
+    const meses = {
+      Janeiro: 0,
+      Fevereiro: 1,
+      Março: 2,
+      Abril: 3,
+      Maio: 4,
+      Junho: 5,
+      Julho: 6,
+      Agosto: 7,
+      Setembro: 8,
+      Outubro: 9,
+      Novembro: 10,
+      Dezembro: 11,
+    };
+
+    return new Date(ano, meses[mesNome], diaInicio);
+  }
+
+  // ordena da data mais antiga para a mais recente
+  const ministradosOrdenados = [...ministradosCursosData].sort(
+    (a, b) => getDataInicio(a) - getDataInicio(b)
+  );
+
   return (
-    <div>
-      <SectionArea className="bg-bgSectionDark">
-        <SectionWrapper>
-          <SectionHeader
-            className="text-center"
-            miniTitle="Cursos Anteriores"
-            sectionHeaderTitle="Cursos Ministrados"
-            sectionHeaderSubtitle="Saiba quais cursos tivemos em nossa unidade de cursos para não perder nenhuma oportunidade"
-            color=""
-          />
-          <MotionDivDownToUp>
-            <div className="flex justify-center w-full">
-              <div className="flex flex-col w-full gap-8 ">
-                <div className="flex flex-col items-center gap-4 tablet1:flex-row tablet1:items-start desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
-                  <CardHeroCursos
-                    imageUrl={imgCursoAnterior1}
-                    title="Prefeituras: Concurso público e PSS"
-                    date="15 a 17 de Outubro de 2025"
-                    description="O estudo preliminar e os critérios legais para abertura dos procedimentos de contratação de funcionários."
-                    button={false}
-                  />
+    <SectionArea className="bg-bgSectionDark">
+      <SectionWrapper>
+        <SectionHeader
+          className="text-center"
+          miniTitle={content.texts.cursosMinistrados.miniTag}
+          sectionHeaderTitle={content.texts.cursosMinistrados.title}
+          sectionHeaderSubtitle={content.texts.cursosMinistrados.subtitle}
+        />
 
-                  <CardHeroCursos
-                    imageUrl={imgCursoAnterior2}
-                    title="Violência nas escolas: Desafios pedagógicos"
-                    date="22 a 24 de Outubro de 2025"
-                    description="A condução da gestão de crise e soluções para problemas de segurança pública que envolvam crianças e adolescentes na rede municipal."
-                    button={false}
-                  />
-
-                  <CardHeroCursos
-                    imageUrl={imgCursoAnterior3}
-                    title="Reformas administrativas municipais"
-                    date="29 a 31 de Outubro de 2025"
-                    description="A necessidade de atualização do ordenamento jurídico municipal diante dos avanços tecnológicos dos ambientes de trabalho e da gestão de serviços públicos."
-                    button={false}
-                  />
-                </div>
-              </div>
-            </div>
-          </MotionDivDownToUp>
-        </SectionWrapper>
-      </SectionArea>
-    </div>
+        <MotionDivDownToUp>
+          <div className="flex flex-wrap gap-6 w-full">
+            {ministradosOrdenados.map((card) => (
+              <CardHeroCursos
+                key={card.id}
+                imageUrl={card.imgs.imgCard}
+                title={card.titulo}
+                date={card.data}
+                hora={card.hora}
+                description={card.subtitulo}
+                buttonLink={card.rota}
+                labelButton={card.labelButton}
+                button={false}
+              />
+            ))}
+          </div>
+        </MotionDivDownToUp>
+      </SectionWrapper>
+    </SectionArea>
   );
 }
