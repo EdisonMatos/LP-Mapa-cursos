@@ -60,7 +60,7 @@ export default function CursosMinistrados() {
             {ministradosOrdenados.map((card) => (
               <CardHeroCursos
                 key={card.id}
-                imageUrl={card.imgs.imgCard}
+                imageUrl={card.imgs}
                 title={card.titulo}
                 date={card.data}
                 hora={card.hora}
