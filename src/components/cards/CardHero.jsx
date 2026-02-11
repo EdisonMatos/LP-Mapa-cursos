@@ -27,11 +27,11 @@ export default function CardHeroCursos({
   return (
     <MotionDivDownToUp className="flex justify-center w-fit py-4">
       <div
-        className={`max-w-[337px] tablet1:max-w-[300px] desktop2:max-w-[360px] h-fit bg-white flex p-5 shadow-xl rounded-[10px] ${className}`}
+        className={`max-w-[300px] w-fit h-fit bg-white flex p-5 shadow-xl rounded-[10px] ${className}`}
       >
         <div className="flex flex-col gap-4 w-full desktop2:p-[4px]">
           <img
-            className="rounded-[10px] max-h-[400px]"
+            className="rounded-[10px] max-h-[400px] desktop1:w-fit"
             src={imageUrl}
             alt={title}
           />
