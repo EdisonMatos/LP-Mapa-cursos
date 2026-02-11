@@ -1,26 +1,26 @@
-import curso4 from "../assets/imgs/cursos/curso4.webp";
-import curso5 from "../assets/imgs/cursos/curso5.webp";
-import curso6 from "../assets/imgs/cursos/curso6.webp";
-import curso1 from "../assets/imgs/cursos/curso1.webp";
-import curso2 from "../assets/imgs/cursos/curso2.webp";
-import curso3 from "../assets/imgs/cursos/curso3.webp";
-import bgImg from "../assets/imgs/hero/bgHeroLp01.webp";
-import logo from "../assets/imgs/logo/logo.png";
-import content, { infos } from "./content";
+import curso4 from '../assets/imgs/cursos/curso4.webp'
+import curso5 from '../assets/imgs/cursos/curso5.webp'
+import curso6 from '../assets/imgs/cursos/curso6.webp'
+import curso1 from '../assets/imgs/cursos/curso1.webp'
+import curso2 from '../assets/imgs/cursos/curso2.webp'
+import curso3 from '../assets/imgs/cursos/curso3.webp'
+import bgImg from '../assets/imgs/hero/bgHeroLp01.webp'
+import logo from '../assets/imgs/logo/logo.png'
+import content, { infos } from './content'
 
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear()
 
 const landingPageInfos = {
   about: {
     bgImg: bgImg,
     logo: {
       logoImg: logo,
-      alt: "Logomarca",
+      alt: 'Logomarca',
     },
     sectionHeader: {
-      miniTag: "GESTÃO COM QUEM ENTENDE",
+      miniTag: 'GESTÃO COM QUEM ENTENDE',
       title:
-        "A capacitação que separa profissionais comuns de referências na gestão pública",
+        'A capacitação que separa profissionais comuns de referências na gestão pública',
     },
     paragraph: (
       <p>
@@ -33,13 +33,13 @@ const landingPageInfos = {
         armadilhas que podem custar sua carreira.
       </p>
     ),
-    buttonLabel: "Quero falar com um especialista",
-    ctaButtonAriaLabel: "Fortaleça sua atuação na gestão pública.",
+    buttonLabel: 'Quero falar com um especialista',
+    ctaButtonAriaLabel: 'Fortaleça sua atuação na gestão pública.',
   },
   whyUs: {
     sectionHeader: {
-      miniTag: "O ESPECIALISTA EM AÇÃO",
-      title: "Aprenda com quem já transformou a Gestão Pública",
+      miniTag: 'O ESPECIALISTA EM AÇÃO',
+      title: 'Aprenda com quem já transformou a Gestão Pública',
     },
     cards: {
       card1: {
@@ -61,9 +61,9 @@ const landingPageInfos = {
             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
           </svg>
         ),
-        title: "Formação acadêmica e experiência jurídica",
+        title: 'Formação acadêmica e experiência jurídica',
         description:
-          "Bacharel em Direito pela UDC Cataratas, com mais de 40 processos de cassação eleitoral no Paraná. Dhiego Alves tem a experiência necessária para ensinar o que realmente importa na gestão pública.",
+          'Bacharel em Direito pela UDC Cataratas, com mais de 40 processos de cassação eleitoral no Paraná. Dhiego Alves tem a experiência necessária para ensinar o que realmente importa na gestão pública.',
       },
       card2: {
         icon: (
@@ -84,9 +84,9 @@ const landingPageInfos = {
             <path d="M22 19H2" />
           </svg>
         ),
-        title: "Especializações que fazem a diferença",
+        title: 'Especializações que fazem a diferença',
         description:
-          "Pós-graduado em Controle de Constitucionalidade e Direito Eleitoral, Dhiego é especialista em áreas essenciais para quem atua na administração pública e quer evitar falhas jurídicas.",
+          'Pós-graduado em Controle de Constitucionalidade e Direito Eleitoral, Dhiego é especialista em áreas essenciais para quem atua na administração pública e quer evitar falhas jurídicas.',
       },
       card3: {
         icon: (
@@ -107,9 +107,9 @@ const landingPageInfos = {
             <path d="M10 22h4" />
           </svg>
         ),
-        title: "Experiência em assessoria eleitoral",
+        title: 'Experiência em assessoria eleitoral',
         description:
-          "Assessor jurídico eleitoral com experiência prática em cassações eleitorais, Dhiego Alves traz a vivência necessária para a aplicação real dos conceitos no campo da gestão pública.",
+          'Assessor jurídico eleitoral com experiência prática em cassações eleitorais, Dhiego Alves traz a vivência necessária para a aplicação real dos conceitos no campo da gestão pública.',
       },
       card4: {
         icon: (
@@ -131,9 +131,9 @@ const landingPageInfos = {
             <path d="M16 3.13a4 4 0 0 1 0 7.75" />
           </svg>
         ),
-        title: "Líder pedagógico do Mapa Cursos",
+        title: 'Líder pedagógico do Mapa Cursos',
         description:
-          "Como coordenador pedagógico do Mapa Cursos, Dhiego Alves aplica seu vasto conhecimento para transformar a capacitação de agentes públicos, preparando-os para os desafios reais da administração.",
+          'Como coordenador pedagógico do Mapa Cursos, Dhiego Alves aplica seu vasto conhecimento para transformar a capacitação de agentes públicos, preparando-os para os desafios reais da administração.',
       },
     },
   },
@@ -141,73 +141,67 @@ const landingPageInfos = {
     copyrightLine: `© ${currentYear} ${infos.name}. Todos os direitos reservados.`,
     disclaimer: `Este site não é um produto Meta Platforms, Inc., Google LLC, tampouco oferece serviços públicos oficiais. ${infos.name} oferece serviços jurídicos privativos de advogado, de acordo com a legislação vigente e o Código de Ética e Disciplina da Ordem dos Advogados do Brasil.`,
   },
-};
+}
 
 const cursosDataBase = {
   curso: {
     proximos: [
       {
         id: 1,
-        data: "15 a 17 de Outubro de 2025",
-        hora: "",
-        titulo: "Prefeituras: Concurso público e PSS",
+        data: '05 a 07 de Novembro de 2025',
+        hora: '',
+        titulo: 'Liderança e Alta Performance no Setor Público',
         subtitulo:
-          "O estudo preliminar e os critérios legais para abertura dos procedimentos de contratação de funcionários.",
-        imgs: curso1,
-      },
-      {
-        id: 2,
-        data: "22 a 24 de Outubro de 2025",
-        hora: "",
-        titulo: "Violência nas escolas: Desafios pedagógicos",
-        subtitulo:
-          "A condução da gestão de crise e soluções para problemas de segurança pública que envolvam crianças e adolescentes na rede municipal.",
-        imgs: curso2,
-      },
-      {
-        id: 3,
-        data: "29 a 31 de Outubro de 2025",
-        hora: "",
-        titulo: "Reformas administrativas municipais",
-        subtitulo:
-          "A necessidade de atualização do ordenamento jurídico municipal diante dos avanços tecnológicos dos ambientes de trabalho e da gestão de serviços públicos.",
-        imgs: curso3,
-      },
-      {
-        id: 4,
-        data: "05 a 07 de Novembro de 2025",
-        hora: "",
-        titulo: "Liderança e Alta Performance no Setor Público",
-        subtitulo:
-          "Ferramentas práticas para gestores que querem motivar equipes, melhorar entregas e revolucionar a cultura organizacional.",
+          'Ferramentas práticas para gestores que querem motivar equipes, melhorar entregas e revolucionar a cultura organizacional.',
         imgs: curso4,
       },
       {
-        id: 5,
-        data: "12 a 14 de Novembro de 2025",
-        hora: "",
-        titulo: "Compras Governamentais Inteligentes",
+        id: 2,
+        data: '12 a 14 de Novembro de 2025',
+        hora: '',
+        titulo: 'Compras Governamentais Inteligentes',
         subtitulo:
-          "Do planejamento ao pregão: reduza riscos, aumente a eficiência e economize recursos públicos com segurança jurídica.",
+          'Do planejamento ao pregão: reduza riscos, aumente a eficiência e economize recursos públicos com segurança jurídica.',
         imgs: curso5,
       },
       {
-        id: 6,
-        data: "26 a 28 de Novembro de 2025",
-        hora: "",
-        titulo: "Gestão Pública Estratégica para Pequenos Municípios",
+        id: 3,
+        data: '26 a 28 de Novembro de 2025',
+        hora: '',
+        titulo: 'Gestão Pública Estratégica para Pequenos Municípios',
         subtitulo:
-          "Como planejar, executar e transformar políticas públicas mesmo com equipe enxuta e orçamento limitado.",
+          'Como planejar, executar e transformar políticas públicas mesmo com equipe enxuta e orçamento limitado.',
         imgs: curso6,
       },
+
       {
-        id: 7,
-        data: "20 de Agosto de 2025",
-        hora: "",
-        titulo: "Compras Governamentais Inteligentes",
-        subtitulo:
-          "Do planejamento ao pregão: reduza riscos, aumente a eficiência e economize recursos públicos com segurança jurídica.",
-        imgs: curso6,
+        id: 4,
+        data: '24 a 27 de Fevereiro de 2026',
+        hora: '',
+        titulo: 'Regimento Interno das Câmaras',
+        subtitulo: 'Interpretação, votação e reforma',
+        imgs: curso1,
+      },
+      {
+        id: 5,
+        data: '24 a 27 de Março de 2026',
+        hora: '',
+        titulo: 'A Decisão do STF Sobre os Penduricalhos Remuneratórios',
+        subtitulo: (
+          <>
+            Riscos jurídicos e financeiros para <strong>Prefeituras</strong> e
+            <strong> Câmaras</strong> legislativas
+          </>
+        ),
+        imgs: curso2,
+      },
+      {
+        id: 6,
+        data: '29 e 30 de Abril de 2026',
+        hora: '',
+        titulo: 'Licitações na Prática',
+        subtitulo: 'Planejamento, Inteligência Artificial e Oficinas Práticas',
+        imgs: curso3,
       },
     ],
     ministrados: [],
@@ -235,7 +229,7 @@ const cursosDataBase = {
             <rect x="2" y="5" width="20" height="14" rx="2" />
           </svg>
         ),
-        titulo: "Dia 22/04 – Recepção e Credenciamento",
+        titulo: 'Dia 22/04 – Recepção e Credenciamento',
         subtitulo: (
           <p>
             <strong>15:00 às 17:00</strong>
@@ -266,7 +260,7 @@ const cursosDataBase = {
             <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
           </svg>
         ),
-        titulo: "Dia 23/04 – Improbidade e Controle Fiscal",
+        titulo: 'Dia 23/04 – Improbidade e Controle Fiscal',
         subtitulo: (
           <p>
             <strong>09:00 às 12:00 – Abertura</strong> <br /> - Entrega de
@@ -303,7 +297,7 @@ const cursosDataBase = {
             <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
           </svg>
         ),
-        titulo: " Dia 24/04 – Procedimentos e Licitações",
+        titulo: ' Dia 24/04 – Procedimentos e Licitações',
         subtitulo: (
           <p>
             <strong>09:00 às 12:00 – Aula</strong>
@@ -341,7 +335,7 @@ const cursosDataBase = {
             <path d="M7 16.5 8 22l-3-1-3 1 1-5.5" />
           </svg>
         ),
-        titulo: "Dia 25/04 – Encerramento e Certificação",
+        titulo: 'Dia 25/04 – Encerramento e Certificação',
         subtitulo: (
           <p>
             <strong>09:00 às 12:00</strong>
@@ -372,9 +366,9 @@ const cursosDataBase = {
           <path d="M4 4v7a4 4 0 0 0 4 4h12" />
         </svg>
       ),
-      title: "Acadêmicos de universidades e faculdades",
-      valor: "R$200,00",
-      buttonLabel: "Inscrever-se",
+      title: 'Acadêmicos de universidades e faculdades',
+      valor: 'R$200,00',
+      buttonLabel: 'Inscrever-se',
     },
     card2: {
       icon: (
@@ -394,9 +388,9 @@ const cursosDataBase = {
           <path d="M4 4v7a4 4 0 0 0 4 4h12" />
         </svg>
       ),
-      title: "Profissionais do Direito e da iniciativa privada",
-      valor: "R$400,00",
-      buttonLabel: "Inscrever-se",
+      title: 'Profissionais do Direito e da iniciativa privada',
+      valor: 'R$400,00',
+      buttonLabel: 'Inscrever-se',
     },
     card3: {
       icon: (
@@ -416,17 +410,17 @@ const cursosDataBase = {
           <path d="M4 4v7a4 4 0 0 0 4 4h12" />
         </svg>
       ),
-      title: "Servidores Públicos / Agentes Políticos",
-      valor: "R$2.500,00",
-      buttonLabel: "Inscrever-se",
+      title: 'Servidores Públicos / Agentes Políticos',
+      valor: 'R$2.500,00',
+      buttonLabel: 'Inscrever-se',
     },
     paragrafoRodape: (
       <p>
-        {" "}
+        {' '}
         Nossa empresa está em total conformidade com a Lei Geral de Proteção de
         Dados (LGPD). Para garantir a segurança e a privacidade das suas
         informações, a confirmação de inscrição será realizada exclusivamente
-        por e-mail e/ou WhatsApp, após o envio do formulário preenchido. <br />{" "}
+        por e-mail e/ou WhatsApp, após o envio do formulário preenchido. <br />{' '}
         <br /> Pedimos que complete o formulário de maneira detalhada para que
         nossa equipe possa entrar em contato e concluir sua inscrição. A Nota
         Fiscal Eletrônica (NFe) será emitida em até 1 (um) dia útil após a
@@ -435,6 +429,6 @@ const cursosDataBase = {
       </p>
     ),
   },
-};
+}
 
-export { cursosDataBase, landingPageInfos };
+export { cursosDataBase, landingPageInfos }

@@ -1,13 +1,13 @@
-import { useNavigate } from "react-router-dom";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import Button from "../interactives/Button";
+import { useNavigate } from 'react-router-dom'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import Button from '../interactives/Button'
 
 export default function CardHeroCursos({
   imageUrl,
   title,
   date,
   hora,
-  className = "", // Adicionando className como propriedade
+  className = '', // Adicionando className como propriedade
   description,
   buttonLink,
   buttonColor,
@@ -15,22 +15,26 @@ export default function CardHeroCursos({
   onClick,
   button = true, // Define true como padrão
 }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const handleButtonClick = () => {
-    window.open(buttonLink, "_blank");
+    window.open(buttonLink, '_blank')
     if (onClick) {
-      onClick();
+      onClick()
     }
-  };
+  }
 
   return (
     <MotionDivDownToUp className="flex justify-center w-fit py-4">
       <div
-        className={`w-[90%] tablet1:max-w-[300px] desktop2:max-w-[360px] bg-white flex p-5 shadow-xl rounded-[10px] ${className}`}
+        className={`max-w-[337px] tablet1:max-w-[300px] desktop2:max-w-[360px] h-fit bg-white flex p-5 shadow-xl rounded-[10px] ${className}`}
       >
         <div className="flex flex-col gap-4 w-full desktop2:p-[4px]">
-          <img className="rounded-[10px]" src={imageUrl} alt={title} />
+          <img
+            className="rounded-[10px] max-h-[400px]"
+            src={imageUrl}
+            alt={title}
+          />
           <div className="flex flex-col w-full h-full">
             <p className="text-black/50 text-paragraph2">
               {date} {hora && <span>-</span>} {hora}
@@ -76,5 +80,5 @@ export default function CardHeroCursos({
         </div>
       </div>
     </MotionDivDownToUp>
-  );
+  )
 }
