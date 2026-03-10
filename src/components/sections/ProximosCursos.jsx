@@ -1,23 +1,23 @@
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import CardHeroCursos from '../cards/CardHero'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionHeader from '../sectionElements/SectionHeader'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import { cursosDataBase } from '../../content/contentCursos'
-import content from '../../content/content'
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import CardHeroCursos from "../cards/CardHero";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionHeader from "../sectionElements/SectionHeader";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import { cursosDataBase } from "../../content/contentCursos";
+import content from "../../content/content";
 
 export default function ProximosCursos() {
-  const proximos = cursosDataBase.curso.proximos
-  const ministrados = cursosDataBase.curso.ministrados
+  const proximos = cursosDataBase.curso.proximos;
+  const ministrados = cursosDataBase.curso.ministrados;
 
   // função que converte data para Date
   function getDataInicio(curso) {
-    const texto = curso.data || ''
-    const dia = Number(texto.match(/\d{1,2}/)?.[0] || 1)
+    const texto = curso.data || "";
+    const dia = Number(texto.match(/\d{1,2}/)?.[0] || 1);
     const mesNome = texto.match(
       /Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro/,
-    )?.[0]
-    const ano = Number(texto.match(/\d{4}/)?.[0] || new Date().getFullYear())
+    )?.[0];
+    const ano = Number(texto.match(/\d{4}/)?.[0] || new Date().getFullYear());
 
     const meses = {
       Janeiro: 0,
@@ -32,37 +32,37 @@ export default function ProximosCursos() {
       Outubro: 9,
       Novembro: 10,
       Dezembro: 11,
-    }
+    };
 
-    return new Date(ano, meses[mesNome] ?? 0, dia)
+    return new Date(ano, meses[mesNome] ?? 0, dia);
   }
 
   // data atual
-  const hoje = new Date()
+  const hoje = new Date();
 
   // ordena próximos por data
-  proximos.sort((a, b) => getDataInicio(a) - getDataInicio(b))
+  proximos.sort((a, b) => getDataInicio(a) - getDataInicio(b));
 
   // enquanto houver mais de 3, remove o curso mais antigo que seja **antes da data atual**
   while (proximos.length > 3) {
     // encontra o índice do curso mais antigo antes de hoje
     const indexMaisAntigo = proximos.findIndex(
       (curso) => getDataInicio(curso) < hoje,
-    )
+    );
 
     // se não tiver nenhum mais antigo, remove o último
     const cursoParaMinistrados =
       indexMaisAntigo >= 0
         ? proximos.splice(indexMaisAntigo, 1)[0]
-        : proximos.pop()
+        : proximos.pop();
 
-    ministrados.push(cursoParaMinistrados)
+    ministrados.push(cursoParaMinistrados);
   }
 
-  const proximosCursos = proximos.slice(0, 3)
+  const proximosCursos = proximos.slice(0, 3);
 
   return (
-    <SectionArea className="bg-white squares">
+    <SectionArea className="bg-white squares" paddingbot={false}>
       <SectionWrapper>
         <SectionHeader
           className="text-center"
@@ -91,5 +91,5 @@ export default function ProximosCursos() {
         </MotionDivDownToUp>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
