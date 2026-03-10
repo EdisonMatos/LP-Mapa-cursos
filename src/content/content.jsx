@@ -431,7 +431,7 @@ const content = {
           mais de 10 anos de experiência e especialista em Direito
           Constitucional, Administrativo e Eleitoral. Além de atuar como
           assessor jurídico de parlamentares, Dhiego tem se dedicado à docência
-          há mais de dois anos, compartilhando sua expertise para capacitar
+          há mais de oito anos, compartilhando sua expertise para capacitar
           profissionais do Direito e do setor público.
           <br />
           <br />
