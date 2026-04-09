@@ -265,7 +265,7 @@ export default function ListGroupSocial({ LightMode }) {
               }
             />
           </a> */}
-          <a
+          {/* <a
             href={content.texts.links.linkedin}
             target="_blank"
             className={scrolling ? "" : ""}
@@ -290,7 +290,7 @@ export default function ListGroupSocial({ LightMode }) {
                 </svg>
               }
             />
-          </a>
+          </a> */}
 
           {/* Fim Botões das redes sociais na navbar */}
         </div>

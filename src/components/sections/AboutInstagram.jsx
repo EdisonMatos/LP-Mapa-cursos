@@ -134,7 +134,7 @@ export default function AboutInstagram({
               />
             )}
 
-            {linkedin && (
+            {/* {linkedin && (
               <Button
                 label={content.texts.about.aboutSocial.labelLinkedin}
                 buttonLink={content.texts.links.linkedin}
@@ -157,7 +157,7 @@ export default function AboutInstagram({
                   </svg>
                 }
               />
-            )}
+            )} */}
           </div>
         </div>
       </SectionWrapper>

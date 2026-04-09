@@ -275,7 +275,7 @@ export default function FooterSocial({
                             {/* Instagram icon */}
                           </MotionDivDownToUp>
                         )}
-                        {linkedin && (
+                        {/* {linkedin && (
                           <MotionDivDownToUp>
                             {" "}
                             <a
@@ -304,7 +304,7 @@ export default function FooterSocial({
                               />
                             </a>
                           </MotionDivDownToUp>
-                        )}
+                        )} */}
                       </div>
 
                       {icon && (
@@ -315,7 +315,7 @@ export default function FooterSocial({
                             target="_blank"
                           >
                             <IconButton
-                              className="bg-transparent mt-4"
+                              className="mt-4 bg-transparent"
                               padding="p-0"
                               size="small"
                               gap={false}
