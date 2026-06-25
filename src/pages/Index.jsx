@@ -18,6 +18,7 @@ import ProximosCursos from "../components/sections/ProximosCursos";
 import CursosMinistrados from "../components/sections/CursosAnteriores";
 import DownloadArchives from "../components/sections/Downloads";
 import Team from "../components/sections/Team";
+import BannerDestaque from "../components/sections/BannerDestaque";
 
 export default function Index() {
   return (
@@ -26,6 +27,7 @@ export default function Index() {
       <Hero appDownloadButtons={false} />
       {/* <ProximosCursos /> */}
       {/* <CursosMinistrados /> */}
+      <BannerDestaque />
       <Features
         defaultFeature={false}
         imageFeatures={true}
