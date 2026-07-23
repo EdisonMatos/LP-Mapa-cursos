@@ -19,6 +19,7 @@ import CursosMinistrados from "../components/sections/CursosAnteriores";
 import DownloadArchives from "../components/sections/Downloads";
 import Team from "../components/sections/Team";
 import BannerDestaque from "../components/sections/BannerDestaque";
+import BannerDestaquePratica from "../components/sections/BannerDestaquePratica";
 
 export default function Index() {
   return (
@@ -27,6 +28,7 @@ export default function Index() {
       <Hero appDownloadButtons={false} />
       {/* <ProximosCursos /> */}
       {/* <CursosMinistrados /> */}
+      <BannerDestaquePratica />
       <BannerDestaque />
       <Features
         defaultFeature={false}
